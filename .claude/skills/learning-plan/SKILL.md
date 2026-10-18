@@ -30,6 +30,10 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
    - Prefer official docs, well-regarded conference talks, and established authors.
    - Use only resources you are confident exist. Verify any you are unsure of with a web search.
    - Give video lengths when you know them.
-5. **Close with a short "If you have extra time" note**.
+5. **Have a short "If you have extra time" note**.
+6. **At the end, give your recommendation for future learning:**
+   - Is the topic small and covered adequately by this plan?
+   - Would you recommend having a longer self-study plan for this topic? How long?
+   - Is the topic so vast that you'd recommend splitting it into multiple smaller topics?
 
 Keep the whole plan scannable. It should go from a few lines to a screenful of text for a weekend-long plan.
