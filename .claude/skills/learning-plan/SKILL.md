@@ -14,7 +14,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 - Write the plan to a Markdown file.
 - In the file, use Markdown syntax for links. Also, list resources as GitHub Markdown todo items.
 - Structure the file logically, beginning with the topic and the time required.
-- Have the file name communicate the topic, as in "test-driven-development-learning-plan.md".
+- The file will be opened as a note in Obsidian, so its file name should be something like "Model Context Protocol (MCP).md", and you shouldn't add a Markdown level-1 title inside (like #MCP); Obsidian will add the title automatically.
 - The learner might be a slow reader/learner, so don't be tight with the time. For example, don't assume they'll take one hour to consume two 30' videos. It's more likely they'll rewind at times or pause to take notes, so they're more likely to take maybe 1.5 hours overall.
 
 ## Steps
@@ -28,12 +28,19 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
    - in levels 3-4, one hands-on **Do** exercise, with later exercises building on earlier ones
 4. **Curate resources carefully:**
    - Prefer official docs, well-regarded conference talks, and established authors.
+   - You can include brief courses from the following sources–even paid ones, as long they are relevant and high quality:
+      * Coursera
+      * Deeplearning.ai
+      * Pluralsight
    - Use only resources you are confident exist. Verify any you are unsure of with a web search.
    - Give video lengths when you know them.
 5. **Have a short "If you have extra time" note**.
-6. **At the end, give your recommendation for future learning:**
+6. **Give a quick assessment of the current state of the topic**: How did it evolve recently, across its history, and/or since the original resource given by the learner was published? Is there any timely need-to-know information, like the fact that the topic is now obsolete or irrelevant, or still evolving as we speak? Keep this short: one to three quick paragraphs.
+7. **At the end, give your recommendation for future learning:**
    - Is the topic small and covered adequately by this plan?
    - Would you recommend having a longer self-study plan for this topic? How long?
    - Is the topic so vast that you'd recommend splitting it into multiple smaller topics?
+   - List all related topics in Thoughtworks Radar. (You'll find all the topics listed by Radar edition in the `Thoughtworks Radar` folder.)
+   - If there is any Coursera/Deeplearning.ai/Pluralsight course that is especially relevant but doesn't fit the time budget, you can recommend it here.
 
 Keep the whole plan scannable. It should go from a few lines to a screenful of text for a weekend-long plan.
