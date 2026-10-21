@@ -1,6 +1,6 @@
 ---
 name: learning-plan
-description: Create a layered self-study plan for a short technical topic (a few hours to a weekend), with curated videos and articles. Use when the user asks for a learning plan, study plan, or how to learn a technical topic quickly.
+description: Create a layered self-study plan for a short technical topic (from 30 minutes to a weekend), with curated videos and articles. Use when the user asks for a learning plan, study plan, or how to learn a technical topic quickly.
 argument-hint: "[topic] [time budget]"
 ---
 
@@ -11,15 +11,17 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 ## Standing rules
 
 - The $TOPIC can be a literal topic ("Zero trust architecture") or a URL referring to it (https://www.thoughtworks.com/radar/techniques/zero-trust-architecture)
-- Write the plan to a Markdown file.
+- Write the plan to a Markdown file in the `Topics` folder.
 - In the file, use Markdown syntax for links. Also, list resources as GitHub Markdown todo items.
 - Structure the file logically, beginning with the topic and the time required.
 - The file will be opened as a note in Obsidian, so its file name should be something like "Model Context Protocol (MCP).md", and you shouldn't add a Markdown level-1 title inside (like #MCP); Obsidian will add the title automatically.
-- The learner might be a slow reader/learner, so don't be tight with the time. For example, don't assume they'll take one hour to consume two 30' videos. It's more likely they'll rewind at times or pause to take notes, so they're more likely to take maybe 1.5 hours overall.
+- The learner is a slow, thorough learner: they pause, rewind, take notes, and follow up on what they read. Estimate every layer at about **twice** the time a typical learner would need. For example, two 30' videos take about 2 hours, a 10-minute article takes about 20 minutes, and hands-on exercises take at least twice what you'd expect. As a calibration point, the learner needed at least 4 hours for a plan that had been estimated at 2 hours. Size the content so that it fits the time budget at this pace, and still give the nominal length of each video or article next to its link.
+- The learner's goal is to become an up-to-date **generalist**: to understand the current state of technology and how it got here, not to master each topic. All plans together form one larger curriculum. So, when you choose or suggest a time budget, base it on how relevant the topic is to that general understanding, not on how broad the topic is. A niche tool can get 30'–60' even if it has a lot of features. A subtopic usually gets less time than its parent topic. For example, if "Model Context Protocol (MCP)" takes 4 hours, then FastMCP (a framework for MCP) might get an hour or two, and a single MCP server such as Context7 might get 30'–60'. This is a guideline, not a hard rule: a subtopic can get more time when it's more relevant than its parent. Judge each case, and when you depart from the guideline, say why in one line so the learner can disagree.
+- Plans must work well together. Before you write a plan, look at the existing plans in the `Topics` folder. If the new topic is related to one of them, link to it with an Obsidian link (like `[[Model Context Protocol (MCP)]]`). Assume what the earlier plan covers instead of repeating it, avoid reusing its resources, and build the exercises on the earlier plan's exercises when that makes sense. Keep one plan per topic: two tools that the Radar lists separately get two plans.
 
 ## Steps
 
-1. **Pin down the inputs.** Get the topic and time budget from the arguments. If the budget is missing, ask the learner. If the learner's background is unclear, state your assumption in one line instead of asking.
+1. **Pin down the inputs.** Get the topic and time budget from the arguments. If the budget is missing, choose one with the relevance rule above and state it in one line, so the learner can change it. If the learner's background is unclear, state your assumption in one line instead of asking.
 2. **Split the time into 2–4 layers**, from fundamentals (that might be just one short description or a 5 minutes video) to applied use. Each layer must leave the learner with something usable, so they can stop after any layer. If time is tight, then have a minimum of two layers.
 3. **For each layer, give:**
    - a heading with the time slot and estimated hours
@@ -38,7 +40,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 6. **Give a quick assessment of the current state of the topic**: How did it evolve recently, across its history, and/or since the original resource given by the learner was published? Is there any timely need-to-know information, like the fact that the topic is now obsolete or irrelevant, or still evolving as we speak? Keep this short: one to three quick paragraphs.
 7. **At the end, give your recommendation for future learning:**
    - Is the topic small and covered adequately by this plan?
-   - Would you recommend having a longer self-study plan for this topic? How long?
+   - Would you recommend having a longer self-study plan for this topic? How long? (Follow the relevance rule above.)
    - Is the topic so vast that you'd recommend splitting it into multiple smaller topics?
    - List all related topics in Thoughtworks Radar. (You'll find all the topics listed by Radar edition in the `Thoughtworks Radar` folder.)
    - If there is any Coursera/Deeplearning.ai/Pluralsight course that is especially relevant but doesn't fit the time budget, you can recommend it here.

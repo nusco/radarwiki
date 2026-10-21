@@ -1,26 +1,28 @@
-**Time:** ~2 hours · **Source:** [Thoughtworks Radar – Model Context Protocol (MCP) (Trial, November 2025)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp)
+**Time:** ~4 hours (half a day) · **Source:** [Thoughtworks Radar – Model Context Protocol (MCP) (Trial, November 2025)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp)
 
 *Assumption: you use Claude Code (or a similar agent) and can read and write a little Python.*
 
 ---
 
-## Layer 1 — What MCP is (0:00–0:15, ~15 min)
+## Layer 1 — What MCP is (0:00–0:30, ~30 min)
 
 **Goal:** Explain in two sentences what MCP is and what problem it solves.
 
-- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) — Thoughtworks' take: wide adoption, but gaps in architecture and security.
-- [ ] Read: [What is MCP?](https://modelcontextprotocol.io/docs/getting-started/intro) — the official one-page intro. It's short.
-- [ ] Read: [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol) (Anthropic, Nov 2024) — the original announcement, with the reasons for creating MCP.
+- [x] Read: [The Radar blip](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) — Thoughtworks' take: wide adoption, but gaps in architecture and security.
+- [x] Read: [What is MCP?](https://modelcontextprotocol.io/docs/getting-started/intro) — the official one-page intro. It's short.
+- [x] Read: [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol) (Anthropic, Nov 2024) — the original announcement, with the reasons for creating MCP.
 
-## Layer 2 — How it works (0:15–0:50, ~35 min)
+_I actually took ~25'_
+
+## Layer 2 — How it works (0:30–1:40, ~70 min)
 
 **Goal:** Know the parts (host, client, server), the three server primitives (tools, resources, prompts) and the two transports (stdio and Streamable HTTP).
 
-- [ ] Read: [Architecture overview](https://modelcontextprotocol.io/docs/learn/architecture) — the key page. Read the concepts carefully. You can skim the JSON-RPC examples.
+- [x] Read: [Architecture overview](https://modelcontextprotocol.io/docs/learn/architecture) — the key page. Read the concepts carefully. You can skim the JSON-RPC examples.
 - [ ] Read: [Server concepts](https://modelcontextprotocol.io/docs/learn/server-concepts) — when to use a tool, a resource, or a prompt, and who controls each one (the model, the app, or the user).
-- [ ] Read: [The Model Context Protocol: Getting beneath the hype](https://www.thoughtworks.com/insights/blog/generative-ai/model-context-protocol-beneath-hype) (Thoughtworks, ~8 min) — linked from the blip. It weighs the benefits against the drawbacks.
+- [x] Read: [The Model Context Protocol: Getting beneath the hype](https://www.thoughtworks.com/insights/blog/generative-ai/model-context-protocol-beneath-hype) (Thoughtworks, ~8 min) — linked from the blip. It weighs the benefits against the drawbacks.
 
-## Layer 3 — Build a server (0:50–1:35, ~45 min)
+## Layer 3 — Build a server (1:40–3:10, ~90 min)
 
 **Goal:** Write a small MCP server, test it on its own, and use it from your agent.
 
@@ -29,7 +31,7 @@
 - [ ] Skim: [FastMCP](https://gofastmcp.com/) — the framework the Radar mentions. The official Python SDK's high-level API grew out of it.
 - [ ] **Do:** Write a `radar-progress` MCP server with one tool. The tool takes a Radar edition (for example `2025-november`) and returns how many items in `Thoughtworks Radar/thoughtworks-radar-<edition>.md` are ticked and how many aren't. Call it with the Inspector first. Then add it to Claude Code with `claude mcp add` and ask, in plain words, "how far along am I with the November 2025 Radar?"
 
-## Layer 4 — Use it safely (1:35–2:05, ~30 min)
+## Layer 4 — Use it safely (3:10–4:10, ~60 min)
 
 **Goal:** Understand why the Radar says to apply scrutiny, and know how to check an MCP setup.
 
@@ -42,7 +44,7 @@
 
 ## If you have extra time
 
-- [ ] [Introduction to Model Context Protocol (MCP)](https://www.pluralsight.com/courses/introduction-model-context-protocol-mcp) (Pluralsight, Tony Alicea, 43 min, updated Jan 2026): covers the same ground as Layers 1–2 as video. Watch it if the reading didn't quite stick.
+- [x] [Introduction to Model Context Protocol (MCP)](https://www.pluralsight.com/courses/introduction-model-context-protocol-mcp) (Pluralsight, Tony Alicea, 43 min, updated Jan 2026): covers the same ground as Layers 1–2 as video. Watch it if the reading didn't quite stick.
 - [ ] [MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/) (DeepLearning.AI, free, 1h38): builds servers *and* a client app from scratch. A good next step after Layer 3.
 - [ ] [The 2026-07-28 release candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) (official MCP blog): what changed in the latest spec, and why.
 - [ ] [Why MCP's disregard for 40 years of RPC best practices will burn enterprises](https://julsimon.medium.com/why-mcps-disregard-for-40-years-of-rpc-best-practices-will-burn-enterprises-8ef85ce5bc9b) (Julien Simon): the critique the Radar quotes. It's on Medium, so it might be behind the paywall.
@@ -61,17 +63,18 @@ MCP has also lost some of its novelty. The April 2026 Radar doesn't list MCP its
 
 ## Recommendation for future learning
 
-These 2 hours are enough to understand the blip, judge MCP servers, and write simple local ones. If you want to **build and run remote MCP servers in production**, plan another half day (~4 hours) on Streamable HTTP, the [authorization spec](https://modelcontextprotocol.io/docs/tutorials/security/authorization) (OAuth), and deployment. Start that half day with the DeepLearning.AI course above, then take [Model Context Protocol in Practice](https://www.pluralsight.com/courses/model-context-protocol-practice) (Pluralsight, Kamran Ayub, 1h40). It covers local and remote servers and securing them with OAuth. MCP security and A2A are each big enough to study as separate topics.
+These 4 hours are enough to understand the blip, judge MCP servers, and write simple local ones. If you want to **build and run remote MCP servers in production**, plan another full day (~8 hours) on Streamable HTTP, the [authorization spec](https://modelcontextprotocol.io/docs/tutorials/security/authorization) (OAuth), and deployment. Start that day with the DeepLearning.AI course above, then take [Model Context Protocol in Practice](https://www.pluralsight.com/courses/model-context-protocol-practice) (Pluralsight, Kamran Ayub, 1h40). It covers local and remote servers and securing them with OAuth. MCP security and A2A have their own plans in the series below.
 
-**Related topics in Thoughtworks Radar:**
+**Related topics in Thoughtworks Radar.** Each one has its own plan. Together they make an ~12.5-hour series, best done in this order:
 
-- [ ] [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) (Nov 2025)
-- [ ] [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
-- [ ] [MCP Apps](https://www.thoughtworks.com/radar/platforms/mcp-apps) (Apr 2026)
-- [ ] [FastMCP](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) (Nov 2025)
-- [ ] [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025) → [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan) (Apr 2026)
-- [ ] [Toxic flow analysis for AI](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
-- [ ] [Agent-to-Agent (A2A) Protocol](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol) (Nov 2025)
-- [ ] [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026): an alternative to MCP for many use cases
-- [ ] [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
-- [ ] [Context7](https://www.thoughtworks.com/radar/tools/context7) and [Serena](https://www.thoughtworks.com/radar/tools/serena) (Nov 2025): two popular MCP servers for coding agents
+1. [ ] [[Naive API-to-MCP conversion]] (~1h) — [Radar](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) (Nov 2025)
+2. [ ] [[FastMCP]] (~1h) — [Radar](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) (Nov 2025)
+3. [ ] [[MCP Apps]] (~1h) — [Radar](https://www.thoughtworks.com/radar/platforms/mcp-apps) (Apr 2026)
+4. [ ] [[MCP by default]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
+5. [ ] [[Agent Skills]] (~2h) — [Radar](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026): an alternative to MCP for many use cases
+6. [ ] [[Context engineering]] (~2h) — [Radar](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
+7. [ ] [[Context7]] (~30') — [Radar](https://www.thoughtworks.com/radar/tools/context7) (Nov 2025)
+8. [ ] [[Serena]] (~30') — [Radar](https://www.thoughtworks.com/radar/tools/serena) (Nov 2025)
+9. [ ] [[Toxic flow analysis for AI]] (~1h) — [Radar](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
+10. [ ] [[Agent Scan]] (~30') — [Radar](https://www.thoughtworks.com/radar/tools/agent-scan) (Apr 2026), formerly [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025)
+11. [ ] [[Agent-to-Agent (A2A) Protocol]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol) (Nov 2025)
