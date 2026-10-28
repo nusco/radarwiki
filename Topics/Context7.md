@@ -1,16 +1,17 @@
-**Time:** ~30 minutes · **Source:** [Thoughtworks Radar – Context7 (Trial, November 2025)](https://www.thoughtworks.com/radar/tools/context7)
+**Time:** ~45 minutes · **Source:** [Thoughtworks Radar – Context7 (Trial, November 2025)](https://www.thoughtworks.com/radar/tools/context7)
 
 *Series: after [[Context engineering]] · next: [[Serena]].*
 
 ---
 
-## Layer 1 — What it is (0:00–0:10, ~10 min)
+## Layer 1 — What it is (0:00–0:15, ~15 min)
 
 **Goal:** Explain how Context7 reduces hallucinated code: it fetches current, version-specific library docs into the context when the agent needs them.
 
 - [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/tools/context7) — short.
+- [ ] **Do:** Go to [context7.com](https://context7.com), search for FastMCP, and look at the documentation snippets it serves. That's what Context7 would put into your agent's context.
 
-## Layer 2 — Try it (0:10–0:30, ~20 min)
+## Layer 2 — Try it (0:15–0:45, ~30 min)
 
 **Goal:** Use it once, and notice that it's now available as both an MCP server and a CLI with a skill.
 
@@ -34,3 +35,7 @@ This plan covers it.
 - [ ] [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
 - [ ] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
 - [ ] [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
+
+---
+
+- [ ] **Close:** [Review the blip](https://www.thoughtworks.com/radar/tools/context7) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.

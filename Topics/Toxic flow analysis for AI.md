@@ -1,17 +1,17 @@
-**Time:** ~1 hour · **Source:** [Thoughtworks Radar – Toxic flow analysis for AI (Assess, November 2025 and April 2026)](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)
+**Time:** ~1.5 hours · **Source:** [Thoughtworks Radar – Toxic flow analysis for AI (Assess, November 2025 and April 2026)](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)
 
 *Series: after [[Serena]] · next: [[Agent Scan]]. Assumption: you know the lethal trifecta from Layer 4 of [[Model Context Protocol (MCP)]].*
 
 ---
 
-## Layer 1 — The technique (0:00–0:20, ~20 min)
+## Layer 1 — The technique (0:00–0:30, ~30 min)
 
 **Goal:** Explain toxic flow analysis: mapping the paths through an agent's tools where untrusted content, private data and an outbound channel meet.
 
 - [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) — read both versions. In April 2026 it extends from MCP servers to Agent Skills.
 - [ ] Read: [Toxic flows in agentic systems](https://invariantlabs.ai/blog/toxic-flow-analysis) (Invariant Labs, Jul 2025, ~4 min) — the post that introduced the term, with the GitHub MCP exploit as its example.
 
-## Layer 2 — Apply it to your setup (0:20–1:00, ~40 min)
+## Layer 2 — Apply it to your setup (0:30–1:30, ~60 min)
 
 **Goal:** Find the toxic flows in your own agent setup, and know a simple rule for removing them.
 
@@ -22,7 +22,7 @@
 
 ## If you have extra time
 
-- [ ] Skim the [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw) entry, the "permission-hungry" agent the newer blip uses as its example.
+- [ ] Read the [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw) entry, the "permission-hungry" agent the newer blip uses as its example.
 
 ---
 
@@ -34,7 +34,7 @@ Invariant Labs introduced the term in mid-2025 and built a preview of it into MC
 
 ## Recommendation for future learning
 
-This plan is enough for a generalist. If you ever deploy agents for other people, study agent security more broadly as its own topic (~2 hours): sandboxing, permissions, and prompt injection defenses.
+This plan is enough for a generalist. If you ever deploy agents for other people, study agent security more broadly as its own topic (~3 hours): sandboxing, permissions, and prompt injection defenses.
 
 **Related topics in Thoughtworks Radar:**
 
@@ -43,3 +43,7 @@ This plan is enough for a generalist. If you ever deploy agents for other people
 - [ ] [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw) (Apr 2026)
 - [ ] [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
 - [ ] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
+
+---
+
+- [ ] **Close:** [Review the blip](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.

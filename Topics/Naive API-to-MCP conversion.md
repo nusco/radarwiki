@@ -1,17 +1,18 @@
-**Time:** ~1 hour · **Source:** [Thoughtworks Radar – Naive API-to-MCP conversion (Hold, November 2025)](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
+**Time:** ~1.5 hours · **Source:** [Thoughtworks Radar – Naive API-to-MCP conversion (Hold, November 2025)](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
 
 *Series: after [[Model Context Protocol (MCP)]] · next: [[FastMCP]]. Assumption: you've built the `radar-progress` server from the MCP plan.*
 
 ---
 
-## Layer 1 — The anti-pattern (0:00–0:20, ~20 min)
+## Layer 1 — The anti-pattern (0:00–0:30, ~30 min)
 
 **Goal:** Explain why turning an existing API into MCP tools, one endpoint per tool, gives agents a bad interface.
 
 - [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) — short. APIs are designed for human developers, with many small actions. Agents that chain these actions waste tokens and can reach dangerous operations.
+- [ ] Skim: [The FastAPI-MCP README](https://github.com/tadata-org/fastapi_mcp) — one of the converters the blip names. Look at how little code it takes to turn a whole API into MCP tools. That's the temptation.
 - [ ] Read: [Stop converting your REST APIs to MCP](https://www.jlowin.dev/blog/stop-converting-rest-apis-to-mcp) (Jeremiah Lowin, Jul 2025, ~4 min) — from the author of FastMCP, a framework that itself can do this conversion. Use it to get started quickly, then design curated tools.
 
-## Layer 2 — What a good agent tool looks like (0:20–1:00, ~40 min)
+## Layer 2 — What a good agent tool looks like (0:30–1:30, ~60 min)
 
 **Goal:** Know the main rules for designing tools for agents, and apply them to your own server.
 
@@ -22,7 +23,7 @@
 
 ## If you have extra time
 
-- [ ] Skim the [FastAPI-MCP](https://github.com/tadata-org/fastapi_mcp) README, one of the converters the blip names, to see how tempting the one-line conversion looks.
+- [ ] Skim the README of [MCP Link](https://github.com/automation-ai-labs/mcp-link), the other converter the blip names. It turns any OpenAPI spec into an MCP server, even as a hosted service.
 
 ---
 
@@ -42,3 +43,7 @@ Small, and fully covered here. The design rules are more important than the anti
 - [ ] [FastMCP](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) (Nov 2025)
 - [ ] [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
 - [ ] [GraphQL as data access pattern for LLMs](https://www.thoughtworks.com/radar/techniques/graphql-as-data-access-pattern-for-llms) (Nov 2025)
+
+---
+
+- [ ] **Close:** [Review the blip](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.

@@ -1,27 +1,29 @@
-**Time:** ~1 hour · **Source:** [Thoughtworks Radar – MCP Apps (Assess, April 2026)](https://www.thoughtworks.com/radar/platforms/mcp-apps)
+**Time:** ~1.5 hours · **Source:** [Thoughtworks Radar – MCP Apps (Assess, April 2026)](https://www.thoughtworks.com/radar/platforms/mcp-apps)
 
 *Series: after [[FastMCP]] · next: [[MCP by default]].*
 
 ---
 
-## Layer 1 — What MCP Apps are (0:00–0:20, ~20 min)
+## Layer 1 — What MCP Apps are (0:00–0:30, ~30 min)
 
 **Goal:** Explain how an MCP tool can show an interactive UI inside the chat, and why that's the first official MCP extension.
 
 - [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/platforms/mcp-apps) — short. `ui://` resources, sandboxed iframes, and a text fallback. It also asks whether the extra complexity is worth it.
-- [ ] Read: [MCP Apps – Bringing UI capabilities to MCP clients](https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/) (official MCP blog, Jan 2026) — the announcement.
+- [ ] **Do:** In Claude (even on the free plan), add an interactive connector for a tool you already use, such as Figma, Canva, Slack or Asana, and ask it to show you something. Notice what's interactive and what's plain text. If you don't use any of those tools, read [the announcement](https://claude.com/blog/interactive-tools-in-claude) (Anthropic, Jan 2026, ~4 min) instead, which describes what each one shows.
+- [ ] Read: [MCP Apps – Bringing UI capabilities to MCP clients](https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/) (official MCP blog, Jan 2026) — the announcement of the extension, and where it came from.
 
-## Layer 2 — How they work, and one example (0:20–1:00, ~40 min)
+## Layer 2 — How they work (0:30–1:30, ~60 min)
 
-**Goal:** Know the flow (the tool declares a UI, the host fetches and sandboxes it, the app calls tools back), and see a working app.
+**Goal:** Know the flow (the tool declares a UI, the host fetches and sandboxes it, the app calls tools back), and see it in a working app.
 
-- [ ] Read: [MCP Apps overview](https://modelcontextprotocol.io/extensions/apps/overview) — read "How MCP Apps work" and "When to use MCP Apps". You can skip the parts about building clients.
-- [ ] **Do:** Pick a small example from the [ext-apps examples](https://github.com/modelcontextprotocol/ext-apps/tree/main/examples), such as `qr-server` or `basic-server-vanillajs`. Run it as its README explains, and connect it to Claude Desktop. Use it, and notice what you see compared with what the model sees. Then answer the blip's question for `radar-progress`: would a progress-bar UI be worth it, or is text enough? If the setup takes too long, stop at the one-hour mark and just read the example's code.
+- [ ] Read: [MCP Apps are here: Rendering interactive UIs in AI clients](https://workos.com/blog/2026-01-27-mcp-apps) (Maria Paktiti, WorkOS, Jan 2026, ~6 min) — the flow, with short code samples, and when a UI beats plain text.
+- [ ] **Do:** Pick a small example from the [ext-apps examples](https://github.com/modelcontextprotocol/ext-apps/tree/main/examples), such as `qr-server` or `basic-server-vanillajs`. Run it as its README explains, and connect it to Claude Desktop. Find the three steps of the flow in its code. Then answer the blip's question for `radar-progress`: would a progress-bar UI be worth it, or is text enough? If the setup takes more than 30 minutes, stop and just read the example's code.
 
 ---
 
 ## If you have extra time
 
+- [ ] Read: [MCP Apps overview](https://modelcontextprotocol.io/extensions/apps/overview) (official docs) — the page the blip links to. It's the full reference, and longer than you need if the WorkOS article was clear.
 - [ ] Skim the [build guide](https://modelcontextprotocol.io/extensions/apps/build) to see what adding a UI to your own server would take.
 
 ---
@@ -41,3 +43,7 @@ This plan covers it for a generalist. If you build agent products with a UI, als
 - [ ] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
 - [ ] [AG-UI Protocol](https://www.thoughtworks.com/radar/platforms/ag-ui-protocol) (Nov 2025, Apr 2026)
 - [ ] [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
+
+---
+
+- [ ] **Close:** [Review the blip](https://www.thoughtworks.com/radar/platforms/mcp-apps) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.
