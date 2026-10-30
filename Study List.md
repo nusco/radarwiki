@@ -14,6 +14,13 @@
 - [ ] [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan)
 - [ ] [Agent-to-Agent (A2A) Protocol](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol)
 
+## Stuff from the mlopsday
+
+- [ ] [LiteLLM](https://www.thoughtworks.com/radar/languages-and-frameworks/litellm)
+- [ ] [Pi](https://www.thoughtworks.com/radar/tools/pi)
+- [ ] [GraphRAG](https://www.thoughtworks.com/radar/techniques/graphrag)
+- [ ] [Terraform](https://www.thoughtworks.com/radar/tools/terraform)
+
 ## Large branches out
 
 - [ ] [OAuth](https://www.thoughtworks.com/radar/platforms/oauth)
