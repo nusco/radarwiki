@@ -87,4 +87,4 @@ These 6 hours are enough to understand the blip, judge MCP servers, and write si
 
 ---
 
-- [ ] **Close:** [Review the blip](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.
+- [x] **Close:** [Review the blip](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.
