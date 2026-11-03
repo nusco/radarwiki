@@ -26,30 +26,32 @@
 
 - [x] Read: [Build an MCP server](https://modelcontextprotocol.io/docs/develop/build-server) — the official quickstart. Follow the Python version.
 - [x] Skim: [MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector) — a tool to call your server by hand, with no LLM in between. Skim the page, then launch the Inspector and click around for a few minutes. You'll use it properly in the exercise below.
-- [x] Skim: [FastMCP](https://gofastmcp.com/) — the framework the Radar mentions. The official Python SDK's high-level API grew out of it.
+- [x] Skim: [FastMCP](https://gofastmcp.com/) — the framework the Radar mentions. The official Python SDK's high-level API grew out of it. [[FastMCP]] has its own plan.
 - [x] **Do:** Write a `radar-progress` MCP server with one tool. The tool takes a Radar edition (for example `2025-november`) and returns how many items in `Thoughtworks Radar/thoughtworks-radar-<edition>.md` are ticked and how many aren't. Call it with the Inspector first. Then add it to Claude Code with `claude mcp add` and ask, in plain words, "how far along am I with the November 2025 Radar?"
 
-## Layer 4 — Use it safely (4:45–6:15, ~90 min)
+## Layer 4 — Use it safely (4:45–6:00, ~75 min)
 
 **Goal:** Understand why the Radar says to apply scrutiny, and know how to check the servers you install.
 
 ### How agents get attacked
 
 - [x] Read: [Model Context Protocol has prompt injection security problems](https://simonwillison.net/2025/Apr/9/mcp-prompt-injection/) (Simon Willison) — tool poisoning, rug pulls and tool shadowing, explained clearly.
-- [x] Read: [The lethal trifecta for AI agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) (Simon Willison) — private data plus untrusted content plus a way to send data out. This is the idea behind the Radar's "toxic flows".
+- Why some *combinations* of servers are dangerous, the Radar's "toxic flows", is covered in [[Toxic flow analysis for AI]].
+
 ### Checking what you install
 
-- [ ] Read: [Introducing the MCP Registry](https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/) (official MCP blog, Sep 2025, ~4 min) — linked from the blip. The official catalog of public MCP servers, still in preview. Notice what it checks (who published a server) and what it leaves to others (whether the server is safe).
-- [ ] **Do:** Run [Snyk Agent Scan](https://github.com/snyk/agent-scan) (formerly MCP-Scan, the tool the Radar names) on your agent configuration, including your new `radar-progress` server. Then list every MCP server you have installed and mark which legs of the lethal trifecta each one gives your agent. Finally, look up each server in the registry (for example, `curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=filesystem"`): is it there, and does its namespace match the people you think wrote it?
+- [x] Read: [Introducing the MCP Registry](https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/) (official MCP blog, Sep 2025, ~4 min) — linked from the blip. The official catalog of public MCP servers, still in preview. Notice what it checks (who published a server) and what it leaves to others (whether the server is safe).
+- [ ] **Do:** Check the servers you've installed. List them with `claude mcp list`, including your new `radar-progress` server. For each one, read its tool descriptions in the `/mcp` menu as an attacker would: a description that tells the model what to *do*, rather than what the tool does, is a red flag. Then look up each server in the registry (for example, `curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=filesystem"`). Is it there, and does its namespace match the people you think wrote it?
+  - Mapping the trifecta across your whole setup is covered in [[Toxic flow analysis for AI]], and automated scanning in [[Agent Scan]].
 
 ---
 
 ## If you have extra time
 
 - [x] [Introduction to Model Context Protocol (MCP)](https://www.pluralsight.com/courses/introduction-model-context-protocol-mcp) (Pluralsight, Tony Alicea, 43 min, updated Jan 2026): covers the same ground as Layers 1–2 as video. Watch it if the reading didn't quite stick.
-- [ ] [MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/) (DeepLearning.AI, free, 1h38): builds servers *and* a client app from scratch. A good next step after Layer 3.
-- [ ] [The 2026-07-28 release candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) (official MCP blog): what changed in the latest spec, and why.
-- [ ] [Why MCP's disregard for 40 years of RPC best practices will burn enterprises](https://julsimon.medium.com/why-mcps-disregard-for-40-years-of-rpc-best-practices-will-burn-enterprises-8ef85ce5bc9b) (Julien Simon): the critique the Radar quotes. It's on Medium, so it might be behind the paywall.
+- [ ] [MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/) (DeepLearning.AI, free, 1h58): builds servers *and* a client app from scratch. A good next step after Layer 3.
+- [x] [The 2026-07-28 release candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) (official MCP blog): what changed in the latest spec, and why.
+- [x] [Why MCP's disregard for 40 years of RPC best practices will burn enterprises](https://julsimon.medium.com/why-mcps-disregard-for-40-years-of-rpc-best-practices-will-burn-enterprises-8ef85ce5bc9b) (Julien Simon): the critique the Radar quotes. It's on Medium, so it might be behind the paywall.
 
 ---
 
@@ -77,7 +79,7 @@ These 6 hours are enough to understand the blip, judge MCP servers, and write si
 6. [ ] [[Context engineering]] (~3h) — [Radar](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
 7. [ ] [[Context7]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/context7) (Nov 2025)
 8. [ ] [[Serena]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/serena) (Nov 2025)
-9. [ ] [[Toxic flow analysis for AI]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
+9. [ ] [[Toxic flow analysis for AI]] (~1.75h) — [Radar](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
 10. [ ] [[Agent Scan]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/agent-scan) (Apr 2026), formerly [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025)
 11. [ ] [[Agent-to-Agent (A2A) Protocol]] (~2h) — [Radar](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol) (Nov 2025)
 

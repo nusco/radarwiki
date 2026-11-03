@@ -1,6 +1,6 @@
 **Time:** ~45 minutes · **Source:** [Thoughtworks Radar – Agent Scan (Assess, April 2026)](https://www.thoughtworks.com/radar/tools/agent-scan), formerly [MCP-Scan (November 2025)](https://www.thoughtworks.com/radar/tools/mcp-scan)
 
-*Series: after [[Toxic flow analysis for AI]] · next: [[Agent-to-Agent (A2A) Protocol]]. Assumption: you ran a first scan in Layer 4 of [[Model Context Protocol (MCP)]].*
+*Series: after [[Toxic flow analysis for AI]] · next: [[Agent-to-Agent (A2A) Protocol]]. Assumption: you drew the flow graph of your setup in [[Toxic flow analysis for AI]].*
 
 ---
 
@@ -15,8 +15,9 @@
 
 **Goal:** See how an automated scan compares with your hand-drawn toxic flow graph.
 
-- [ ] Skim: [The Agent Scan README](https://github.com/snyk/agent-scan) — read the section on what data it sends to Snyk before you run a full scan.
-- [ ] **Do:** Run a full scan, which now includes your skills, like the `radar-progress` skill from [[Agent Skills]]. Compare the findings with the graph you drew in [[Toxic flow analysis for AI]]. What did the scanner find that you missed, and what did you find that it missed?
+- [ ] Skim: [The Agent Scan README](https://github.com/snyk/agent-scan) — read the section on what data it sends to Snyk, and the list of issues it reports.
+- [ ] **Do:** Take the inventory from `inspect`, including skills like the `radar-progress` skill from [[Agent Skills]], and compare it with the graph you drew in [[Toxic flow analysis for AI]]. Did the inventory list anything you left out of the graph? Then go through the issues the README says the scanner reports, and decide which ones your graph would catch and which ones only a scanner could catch.
+  - Optional: run a full scan (`uvx snyk-agent-scan@latest`). It needs a Snyk account and a `SNYK_TOKEN`, and the free tier can fail on the first try with "Daily usage limit reached for the public version of Agent-Scan". If you get that error, skip the full scan. Comparing your graph with the README is enough for this exercise.
 
 ---
 

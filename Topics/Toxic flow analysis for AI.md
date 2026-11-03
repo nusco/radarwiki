@@ -1,17 +1,18 @@
-**Time:** ~1.5 hours · **Source:** [Thoughtworks Radar – Toxic flow analysis for AI (Assess, November 2025 and April 2026)](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)
+**Time:** ~1.75 hours · **Source:** [Thoughtworks Radar – Toxic flow analysis for AI (Assess, November 2025 and April 2026)](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)
 
-*Series: after [[Serena]] · next: [[Agent Scan]]. Assumption: you know the lethal trifecta from Layer 4 of [[Model Context Protocol (MCP)]].*
+*Series: after [[Serena]] · next: [[Agent Scan]]. Assumption: you know how prompt injection attacks MCP servers, from Layer 4 of [[Model Context Protocol (MCP)]].*
 
 ---
 
-## Layer 1 — The technique (0:00–0:30, ~30 min)
+## Layer 1 — The technique (0:00–0:45, ~45 min)
 
 **Goal:** Explain toxic flow analysis: mapping the paths through an agent's tools where untrusted content, private data and an outbound channel meet.
 
 - [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) — read both versions. In April 2026 it extends from MCP servers to Agent Skills.
 - [ ] Read: [Toxic flows in agentic systems](https://invariantlabs.ai/blog/toxic-flow-analysis) (Invariant Labs, Jul 2025, ~4 min) — the post that introduced the term, with the GitHub MCP exploit as its example.
+- [x] Read: [The lethal trifecta for AI agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) (Simon Willison) — private data plus untrusted content plus a way to send data out. Toxic flow analysis is the search for paths that combine all three.
 
-## Layer 2 — Apply it to your setup (0:30–1:30, ~60 min)
+## Layer 2 — Apply it to your setup (0:45–1:45, ~60 min)
 
 **Goal:** Find the toxic flows in your own agent setup, and know a simple rule for removing them.
 
@@ -28,7 +29,7 @@
 
 ## Current state of the topic
 
-Invariant Labs introduced the term in mid-2025 and built a preview of it into MCP-Scan. Snyk later acquired Invariant, and MCP-Scan became [[Agent Scan]]. The technique is still in *Assess*, because prompt injection itself is unsolved: no filter reliably stops it. That's why rules that limit capabilities, like the trifecta and the Rule of Two, are the best defense. Since April 2026 the concern covers skills too, after studies such as Snyk's ToxicSkills (see [[Agent Skills]]).
+Invariant Labs introduced the term in mid-2025, along with a tool that automates it (now [[Agent Scan]], which has the tool's history). The technique is still in *Assess*, because prompt injection itself is unsolved: no filter reliably stops it. That's why rules that limit capabilities, like the trifecta and the Rule of Two, are the best defense. Since April 2026 the concern covers skills too, after studies such as Snyk's ToxicSkills (see [[Agent Skills]]).
 
 ---
 
