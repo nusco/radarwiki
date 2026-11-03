@@ -1,4 +1,6 @@
-**Time:** ~1.75 hours · **Source:** [Thoughtworks Radar – Toxic flow analysis for AI (Assess, November 2025 and April 2026)](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)
+**Time:** ~1.75 hours
+**Source:** [Thoughtworks Radar – Toxic flow analysis for AI (Assess, November 2025 and April 2026)](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)
+**Created:** 2026-10-21
 
 *Series: after [[Serena]] · next: [[Agent Scan]]. Assumption: you know how prompt injection attacks MCP servers, from Layer 4 of [[Model Context Protocol (MCP)]].*
 
@@ -39,11 +41,11 @@ This plan is enough for a generalist. If you ever deploy agents for other people
 
 **Related topics in Thoughtworks Radar:**
 
-- [ ] [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan) (Apr 2026), formerly [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025)
-- [ ] [Sandboxed execution for coding agents](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents) (Apr 2026)
-- [ ] [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw) (Apr 2026)
-- [ ] [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
-- [ ] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
+- [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan) (Apr 2026), formerly [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025)
+- [Sandboxed execution for coding agents](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents) (Apr 2026)
+- [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw) (Apr 2026)
+- [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
+- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
 
 ---
 

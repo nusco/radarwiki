@@ -1,4 +1,6 @@
-**Time:** ~45 minutes · **Source:** [Thoughtworks Radar – Agent Scan (Assess, April 2026)](https://www.thoughtworks.com/radar/tools/agent-scan), formerly [MCP-Scan (November 2025)](https://www.thoughtworks.com/radar/tools/mcp-scan)
+**Time:** ~45 minutes
+**Source:** [Thoughtworks Radar – Agent Scan (Assess, April 2026)](https://www.thoughtworks.com/radar/tools/agent-scan), formerly [MCP-Scan (November 2025)](https://www.thoughtworks.com/radar/tools/mcp-scan)
+**Created:** 2026-10-21
 
 *Series: after [[Toxic flow analysis for AI]] · next: [[Agent-to-Agent (A2A) Protocol]]. Assumption: you drew the flow graph of your setup in [[Toxic flow analysis for AI]].*
 
@@ -33,9 +35,9 @@ This plan covers it.
 
 **Related topics in Thoughtworks Radar:**
 
-- [ ] [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025)
-- [ ] [Toxic flow analysis for AI](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
-- [ ] [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
+- [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025)
+- [Toxic flow analysis for AI](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
+- [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
 
 ---
 

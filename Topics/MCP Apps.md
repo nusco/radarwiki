@@ -1,4 +1,6 @@
-**Time:** ~1.5 hours · **Source:** [Thoughtworks Radar – MCP Apps (Assess, April 2026)](https://www.thoughtworks.com/radar/platforms/mcp-apps)
+**Time:** ~1.5 hours
+**Source:** [Thoughtworks Radar – MCP Apps (Assess, April 2026)](https://www.thoughtworks.com/radar/platforms/mcp-apps)
+**Created:** 2026-10-21
 
 *Series: after [[FastMCP]] · next: [[MCP by default]].*
 
@@ -40,9 +42,9 @@ This plan covers it for a generalist. If you build agent products with a UI, als
 
 **Related topics in Thoughtworks Radar:**
 
-- [ ] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
-- [ ] [AG-UI Protocol](https://www.thoughtworks.com/radar/platforms/ag-ui-protocol) (Nov 2025, Apr 2026)
-- [ ] [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
+- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
+- [AG-UI Protocol](https://www.thoughtworks.com/radar/platforms/ag-ui-protocol) (Nov 2025, Apr 2026)
+- [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
 
 ---
 

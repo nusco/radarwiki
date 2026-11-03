@@ -1,4 +1,6 @@
-**Time:** ~2.5 hours · **Source:** [Thoughtworks Radar – MCP by default (Caution, April 2026)](https://www.thoughtworks.com/radar/techniques/mcp-by-default)
+**Time:** ~2.5 hours
+**Source:** [Thoughtworks Radar – MCP by default (Caution, April 2026)](https://www.thoughtworks.com/radar/techniques/mcp-by-default)
+**Created:** 2026-10-21
 
 *Series: after [[MCP Apps]] · next: [[Agent Skills]]. Assumption: you have the `radar-progress` server from [[Model Context Protocol (MCP)]] and [[FastMCP]].*
 
@@ -46,11 +48,11 @@ Small, and covered here. It's a design judgment, not a technology. The ideas con
 
 **Related topics in Thoughtworks Radar:**
 
-- [ ] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
-- [ ] [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) (Nov 2025)
-- [ ] [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
-- [ ] [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026)
-- [ ] [MCP Apps](https://www.thoughtworks.com/radar/platforms/mcp-apps) (Apr 2026): a case where MCP does something a CLI can't
+- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
+- [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) (Nov 2025)
+- [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
+- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026)
+- [MCP Apps](https://www.thoughtworks.com/radar/platforms/mcp-apps) (Apr 2026): a case where MCP does something a CLI can't
 
 ---
 

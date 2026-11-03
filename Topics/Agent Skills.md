@@ -1,4 +1,6 @@
-**Time:** ~3 hours · **Source:** [Thoughtworks Radar – Agent Skills (Trial, April 2026)](https://www.thoughtworks.com/radar/techniques/agent-skills)
+**Time:** ~3 hours
+**Source:** [Thoughtworks Radar – Agent Skills (Trial, April 2026)](https://www.thoughtworks.com/radar/techniques/agent-skills)
+**Created:** 2026-10-21
 
 *Series: after [[MCP by default]] · next: [[Context engineering]]. Assumption: you've written the minimal `radar-progress` skill from the MCP by default plan. You also use one non-trivial skill yourself: `learning-plan`.*
 
@@ -48,14 +50,14 @@ This plan covers it for a generalist. Since you already maintain a skill, the be
 
 **Related topics in Thoughtworks Radar:**
 
-- [ ] [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
-- [ ] [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026)
-- [ ] [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Apr 2026)
-- [ ] [Skills as executable onboarding documentation](https://www.thoughtworks.com/radar/techniques/skills-as-executable-onboarding-documentation) (Apr 2026)
-- [ ] [Claude Code plugin marketplace](https://www.thoughtworks.com/radar/tools/claude-code-plugin-marketplace) (Apr 2026)
-- [ ] [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw) (Apr 2026)
-- [ ] [Toxic flow analysis for AI](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
-- [ ] [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
+- [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
+- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026)
+- [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Apr 2026)
+- [Skills as executable onboarding documentation](https://www.thoughtworks.com/radar/techniques/skills-as-executable-onboarding-documentation) (Apr 2026)
+- [Claude Code plugin marketplace](https://www.thoughtworks.com/radar/tools/claude-code-plugin-marketplace) (Apr 2026)
+- [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw) (Apr 2026)
+- [Toxic flow analysis for AI](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
+- [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
 
 ---
 

@@ -1,4 +1,6 @@
-**Time:** ~45 minutes · **Source:** [Thoughtworks Radar – Context7 (Trial, November 2025)](https://www.thoughtworks.com/radar/tools/context7)
+**Time:** ~45 minutes
+**Source:** [Thoughtworks Radar – Context7 (Trial, November 2025)](https://www.thoughtworks.com/radar/tools/context7)
+**Created:** 2026-10-21
 
 *Series: after [[Context engineering]] · next: [[Serena]].*
 
@@ -32,9 +34,9 @@ This plan covers it.
 
 **Related topics in Thoughtworks Radar:**
 
-- [ ] [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
-- [ ] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
-- [ ] [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
+- [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
+- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
+- [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
 
 ---
 

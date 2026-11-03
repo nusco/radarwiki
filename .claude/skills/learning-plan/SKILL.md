@@ -14,6 +14,13 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 - Write the plan to a Markdown file in the `Topics` folder.
 - In the file, use Markdown syntax for links. Also, list resources as GitHub Markdown todo items.
 - Structure the file logically, beginning with the topic and the time required.
+- Open the file with three metadata lines, one field per line:
+  ```
+  **Time:** ~45 minutes
+  **Source:** [Thoughtworks Radar – Serena (Assess, November 2025)](https://www.thoughtworks.com/radar/tools/serena)
+  **Created:** 2026-10-21
+  ```
+  **Created** is today's date in ISO format. Keep this date when you revise the plan later. Use it to tell how old the plan's time-sensitive parts are, such as "Current state of the topic", before you update them.
 - The file will be opened as a note in Obsidian, so its file name should be something like "Model Context Protocol (MCP).md", and you shouldn't add a Markdown level-1 title inside (like #MCP); Obsidian will add the title automatically.
 - The learner is a slow, thorough learner: they pause, rewind, take notes, and follow up on what they read. Estimate every layer at about **three times** the time needed to just read/watch the content. For example, two 30' videos take about 3 hours, a 10-minute article takes about 30 minutes, and hands-on exercises take at least three times what you'd expect. Size the content so that it fits the time budget at this pace, and still give the nominal length of each video or article next to its link.
 - The learner's goal is to become an up-to-date **generalist**: to understand the current state of technology and how it got here, not to master each topic. All plans together form one larger curriculum. So, when you choose or suggest a time budget, base it on how relevant the topic is to that general understanding, not on how broad the topic is. A niche tool can get 30'–60' even if it has a lot of features. A subtopic usually gets less time than its parent topic. For example, if "Model Context Protocol (MCP)" takes 6 hours, then FastMCP (a framework for MCP) might get two hours, and a single MCP server such as Context7 might get one or less. This is a guideline, not a hard rule: a subtopic can get more time when it's more relevant than its parent. Judge each case, and when you depart from the guideline, say why in one line so the learner can disagree and ask for correction.
@@ -58,7 +65,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
    - Is the topic small and covered adequately by this plan?
    - Would you recommend having a longer self-study plan for this topic? How long? (Follow the relevance rule above.)
    - Is the topic so vast that you'd recommend splitting it into multiple smaller topics?
-   - List all related topics in Thoughtworks Radar. (You'll find all the topics listed by Radar edition in the `Thoughtworks Radar` folder.)
+   - List all related topics in Thoughtworks Radar. (You'll find all the topics listed by Radar edition in the `Thoughtworks Radar` folder.) Make them plain list items, not checkboxes: they're pointers, not tasks, so the learner never has to come back to a finished plan to check them off.
    - If there is any Coursera/Deeplearning.ai/Pluralsight course that is especially relevant but doesn't fit the time budget, you can recommend it here.
 9. **Close with the blip.** If the topic comes from a Radar blip, end the file with a horizontal rule and this to-do item, linking the blip: `- [ ] **Close:** [Review the blip](<blip URL>) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.`
 

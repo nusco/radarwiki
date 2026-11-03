@@ -1,4 +1,6 @@
-**Time:** ~3 hours · **Source:** [Thoughtworks Radar – Context engineering (Adopt, April 2026)](https://www.thoughtworks.com/radar/techniques/context-engineering)
+**Time:** ~3 hours
+**Source:** [Thoughtworks Radar – Context engineering (Adopt, April 2026)](https://www.thoughtworks.com/radar/techniques/context-engineering)
+**Created:** 2026-10-21
 
 *Series: after [[Agent Skills]] · next: [[Context7]]. This plan ties together much of what came before it: tool design, MCP vs. CLI, and skills.*
 
@@ -50,14 +52,14 @@ This is one of the most relevant topics in the series, and 3 hours gives a gener
 
 **Related topics in Thoughtworks Radar:**
 
-- [ ] [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026)
-- [ ] [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Apr 2026)
-- [ ] [Context graph](https://www.thoughtworks.com/radar/techniques/context-graph) (Apr 2026)
-- [ ] [Curated shared instructions for software teams](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams) (Nov 2025, Apr 2026)
-- [ ] [AGENTS.md](https://www.thoughtworks.com/radar/techniques/agents-md) (Nov 2025)
-- [ ] [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
-- [ ] [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Apr 2026)
-- [ ] [Context7](https://www.thoughtworks.com/radar/tools/context7) (Nov 2025)
+- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026)
+- [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Apr 2026)
+- [Context graph](https://www.thoughtworks.com/radar/techniques/context-graph) (Apr 2026)
+- [Curated shared instructions for software teams](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams) (Nov 2025, Apr 2026)
+- [AGENTS.md](https://www.thoughtworks.com/radar/techniques/agents-md) (Nov 2025)
+- [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
+- [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Apr 2026)
+- [Context7](https://www.thoughtworks.com/radar/tools/context7) (Nov 2025)
 
 ---
 

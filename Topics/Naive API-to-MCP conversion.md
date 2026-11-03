@@ -1,4 +1,6 @@
-**Time:** ~1.5 hours · **Source:** [Thoughtworks Radar – Naive API-to-MCP conversion (Hold, November 2025)](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
+**Time:** ~1.5 hours
+**Source:** [Thoughtworks Radar – Naive API-to-MCP conversion (Hold, November 2025)](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
+**Created:** 2026-10-21
 
 *Series: after [[Model Context Protocol (MCP)]] · next: [[FastMCP]]. Assumption: you've built the `radar-progress` server from the MCP plan.*
 
@@ -39,10 +41,10 @@ Small, and fully covered here. The design rules are more important than the anti
 
 **Related topics in Thoughtworks Radar:**
 
-- [ ] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
-- [ ] [FastMCP](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) (Nov 2025)
-- [ ] [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
-- [ ] [GraphQL as data access pattern for LLMs](https://www.thoughtworks.com/radar/techniques/graphql-as-data-access-pattern-for-llms) (Nov 2025)
+- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
+- [FastMCP](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) (Nov 2025)
+- [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
+- [GraphQL as data access pattern for LLMs](https://www.thoughtworks.com/radar/techniques/graphql-as-data-access-pattern-for-llms) (Nov 2025)
 
 ---
 

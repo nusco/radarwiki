@@ -1,4 +1,6 @@
-**Time:** ~45 minutes · **Source:** [Thoughtworks Radar – Serena (Assess, November 2025)](https://www.thoughtworks.com/radar/tools/serena)
+**Time:** ~45 minutes
+**Source:** [Thoughtworks Radar – Serena (Assess, November 2025)](https://www.thoughtworks.com/radar/tools/serena)
+**Created:** 2026-10-21
 
 *Series: after [[Context7]] · next: [[Toxic flow analysis for AI]].*
 
@@ -38,9 +40,9 @@ This plan covers it.
 
 **Related topics in Thoughtworks Radar:**
 
-- [ ] [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Apr 2026)
-- [ ] [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
-- [ ] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
+- [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Apr 2026)
+- [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
+- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
 
 ---
 

@@ -1,4 +1,6 @@
-**Time:** ~6 hours · **Source:** [Thoughtworks Radar – Model Context Protocol (MCP) (Trial, November 2025)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp)
+**Time:** ~6 hours
+**Source:** [Thoughtworks Radar – Model Context Protocol (MCP) (Trial, November 2025)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp)
+**Created:** 2026-10-19
 
 *Assumption: you use Claude Code (or a similar agent) and can read and write a little Python.*
 
@@ -41,7 +43,7 @@
 ### Checking what you install
 
 - [x] Read: [Introducing the MCP Registry](https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/) (official MCP blog, Sep 2025, ~4 min) — linked from the blip. The official catalog of public MCP servers, still in preview. Notice what it checks (who published a server) and what it leaves to others (whether the server is safe).
-- [ ] **Do:** Check the servers you've installed. List them with `claude mcp list`, including your new `radar-progress` server. For each one, read its tool descriptions in the `/mcp` menu as an attacker would: a description that tells the model what to *do*, rather than what the tool does, is a red flag. Then look up each server in the registry (for example, `curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=filesystem"`). Is it there, and does its namespace match the people you think wrote it?
+- [x] **Do:** Run `claude mcp list` to see which servers you have. Besides your new `radar-progress` server, the list may include connectors from your claude.ai account. Pick one server you didn't write, or `radar-progress` if it's the only one, and skim a handful of its tool descriptions in the `/mcp` menu as an attacker would: a description that tells the model what to *do*, rather than what the tool does, is a red flag. Then look up a well-known server in the registry (for example, `curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=filesystem"`). Is it there, and does its namespace match the people you think wrote it?
   - Mapping the trifecta across your whole setup is covered in [[Toxic flow analysis for AI]], and automated scanning in [[Agent Scan]].
 
 ---
@@ -71,17 +73,17 @@ These 6 hours are enough to understand the blip, judge MCP servers, and write si
 
 **Related topics in Thoughtworks Radar.** Each one has its own plan. Together they make an ~19-hour series, best done in this order:
 
-1. [ ] [[Naive API-to-MCP conversion]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) (Nov 2025)
-2. [ ] [[FastMCP]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) (Nov 2025)
-3. [ ] [[MCP Apps]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/platforms/mcp-apps) (Apr 2026)
-4. [ ] [[MCP by default]] (~2.5h) — [Radar](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
-5. [ ] [[Agent Skills]] (~3h) — [Radar](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026): an alternative to MCP for many use cases
-6. [ ] [[Context engineering]] (~3h) — [Radar](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
-7. [ ] [[Context7]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/context7) (Nov 2025)
-8. [ ] [[Serena]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/serena) (Nov 2025)
-9. [ ] [[Toxic flow analysis for AI]] (~1.75h) — [Radar](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
-10. [ ] [[Agent Scan]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/agent-scan) (Apr 2026), formerly [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025)
-11. [ ] [[Agent-to-Agent (A2A) Protocol]] (~2h) — [Radar](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol) (Nov 2025)
+1. [[Naive API-to-MCP conversion]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) (Nov 2025)
+2. [[FastMCP]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) (Nov 2025)
+3. [[MCP Apps]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/platforms/mcp-apps) (Apr 2026)
+4. [[MCP by default]] (~2.5h) — [Radar](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
+5. [[Agent Skills]] (~3h) — [Radar](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026): an alternative to MCP for many use cases
+6. [[Context engineering]] (~3h) — [Radar](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
+7. [[Context7]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/context7) (Nov 2025)
+8. [[Serena]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/serena) (Nov 2025)
+9. [[Toxic flow analysis for AI]] (~1.75h) — [Radar](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
+10. [[Agent Scan]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/agent-scan) (Apr 2026), formerly [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025)
+11. [[Agent-to-Agent (A2A) Protocol]] (~2h) — [Radar](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol) (Nov 2025)
 
 ---
 

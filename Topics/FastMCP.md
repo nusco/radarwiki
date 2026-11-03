@@ -1,4 +1,6 @@
-**Time:** ~1.5 hours · **Source:** [Thoughtworks Radar – FastMCP (Trial, November 2025)](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp)
+**Time:** ~1.5 hours
+**Source:** [Thoughtworks Radar – FastMCP (Trial, November 2025)](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp)
+**Created:** 2026-10-21
 
 *Series: after [[Naive API-to-MCP conversion]] · next: [[MCP Apps]]. Assumption: you've built the `radar-progress` server from [[Model Context Protocol (MCP)]] with standalone FastMCP.*
 
@@ -40,9 +42,9 @@ This plan covers it for a generalist. Go deeper only if you build Python MCP ser
 
 **Related topics in Thoughtworks Radar:**
 
-- [ ] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
-- [ ] [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) (Nov 2025)
-- [ ] [MCP Apps](https://www.thoughtworks.com/radar/platforms/mcp-apps) (Apr 2026)
+- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
+- [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) (Nov 2025)
+- [MCP Apps](https://www.thoughtworks.com/radar/platforms/mcp-apps) (Apr 2026)
 
 ---
 
