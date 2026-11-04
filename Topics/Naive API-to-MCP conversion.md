@@ -1,5 +1,8 @@
 **Time:** ~1.5 hours
-**Source:** [Thoughtworks Radar – Naive API-to-MCP conversion (Hold, November 2025)](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
+**Radar edition:** November 2025
+**Blip:** [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
+**Quadrant:** Techniques
+**Ring:** Hold
 **Created:** 2026-10-21
 
 *Series: after [[Model Context Protocol (MCP)]] · next: [[FastMCP]]. Assumption: you've built the `radar-progress` server from the MCP plan.*
@@ -10,7 +13,7 @@
 
 **Goal:** Explain why turning an existing API into MCP tools, one endpoint per tool, gives agents a bad interface.
 
-- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) — short. APIs are designed for human developers, with many small actions. Agents that chain these actions waste tokens and can reach dangerous operations.
+- [x] Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) — short. APIs are designed for human developers, with many small actions. Agents that chain these actions waste tokens and can reach dangerous operations.
 - [ ] Skim: [The FastAPI-MCP README](https://github.com/tadata-org/fastapi_mcp) — one of the converters the blip names. Look at how little code it takes to turn a whole API into MCP tools. That's the temptation.
 - [ ] Read: [Stop converting your REST APIs to MCP](https://www.jlowin.dev/blog/stop-converting-rest-apis-to-mcp) (Jeremiah Lowin, Jul 2025, ~4 min) — from the author of FastMCP, a framework that itself can do this conversion. Use it to get started quickly, then design curated tools.
 
@@ -25,7 +28,7 @@
 
 ## If you have extra time
 
-- [ ] Skim the README of [MCP Link](https://github.com/automation-ai-labs/mcp-link), the other converter the blip names. It turns any OpenAPI spec into an MCP server, even as a hosted service.
+- [x] Skim the README of [MCP Link](https://github.com/automation-ai-labs/mcp-link), the other converter the blip names. It turns any OpenAPI spec into an MCP server, even as a hosted service.
 
 ---
 

@@ -1,5 +1,8 @@
 **Time:** ~45 minutes
-**Source:** [Thoughtworks Radar – Serena (Assess, November 2025)](https://www.thoughtworks.com/radar/tools/serena)
+**Radar edition:** November 2025
+**Blip:** [Serena](https://www.thoughtworks.com/radar/tools/serena)
+**Quadrant:** Tools
+**Ring:** Assess
 **Created:** 2026-10-21
 
 *Series: after [[Context7]] · next: [[Toxic flow analysis for AI]].*

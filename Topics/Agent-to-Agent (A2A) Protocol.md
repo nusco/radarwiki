@@ -1,5 +1,8 @@
 **Time:** ~2 hours
-**Source:** [Thoughtworks Radar – Agent-to-Agent (A2A) Protocol (Assess, November 2025)](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol)
+**Radar edition:** November 2025
+**Blip:** [Agent-to-Agent (A2A) Protocol](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol)
+**Quadrant:** Platforms
+**Ring:** Assess
 **Created:** 2026-10-21
 
 *Series: after [[Agent Scan]], the last plan in the MCP series. Assumption: you know MCP from [[Model Context Protocol (MCP)]].*

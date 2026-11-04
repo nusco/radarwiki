@@ -1,5 +1,8 @@
 **Time:** ~3 hours
-**Source:** [Thoughtworks Radar – Context engineering (Adopt, April 2026)](https://www.thoughtworks.com/radar/techniques/context-engineering)
+**Radar edition:** April 2026
+**Blip:** [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering)
+**Quadrant:** Techniques
+**Ring:** Adopt
 **Created:** 2026-10-21
 
 *Series: after [[Agent Skills]] · next: [[Context7]]. This plan ties together much of what came before it: tool design, MCP vs. CLI, and skills.*

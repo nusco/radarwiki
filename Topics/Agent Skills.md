@@ -1,5 +1,8 @@
 **Time:** ~3 hours
-**Source:** [Thoughtworks Radar – Agent Skills (Trial, April 2026)](https://www.thoughtworks.com/radar/techniques/agent-skills)
+**Radar edition:** April 2026
+**Blip:** [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills)
+**Quadrant:** Techniques
+**Ring:** Trial
 **Created:** 2026-10-21
 
 *Series: after [[MCP by default]] · next: [[Context engineering]]. Assumption: you've written the minimal `radar-progress` skill from the MCP by default plan. You also use one non-trivial skill yourself: `learning-plan`.*

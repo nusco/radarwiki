@@ -14,12 +14,16 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 - Write the plan to a Markdown file in the `Topics` folder.
 - In the file, use Markdown syntax for links. Also, list resources as GitHub Markdown todo items.
 - Structure the file logically, beginning with the topic and the time required.
-- Open the file with three metadata lines, one field per line:
+- Open the file with metadata lines, one field per line. For a topic from a Radar blip:
   ```
   **Time:** ~45 minutes
-  **Source:** [Thoughtworks Radar – Serena (Assess, November 2025)](https://www.thoughtworks.com/radar/tools/serena)
+  **Radar edition:** November 2025
+  **Blip:** [Serena](https://www.thoughtworks.com/radar/tools/serena)
+  **Quadrant:** Tools
+  **Ring:** Assess
   **Created:** 2026-10-21
   ```
+  **Quadrant** is Techniques, Tools, Platforms, or Languages & Frameworks: it's the path segment after `/radar/` in the blip URL. **Ring** is Adopt, Trial, Assess, Hold, or Caution. If the blip appears in several editions, list them all (like "November 2025 and April 2026"). For a topic that doesn't come from the Radar, replace the four Radar lines with a single **Source:** line that links where the topic came from.
   **Created** is today's date in ISO format. Keep this date when you revise the plan later. Use it to tell how old the plan's time-sensitive parts are, such as "Current state of the topic", before you update them.
 - The file will be opened as a note in Obsidian, so its file name should be something like "Model Context Protocol (MCP).md", and you shouldn't add a Markdown level-1 title inside (like #MCP); Obsidian will add the title automatically.
 - The learner is a slow, thorough learner: they pause, rewind, take notes, and follow up on what they read. Estimate every layer at about **three times** the time needed to just read/watch the content. For example, two 30' videos take about 3 hours, a 10-minute article takes about 30 minutes, and hands-on exercises take at least three times what you'd expect. Size the content so that it fits the time budget at this pace, and still give the nominal length of each video or article next to its link.

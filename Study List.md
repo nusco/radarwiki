@@ -28,6 +28,8 @@
 
 ## Smaller things I stumbled upon
 
+- [ ] [Swagger](https://www.thoughtworks.com/radar/tools/swagger)
+- [ ] [FastAPI](https://www.thoughtworks.com/radar/languages-and-frameworks/fastapi)
 - [ ] [uv](https://www.thoughtworks.com/radar/tools/uv)
 - [ ] [Figma](https://www.thoughtworks.com/radar/tools/figma)
 - [ ] [Puppeteer](https://www.thoughtworks.com/radar/languages-and-frameworks/puppeteer) 

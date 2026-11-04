@@ -1,5 +1,8 @@
 **Time:** ~1.75 hours
-**Source:** [Thoughtworks Radar – Toxic flow analysis for AI (Assess, November 2025 and April 2026)](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)
+**Radar edition:** November 2025 and April 2026
+**Blip:** [Toxic flow analysis for AI](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)
+**Quadrant:** Techniques
+**Ring:** Assess
 **Created:** 2026-10-21
 
 *Series: after [[Serena]] · next: [[Agent Scan]]. Assumption: you know how prompt injection attacks MCP servers, from Layer 4 of [[Model Context Protocol (MCP)]].*

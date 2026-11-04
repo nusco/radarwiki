@@ -1,5 +1,8 @@
 **Time:** ~2.5 hours
-**Source:** [Thoughtworks Radar – MCP by default (Caution, April 2026)](https://www.thoughtworks.com/radar/techniques/mcp-by-default)
+**Radar edition:** April 2026
+**Blip:** [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default)
+**Quadrant:** Techniques
+**Ring:** Caution
 **Created:** 2026-10-21
 
 *Series: after [[MCP Apps]] · next: [[Agent Skills]]. Assumption: you have the `radar-progress` server from [[Model Context Protocol (MCP)]] and [[FastMCP]].*

@@ -1,5 +1,8 @@
 **Time:** ~45 minutes
-**Source:** [Thoughtworks Radar – Context7 (Trial, November 2025)](https://www.thoughtworks.com/radar/tools/context7)
+**Radar edition:** November 2025
+**Blip:** [Context7](https://www.thoughtworks.com/radar/tools/context7)
+**Quadrant:** Tools
+**Ring:** Trial
 **Created:** 2026-10-21
 
 *Series: after [[Context engineering]] · next: [[Serena]].*

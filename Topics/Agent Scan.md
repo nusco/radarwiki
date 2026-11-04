@@ -1,5 +1,8 @@
 **Time:** ~45 minutes
-**Source:** [Thoughtworks Radar – Agent Scan (Assess, April 2026)](https://www.thoughtworks.com/radar/tools/agent-scan), formerly [MCP-Scan (November 2025)](https://www.thoughtworks.com/radar/tools/mcp-scan)
+**Radar edition:** April 2026
+**Blip:** [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan), formerly [MCP-Scan (November 2025)](https://www.thoughtworks.com/radar/tools/mcp-scan)
+**Quadrant:** Tools
+**Ring:** Assess
 **Created:** 2026-10-21
 
 *Series: after [[Toxic flow analysis for AI]] · next: [[Agent-to-Agent (A2A) Protocol]]. Assumption: you drew the flow graph of your setup in [[Toxic flow analysis for AI]].*

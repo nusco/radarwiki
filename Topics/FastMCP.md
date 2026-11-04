@@ -1,5 +1,8 @@
 **Time:** ~1.5 hours
-**Source:** [Thoughtworks Radar – FastMCP (Trial, November 2025)](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp)
+**Radar edition:** November 2025
+**Blip:** [FastMCP](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp)
+**Quadrant:** Languages & Frameworks
+**Ring:** Trial
 **Created:** 2026-10-21
 
 *Series: after [[Naive API-to-MCP conversion]] · next: [[MCP Apps]]. Assumption: you've built the `radar-progress` server from [[Model Context Protocol (MCP)]] with standalone FastMCP.*
