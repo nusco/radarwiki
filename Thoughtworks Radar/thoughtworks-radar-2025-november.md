@@ -41,7 +41,7 @@
 - [ ] [AI-accelerated shadow IT](https://www.thoughtworks.com/radar/techniques/ai-accelerated-shadow-it)
 - [ ] [Capacity-driven development](https://www.thoughtworks.com/radar/techniques/capacity-driven-development)
 - [ ] [Complacency with AI-generated code](https://www.thoughtworks.com/radar/techniques/complacency-with-ai-generated-code)
-- [ ] [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
+- [x] [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
 - [ ] [Standalone data engineering teams](https://www.thoughtworks.com/radar/techniques/standalone-data-engineering-teams)
 - [ ] [Text to SQL](https://www.thoughtworks.com/radar/techniques/text-to-sql)
 
@@ -97,7 +97,7 @@
 - [ ] [Dovetail](https://www.thoughtworks.com/radar/platforms/dovetail)
 - [ ] [Langdock](https://www.thoughtworks.com/radar/platforms/langdock)
 - [ ] [LangSmith](https://www.thoughtworks.com/radar/platforms/langsmith)
-- [ ] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp)
+- [x] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp)
 - [ ] [n8n](https://www.thoughtworks.com/radar/platforms/n8n)
 - [ ] [OpenThread](https://www.thoughtworks.com/radar/platforms/openthread)
 

@@ -14,15 +14,15 @@
 **Goal:** Explain why turning an existing API into MCP tools, one endpoint per tool, gives agents a bad interface.
 
 - [x] Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) — short. APIs are designed for human developers, with many small actions. Agents that chain these actions waste tokens and can reach dangerous operations.
-- [ ] Skim: [The FastAPI-MCP README](https://github.com/tadata-org/fastapi_mcp) — one of the converters the blip names. Look at how little code it takes to turn a whole API into MCP tools. That's the temptation.
-- [ ] Read: [Stop converting your REST APIs to MCP](https://www.jlowin.dev/blog/stop-converting-rest-apis-to-mcp) (Jeremiah Lowin, Jul 2025, ~4 min) — from the author of FastMCP, a framework that itself can do this conversion. Use it to get started quickly, then design curated tools.
+- [x] Skim: [The FastAPI-MCP README](https://github.com/tadata-org/fastapi_mcp) — one of the converters the blip names. Look at how little code it takes to turn a whole API into MCP tools. That's the temptation.
+- [x] Read: [Stop converting your REST APIs to MCP](https://www.jlowin.dev/blog/stop-converting-rest-apis-to-mcp) (Jeremiah Lowin, Jul 2025, ~4 min) — from the author of FastMCP, a framework that itself can do this conversion. Use it to get started quickly, then design curated tools.
 
 ## Layer 2 — What a good agent tool looks like (0:30–1:30, ~60 min)
 
 **Goal:** Know the main rules for designing tools for agents, and apply them to your own server.
 
-- [ ] Read: [Writing effective tools for agents — with agents](https://www.anthropic.com/engineering/writing-tools-for-agents) (Anthropic, Sep 2025, ~15 min) — linked from the [[Context engineering]] blip. Combine many small operations into a few tools, return information that's meaningful to the agent, keep outputs token-efficient, and write descriptions the way you'd write a prompt.
-- [ ] **Do:** Imagine the naive version of `radar-progress`: a file-system API turned into MCP, with `list_files` and `read_file` tools. Write down the calls and tokens an agent would need to answer "how far along am I with the November 2025 Radar?". Then check your real server against Anthropic's rules, and fix one thing. For example, make the error for an unknown edition list the valid ones.
+- [x] Read: [Writing effective tools for agents — with agents](https://www.anthropic.com/engineering/writing-tools-for-agents) (Anthropic, Sep 2025, ~15 min) — linked from the [[Context engineering]] blip. Combine many small operations into a few tools, return information that's meaningful to the agent, keep outputs token-efficient, and write descriptions the way you'd write a prompt.
+- [x] **Do:** Imagine the naive version of `radar-progress`: a file-system API turned into MCP, with `list_files` and `read_file` tools. Write down the calls an agent would need to answer "how far along am I with the November 2025 Radar?", and estimate the tokens they return (bytes ÷ 4 is close enough; `wc -c` gives the bytes). Compare with one call to your real server. Then check your real server against Anthropic's rules, and fix one thing. For example, make the error for an unknown edition list the valid ones.
 
 ---
 
@@ -51,4 +51,4 @@ Small, and fully covered here. The design rules are more important than the anti
 
 ---
 
-- [ ] **Close:** [Review the blip](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.
+- [x] **Close:** [Review the blip](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.

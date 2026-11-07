@@ -2,7 +2,7 @@
 ## MCP
 
 - [x] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp)
-- [ ] [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
+- [x] [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
 - [ ] [FastMCP](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp)
 - [ ] [MCP Apps](https://www.thoughtworks.com/radar/platforms/mcp-apps)
 - [ ] [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default)
