@@ -1,19 +1,19 @@
 
-## MCP
+## Agents
 
-- [x] [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp)
-- [x] [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
-- [ ] [FastMCP](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp)
-- [ ] [MCP Apps](https://www.thoughtworks.com/radar/platforms/mcp-apps)
-- [ ] [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default)
-- [ ] [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills)
-- [ ] [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering)
-- [ ] [Context7](https://www.thoughtworks.com/radar/tools/context7)
-- [ ] [Serena](https://www.thoughtworks.com/radar/tools/serena)
-- [ ] [Toxic flow analysis for AI](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)
-- [ ]  [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan)
-- [ ] [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan)
-- [ ] [Agent-to-Agent (A2A) Protocol](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol)
+- [ ] [[Agent Skills]]
+- [ ] [[FastMCP]]
+- [ ] [[MCP Apps]]
+- [ ] [[MCP by default]]
+- [ ] [[Context engineering]]
+- [ ] [[Context7]]
+- [ ] [[Serena]]
+- [ ] [[Toxic flow analysis for AI]]
+- [ ]  [[Agent Scan|MCP-Scan]]
+- [ ] [[Agent Scan]]
+- [ ] [[Agent-to-Agent (A2A) Protocol]]
+- [x] [[Model Context Protocol (MCP)]]
+- [x] [[Naive API-to-MCP conversion]]
 
 ## Stuff from the mlopsday
 

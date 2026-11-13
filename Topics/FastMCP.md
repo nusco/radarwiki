@@ -45,9 +45,9 @@ This plan covers it for a generalist. Go deeper only if you build Python MCP ser
 
 **Related topics in Thoughtworks Radar:**
 
-- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
-- [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) (Nov 2025)
-- [MCP Apps](https://www.thoughtworks.com/radar/platforms/mcp-apps) (Apr 2026)
+- [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
+- [[Naive API-to-MCP conversion]] (Nov 2025)
+- [[MCP Apps]] (Apr 2026)
 
 ---
 

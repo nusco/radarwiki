@@ -76,17 +76,17 @@ These 6 hours are enough to understand the blip, judge MCP servers, and write si
 
 **Related topics in Thoughtworks Radar.** Each one has its own plan. Together they make an ~19-hour series, best done in this order:
 
-1. [[Naive API-to-MCP conversion]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) (Nov 2025)
-2. [[FastMCP]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) (Nov 2025)
-3. [[MCP Apps]] (~1.5h) — [Radar](https://www.thoughtworks.com/radar/platforms/mcp-apps) (Apr 2026)
-4. [[MCP by default]] (~2.5h) — [Radar](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
-5. [[Agent Skills]] (~3h) — [Radar](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026): an alternative to MCP for many use cases
-6. [[Context engineering]] (~3h) — [Radar](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
-7. [[Context7]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/context7) (Nov 2025)
-8. [[Serena]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/serena) (Nov 2025)
-9. [[Toxic flow analysis for AI]] (~1.75h) — [Radar](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
-10. [[Agent Scan]] (~45') — [Radar](https://www.thoughtworks.com/radar/tools/agent-scan) (Apr 2026), formerly [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025)
-11. [[Agent-to-Agent (A2A) Protocol]] (~2h) — [Radar](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol) (Nov 2025)
+1. [[Naive API-to-MCP conversion]] (~1.5h, Nov 2025)
+2. [[FastMCP]] (~1.5h, Nov 2025)
+3. [[MCP Apps]] (~1.5h, Apr 2026)
+4. [[MCP by default]] (~2.5h, Apr 2026)
+5. [[Agent Skills]] (~3h, Apr 2026): an alternative to MCP for many use cases
+6. [[Context engineering]] (~3h, Nov 2025, Apr 2026)
+7. [[Context7]] (~45', Nov 2025)
+8. [[Serena]] (~45', Nov 2025)
+9. [[Toxic flow analysis for AI]] (~1.75h, Nov 2025, Apr 2026)
+10. [[Agent Scan]] (~45', Apr 2026), formerly MCP-Scan (Nov 2025)
+11. [[Agent-to-Agent (A2A) Protocol]] (~2h, Nov 2025)
 
 ---
 

@@ -44,8 +44,8 @@ This plan covers it.
 **Related topics in Thoughtworks Radar:**
 
 - [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Apr 2026)
-- [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering) (Nov 2025, Apr 2026)
-- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
+- [[Context engineering]] (Nov 2025, Apr 2026)
+- [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
 
 ---
 

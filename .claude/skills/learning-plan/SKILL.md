@@ -1,6 +1,6 @@
 ---
 name: learning-plan
-description: Create a layered self-study plan for a short technical topic (from 30 minutes to a weekend), with curated videos and articles. Use when the user asks for a learning plan, study plan, or how to learn a technical topic quickly.
+description: Create a layered self-study plan for a short technical topic (30' to a weekend), with curated videos and articles. Use when the user asks for a learning plan, study plan, or how to learn a technical topic quickly.
 argument-hint: "[topic] [time budget]"
 ---
 
@@ -14,7 +14,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 - Write the plan to a Markdown file in the `Topics` folder.
 - In the file, use Markdown syntax for links. Also, list resources as GitHub Markdown todo items.
 - Structure the file logically, beginning with the topic and the time required.
-- Open the file with metadata lines, one field per line. For a topic from a Radar blip:
+- Open the file with metadata, one field per line. Example for a topic from a Thoughtworks Radar blip:
   ```
   **Time:** ~45 minutes
   **Radar edition:** November 2025
@@ -26,7 +26,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
   **Quadrant** is Techniques, Tools, Platforms, or Languages & Frameworks: it's the path segment after `/radar/` in the blip URL. **Ring** is Adopt, Trial, Assess, Hold, or Caution. If the blip appears in several editions, list them all (like "November 2025 and April 2026"). For a topic that doesn't come from the Radar, replace the four Radar lines with a single **Source:** line that links where the topic came from.
   **Created** is today's date in ISO format. Keep this date when you revise the plan later. Use it to tell how old the plan's time-sensitive parts are, such as "Current state of the topic", before you update them.
 - The file will be opened as a note in Obsidian, so its file name should be something like "Model Context Protocol (MCP).md", and you shouldn't add a Markdown level-1 title inside (like #MCP); Obsidian will add the title automatically.
-- The learner is a slow, thorough learner: they pause, rewind, take notes, and follow up on what they read. Estimate every layer at about **three times** the time needed to just read/watch the content. For example, two 30' videos take about 3 hours, a 10-minute article takes about 30 minutes, and hands-on exercises take at least three times what you'd expect. Size the content so that it fits the time budget at this pace, and still give the nominal length of each video or article next to its link.
+- Design for slow, thoughtful learning. Assume that the learner will re-read, pause/rewind videos, take notes, and pick up on new threads. Estimate every layer at about **three times** the time needed to just read/watch the content. For example, two 30' videos take about 3 hours, a 10-minute article takes about 30 minutes, and hands-on exercises take at least three times what you'd expect. Size the content so that it fits the time budget at this pace, and still give the nominal length of each video or article next to its link.
 - The learner's goal is to become an up-to-date **generalist**: to understand the current state of technology and how it got here, not to master each topic. All plans together form one larger curriculum. So, when you choose or suggest a time budget, base it on how relevant the topic is to that general understanding, not on how broad the topic is. A niche tool can get 30'–60' even if it has a lot of features. A subtopic usually gets less time than its parent topic. For example, if "Model Context Protocol (MCP)" takes 6 hours, then FastMCP (a framework for MCP) might get two hours, and a single MCP server such as Context7 might get one or less. This is a guideline, not a hard rule: a subtopic can get more time when it's more relevant than its parent. Judge each case, and when you depart from the guideline, say why in one line so the learner can disagree and ask for correction.
 - Relevance means relevance **today**, not when the topic was hot. Before choosing a budget, check which Radar editions in the `Thoughtworks Radar` folder list the topic, and how it has fared since:
   - If the topic appears in one of the recent editions, it's probably current: give it the full time its relevance deserves.
@@ -36,6 +36,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 - Treat the plans as a wiki: link material, don't duplicate it. When two blips overlap, put each resource, exercise or explanation in the one plan where it fits best, usually the plan whose blip is about it. In the other plan, add a short explicit pointer that says what it will find there (for example, "Mapping the trifecta across your whole setup is covered in [[Toxic flow analysis for AI]]"). Make an exception only when removing the material would leave a big hole in a topic. In that case, keep a brief version (one resource or a one-line recap) and link to the full treatment.
   - This works in both directions. When you write a new plan, check whether existing plans already cover its material. If one does, move that material into the new plan, even if the learner has already ticked it off: move it as it is, still ticked, so their progress stays. Replace the moved material with a pointer, and fix any "Assumption:" line that no longer holds.
   - If a related blip has no plan yet, an existing plan can cover it briefly. When that blip gets its own plan, apply the rule above.
+- **Structural links go to plans, not blips.** A structural link is one that helps the learner find their way between topics, such as the related topics in "Recommendation for future learning", a series list, or an entry in `Study List.md`. When the blip has a plan, make that link an Obsidian link to the plan (like `[[Agent Skills]]`, or `[[Agent Scan|MCP-Scan]]` when the plan covers a blip under another name), and don't add a second link to the blip next to it. Link to the blip itself only when the learner needs to read it: the **Blip:** metadata line, the blip as the first item of Layer 1, the **Close** item, and other blips that are reading resources inside a layer. A topic that has no plan yet keeps its blip link. When you write a new plan, replace the structural links to its blip in `Study List.md` and in the other plans with links to the new plan.
 
 ## Steps
 
@@ -69,7 +70,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
    - Is the topic small and covered adequately by this plan?
    - Would you recommend having a longer self-study plan for this topic? How long? (Follow the relevance rule above.)
    - Is the topic so vast that you'd recommend splitting it into multiple smaller topics?
-   - List all related topics in Thoughtworks Radar. (You'll find all the topics listed by Radar edition in the `Thoughtworks Radar` folder.) Make them plain list items, not checkboxes: they're pointers, not tasks, so the learner never has to come back to a finished plan to check them off.
+   - List all related topics in Thoughtworks Radar. (You'll find all the topics listed by Radar edition in the `Thoughtworks Radar` folder.) Make them plain list items, not checkboxes: they're pointers, not tasks, so the learner never has to come back to a finished plan to check them off. Follow the rule on structural links: link a topic that has a plan to the plan, like `[[Agent Skills]] (Apr 2026)`, and link a topic without a plan to its blip.
    - If there is any Coursera/Deeplearning.ai/Pluralsight course that is especially relevant but doesn't fit the time budget, you can recommend it here.
 9. **Close with the blip.** If the topic comes from a Radar blip, end the file with a horizontal rule and this to-do item, linking the blip: `- [ ] **Close:** [Review the blip](<blip URL>) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.`
 

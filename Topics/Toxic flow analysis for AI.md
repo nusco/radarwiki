@@ -44,11 +44,11 @@ This plan is enough for a generalist. If you ever deploy agents for other people
 
 **Related topics in Thoughtworks Radar:**
 
-- [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan) (Apr 2026), formerly [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025)
+- [[Agent Scan]] (Apr 2026), formerly MCP-Scan (Nov 2025)
 - [Sandboxed execution for coding agents](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents) (Apr 2026)
 - [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw) (Apr 2026)
-- [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
-- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
+- [[Agent Skills]] (Apr 2026)
+- [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
 
 ---
 

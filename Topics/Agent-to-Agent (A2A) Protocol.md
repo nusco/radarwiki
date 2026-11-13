@@ -49,7 +49,7 @@ This plan covers it for a generalist. It's not worth more time unless you build 
 
 **Related topics in Thoughtworks Radar:**
 
-- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
+- [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
 - [AG-UI Protocol](https://www.thoughtworks.com/radar/platforms/ag-ui-protocol) (Nov 2025, Apr 2026)
 - [Agent Development Kit (ADK)](https://www.thoughtworks.com/radar/languages-and-frameworks/agent-development-kit-adk) (Nov 2025, Apr 2026)
 - [Team of coding agents](https://www.thoughtworks.com/radar/techniques/team-of-coding-agents) (Nov 2025, Apr 2026)

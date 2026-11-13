@@ -39,8 +39,8 @@ This plan covers it.
 **Related topics in Thoughtworks Radar:**
 
 - [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan) (Nov 2025)
-- [Toxic flow analysis for AI](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (Nov 2025, Apr 2026)
-- [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
+- [[Toxic flow analysis for AI]] (Nov 2025, Apr 2026)
+- [[Agent Skills]] (Apr 2026)
 
 ---
 

@@ -44,9 +44,9 @@ Small, and fully covered here. The design rules are more important than the anti
 
 **Related topics in Thoughtworks Radar:**
 
-- [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) (Apr 2025, Nov 2025)
-- [FastMCP](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) (Nov 2025)
-- [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (Apr 2026)
+- [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
+- [[FastMCP]] (Nov 2025)
+- [[MCP by default]] (Apr 2026)
 - [GraphQL as data access pattern for LLMs](https://www.thoughtworks.com/radar/techniques/graphql-as-data-access-pattern-for-llms) (Nov 2025)
 
 ---

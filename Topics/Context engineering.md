@@ -60,9 +60,9 @@ This is one of the most relevant topics in the series, and 3 hours gives a gener
 - [Context graph](https://www.thoughtworks.com/radar/techniques/context-graph) (Apr 2026)
 - [Curated shared instructions for software teams](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams) (Nov 2025, Apr 2026)
 - [AGENTS.md](https://www.thoughtworks.com/radar/techniques/agents-md) (Nov 2025)
-- [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) (Apr 2026)
+- [[Agent Skills]] (Apr 2026)
 - [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Apr 2026)
-- [Context7](https://www.thoughtworks.com/radar/tools/context7) (Nov 2025)
+- [[Context7]] (Nov 2025)
 
 ---
 
