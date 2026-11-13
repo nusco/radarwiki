@@ -5,8 +5,6 @@
 **Ring:** Assess
 **Created:** 2026-10-21
 
-*Series: after [[Context7]] · next: [[Toxic flow analysis for AI]].*
-
 ---
 
 ## Layer 1 — What it is (0:00–0:20, ~20 min)
@@ -41,7 +39,9 @@ Serena isn't in the April 2026 Radar on its own. Instead, the Radar now has a br
 
 This plan covers it.
 
-**Related topics in Thoughtworks Radar:**
+---
+
+## Related topics
 
 - [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Apr 2026)
 - [[Context engineering]] (Nov 2025, Apr 2026)

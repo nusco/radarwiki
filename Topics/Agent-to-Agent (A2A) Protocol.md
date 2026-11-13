@@ -5,7 +5,7 @@
 **Ring:** Assess
 **Created:** 2026-10-21
 
-*Series: after [[Agent Scan]], the last plan in the MCP series. Assumption: you know MCP from [[Model Context Protocol (MCP)]].*
+*Assumption: you know MCP from [[Model Context Protocol (MCP)]].*
 
 ---
 
@@ -27,7 +27,7 @@
 
 **Goal:** Practice thinking about what an agent exposes to other agents, compared with what it keeps as its own tools.
 
-- [ ] **Do:** Write the Agent Card (JSON) for an imagined "Radar study buddy" agent that other agents could ask to make or check learning plans. Choose its skills. Then sort its capabilities: which ones would be A2A skills that other agents see, and which would be internal MCP tools or Agent Skills, such as `radar-progress` and `learning-plan`?
+- [ ] **Do:** Write the Agent Card (JSON) for an imagined "Radar study buddy" agent that other agents could ask to make or check learning plans. Choose its skills. Then sort its capabilities: which ones would be A2A skills that other agents see, and which would be internal MCP tools or Agent Skills, such as a script that counts your progress through a Radar edition, or the `learning-plan` skill?
 
 ---
 
@@ -47,7 +47,9 @@ Google launched A2A in April 2025 and gave it to the Linux Foundation two months
 
 This plan covers it for a generalist. It's not worth more time unless you build multi-agent systems that cross organizational boundaries. In that case, take the DeepLearning.AI course above.
 
-**Related topics in Thoughtworks Radar:**
+---
+
+## Related topics
 
 - [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
 - [AG-UI Protocol](https://www.thoughtworks.com/radar/platforms/ag-ui-protocol) (Nov 2025, Apr 2026)

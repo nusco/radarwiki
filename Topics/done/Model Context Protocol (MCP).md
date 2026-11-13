@@ -72,21 +72,23 @@ MCP has also lost some of its novelty. The April 2026 Radar doesn't list MCP its
 
 ## Recommendation for future learning
 
-These 6 hours are enough to understand the blip, judge MCP servers, and write simple local ones. If you want to **build and run remote MCP servers in production**, plan another ~12 hours on Streamable HTTP, the [authorization spec](https://modelcontextprotocol.io/docs/tutorials/security/authorization) (OAuth), and deployment. Start that day with the DeepLearning.AI course above, then take [Model Context Protocol in Practice](https://www.pluralsight.com/courses/model-context-protocol-practice) (Pluralsight, Kamran Ayub, 1h40). It covers local and remote servers and securing them with OAuth. MCP security and A2A have their own plans in the series below.
+These 6 hours are enough to understand the blip, judge MCP servers, and write simple local ones. If you want to **build and run remote MCP servers in production**, plan another ~12 hours on Streamable HTTP, the [authorization spec](https://modelcontextprotocol.io/docs/tutorials/security/authorization) (OAuth), and deployment. Start that day with the DeepLearning.AI course above, then take [Model Context Protocol in Practice](https://www.pluralsight.com/courses/model-context-protocol-practice) (Pluralsight, Kamran Ayub, 1h40). It covers local and remote servers and securing them with OAuth. MCP security and A2A have their own plans, listed below.
 
-**Related topics in Thoughtworks Radar.** Each one has its own plan. Together they make an ~19-hour series, best done in this order:
+---
 
-1. [[Naive API-to-MCP conversion]] (~1.5h, Nov 2025)
-2. [[FastMCP]] (~1.5h, Nov 2025)
-3. [[MCP Apps]] (~1.5h, Apr 2026)
-4. [[MCP by default]] (~2.5h, Apr 2026)
-5. [[Agent Skills]] (~3h, Apr 2026): an alternative to MCP for many use cases
-6. [[Context engineering]] (~3h, Nov 2025, Apr 2026)
-7. [[Context7]] (~45', Nov 2025)
-8. [[Serena]] (~45', Nov 2025)
-9. [[Toxic flow analysis for AI]] (~1.75h, Nov 2025, Apr 2026)
-10. [[Agent Scan]] (~45', Apr 2026), formerly MCP-Scan (Nov 2025)
-11. [[Agent-to-Agent (A2A) Protocol]] (~2h, Nov 2025)
+## Related topics
+
+- [[Naive API-to-MCP conversion]] (Nov 2025)
+- [[FastMCP]] (Nov 2025)
+- [[MCP Apps]] (Apr 2026)
+- [[MCP by default]] (Apr 2026)
+- [[Agent Skills]] (Apr 2026): an alternative to MCP for many use cases
+- [[Context engineering]] (Nov 2025, Apr 2026)
+- [[Context7]] (Nov 2025)
+- [[Serena]] (Nov 2025)
+- [[Toxic flow analysis for AI]] (Nov 2025, Apr 2026)
+- [[Agent Scan]] (Apr 2026), formerly MCP-Scan (Nov 2025)
+- [[Agent-to-Agent (A2A) Protocol]] (Nov 2025)
 
 ---
 

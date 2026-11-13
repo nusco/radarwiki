@@ -5,8 +5,6 @@
 **Ring:** Assess
 **Created:** 2026-10-21
 
-*Series: after [[FastMCP]] · next: [[MCP by default]].*
-
 ---
 
 ## Layer 1 — What MCP Apps are (0:00–0:30, ~30 min)
@@ -22,7 +20,7 @@
 **Goal:** Know the flow (the tool declares a UI, the host fetches and sandboxes it, the app calls tools back), and see it in a working app.
 
 - [ ] Read: [MCP Apps are here: Rendering interactive UIs in AI clients](https://workos.com/blog/2026-01-27-mcp-apps) (Maria Paktiti, WorkOS, Jan 2026, ~6 min) — the flow, with short code samples, and when a UI beats plain text.
-- [ ] **Do:** Pick a small example from the [ext-apps examples](https://github.com/modelcontextprotocol/ext-apps/tree/main/examples), such as `qr-server` or `basic-server-vanillajs`. Run it as its README explains, and connect it to Claude Desktop. Find the three steps of the flow in its code. Then answer the blip's question for `radar-progress`: would a progress-bar UI be worth it, or is text enough? If the setup takes more than 30 minutes, stop and just read the example's code.
+- [ ] **Do:** Pick a small example from the [ext-apps examples](https://github.com/modelcontextprotocol/ext-apps/tree/main/examples), such as `qr-server` or `basic-server-vanillajs`. Run it as its README explains, and connect it to Claude Desktop. Find the three steps of the flow in its code. Then answer the blip's question for a small tool you might write, such as one that tells you how far along you are with a Radar edition: would a progress-bar UI be worth it, or is text enough? If the setup takes more than 30 minutes, stop and just read the example's code.
 
 ---
 
@@ -43,7 +41,9 @@ MCP Apps grew out of the community project MCP-UI and OpenAI's similar work for 
 
 This plan covers it for a generalist. If you build agent products with a UI, also look at AG-UI, the competing approach that the blip compares it with.
 
-**Related topics in Thoughtworks Radar:**
+---
+
+## Related topics
 
 - [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
 - [AG-UI Protocol](https://www.thoughtworks.com/radar/platforms/ag-ui-protocol) (Nov 2025, Apr 2026)

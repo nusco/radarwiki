@@ -5,8 +5,6 @@
 **Ring:** Trial
 **Created:** 2026-10-21
 
-*Series: after [[Context engineering]] · next: [[Serena]].*
-
 ---
 
 ## Layer 1 — What it is (0:00–0:15, ~15 min)
@@ -21,7 +19,7 @@
 **Goal:** Use it once, and notice that it's now available as both an MCP server and a CLI with a skill.
 
 - [ ] Skim: [The Context7 README](https://github.com/upstash/context7) — the two modes and how to invoke it.
-- [ ] **Do:** Run `npx ctx7 setup --claude` (it needs Node.js 22.13 or later and a free sign-up), and choose the *CLI + Skills* mode. Ask Claude Code "How do I add a resource to a FastMCP 3 server? use context7". Compare the answer with what you wrote in [[FastMCP]].
+- [ ] **Do:** Run `npx ctx7 setup --claude` (it needs Node.js 22.13 or later and a free sign-up), and choose the *CLI + Skills* mode. Ask Claude Code "How do I add a resource to a FastMCP 3 server? use context7". Then ask the same question in a new session without "use context7", and compare the two answers. Does the one without Context7 use an outdated API?
 
 ---
 
@@ -35,7 +33,9 @@ Context7 is one of the most popular MCP servers for coding agents. It isn't in t
 
 This plan covers it.
 
-**Related topics in Thoughtworks Radar:**
+---
+
+## Related topics
 
 - [[Context engineering]] (Nov 2025, Apr 2026)
 - [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)

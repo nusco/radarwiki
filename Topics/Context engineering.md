@@ -5,8 +5,6 @@
 **Ring:** Adopt
 **Created:** 2026-10-21
 
-*Series: after [[Agent Skills]] · next: [[Context7]]. This plan ties together much of what came before it: tool design, MCP vs. CLI, and skills.*
-
 ---
 
 ## Layer 1 — What it is (0:00–1:00, ~60 min)
@@ -49,11 +47,13 @@ The term became popular in mid-2025, when people started saying that "prompt eng
 
 ## Recommendation for future learning
 
-This is one of the most relevant topics in the series, and 3 hours gives a generalist a solid understanding. If you ever build an agent yourself, plan another ~3 hours on memory, compaction and sub-agents. That's better done as part of a hands-on agent-building plan.
+This is one of the most relevant topics for a generalist, and 3 hours gives a generalist a solid understanding. If you ever build an agent yourself, plan another ~3 hours on memory, compaction and sub-agents. That's better done as part of a hands-on agent-building plan.
 
 **Left out from the blip:** the two research papers cited by the newer version ([dynamic tool selection](https://arxiv.org/abs/2509.20386v1) and [active context compression](https://arxiv.org/abs/2601.07190)) are research-level, and the Anthropic article covers the same ideas for a generalist. The older version's prompt-engineering basics ([tips](https://www.promptingguide.ai/introduction/tips), [few-shot](https://www.promptingguide.ai/techniques/fewshot)) are assumed knowledge. Its [just-in-time tooling](https://jentic.com/blog/just-in-time-tooling) post is mostly a product pitch, and [[MCP by default]] covers the same idea as MCP tool search.
 
-**Related topics in Thoughtworks Radar:**
+---
+
+## Related topics
 
 - [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026)
 - [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Apr 2026)

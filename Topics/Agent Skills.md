@@ -5,7 +5,7 @@
 **Ring:** Trial
 **Created:** 2026-10-21
 
-*Series: after [[MCP by default]] · next: [[Context engineering]]. Assumption: you've written the minimal `radar-progress` skill from the MCP by default plan. You also use one non-trivial skill yourself: `learning-plan`.*
+*Assumption: you use one non-trivial skill yourself: `learning-plan`, the skill that writes these plans.*
 
 ---
 
@@ -14,16 +14,16 @@
 **Goal:** Explain what a skill is (a folder with a `SKILL.md`) and how *progressive disclosure* keeps it cheap until it's needed.
 
 - [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/agent-skills) — short. An open standard that spread fast, with a warning about third-party skills.
-- [ ] **Do:** Open `.claude/skills/learning-plan/SKILL.md` in this repository, the skill that writes these plans. Notice the two parts: the frontmatter (a name and a description that the agent always sees), and the body (instructions that load only when the skill is used).
+- [ ] **Do:** Open the `SKILL.md` of your `learning-plan` skill, the skill that writes these plans. Notice the two parts: the frontmatter (a name and a description that the agent always sees), and the body (instructions that load only when the skill is used).
 - [ ] Read: [Equipping agents for the real world with Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) (Anthropic, Oct 2025, ~10 min) — the original post, by the people who designed skills: why they work this way, and how progressive disclosure keeps them cheap.
 
 ## Layer 2 — Write a good one (0:45–2:00, ~75 min)
 
-**Goal:** Turn a quick skill into a well-structured one.
+**Goal:** Write a well-structured skill, and review one you already use.
 
 - [ ] Skim: [The specification](https://agentskills.io/specification) — frontmatter fields, and the optional `scripts/`, `references/` and `assets/` folders. You'll use them in the exercise below.
 - [ ] Skim: [Extend Claude with skills](https://code.claude.com/docs/en/skills) (Claude Code docs) — read "Configure skills", especially supporting files and who can invoke a skill.
-- [ ] **Do:** Improve the `radar-progress` skill. Move the CLI into `scripts/`. Add a `references/` file that describes the Radar file format. Rewrite the description so it says *when* to use the skill. Check that it triggers when you ask a plain-language question. Then review your `learning-plan` skill against the spec: does its description say when to use it, and is anything in it loaded but rarely needed?
+- [ ] **Do:** Write a `radar-progress` skill that answers "how far along am I with a Radar edition?" (Claude Code can help). Put a script that counts ticked and unticked items in `Thoughtworks Radar/thoughtworks-radar-<edition>.md` into `scripts/`. Add a `references/` file that describes the Radar file format. Write the description so it says *when* to use the skill. Check that it triggers when you ask a plain-language question. Then review your `learning-plan` skill against the spec: does its description say when to use it, and is anything in it loaded but rarely needed?
 
 ## Layer 3 — The risks of other people's skills (2:00–3:00, ~60 min)
 
@@ -51,7 +51,9 @@ Anthropic introduced skills in October 2025 and published them as an open standa
 
 This plan covers it for a generalist. Since you already maintain a skill, the best way to go deeper is to keep improving `learning-plan`, perhaps with the skill-creator's evals, rather than to study more.
 
-**Related topics in Thoughtworks Radar:**
+---
+
+## Related topics
 
 - [[MCP by default]] (Apr 2026)
 - [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026)

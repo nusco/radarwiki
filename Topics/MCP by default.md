@@ -5,7 +5,7 @@
 **Ring:** Caution
 **Created:** 2026-10-21
 
-*Series: after [[MCP Apps]] · next: [[Agent Skills]]. Assumption: you have the `radar-progress` server from [[Model Context Protocol (MCP)]] and [[FastMCP]].*
+*Assumption: you know what an MCP server is and how to add one to Claude Code, from [[Model Context Protocol (MCP)]].*
 
 ---
 
@@ -21,14 +21,14 @@
 
 **Goal:** Know the two main alternatives: a CLI plus instructions, and code execution against MCP servers.
 
-- [ ] Read: [Claude Skills are awesome, maybe a bigger deal than MCP](https://simonwillison.net/2025/Oct/16/claude-skills/#skills-compared-to-mcp) (Simon Willison, Oct 2025) — also cited by the blip. Start at "Skills compared to MCP". [[Agent Skills]] has its own plan, next in the series.
+- [ ] Read: [Claude Skills are awesome, maybe a bigger deal than MCP](https://simonwillison.net/2025/Oct/16/claude-skills/#skills-compared-to-mcp) (Simon Willison, Oct 2025) — also cited by the blip. Start at "Skills compared to MCP". [[Agent Skills]] has its own plan.
 - [ ] Read: [Code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp) (Anthropic, Nov 2025, ~10 min) — a middle path: keep the servers, but let the agent write code that calls them, so intermediate data never enters the context.
 
 ## Layer 3 — Try it (1:45–2:30, ~45 min)
 
 **Goal:** See the difference between the two approaches on your own task.
 
-- [ ] **Do:** Ask Claude Code to rebuild `radar-progress` as a small CLI script (`radar-progress 2025-november`), with `--help` and JSON output. Write a minimal `.claude/skills/radar-progress/SKILL.md` (a name, a description, and three lines on how to run the script). Ask "how far along am I with the November 2025 Radar?" twice: once with only the MCP server enabled, and once with only the skill. Run `/context` after each and compare. You'll improve the skill in [[Agent Skills]].
+- [ ] **Do:** Ask Claude Code to build the same small capability twice: count how many items in `Thoughtworks Radar/thoughtworks-radar-<edition>.md` are ticked and how many aren't. First as a one-tool MCP server, added with `claude mcp add`. Then as a CLI script (`radar-progress 2025-november`) with `--help` and JSON output, plus a minimal `.claude/skills/radar-progress/SKILL.md` (a name, a description, and three lines on how to run the script). Ask "how far along am I with the November 2025 Radar?" twice: once with only the MCP server enabled, and once with only the skill. Run `/context` after each and compare.
 
 ---
 
@@ -49,7 +49,9 @@ This entry reflects the backlash against MCP that started in late 2025, when sin
 
 Small, and covered here. It's a design judgment, not a technology. The ideas continue in [[Agent Skills]] and [[Context engineering]].
 
-**Related topics in Thoughtworks Radar:**
+---
+
+## Related topics
 
 - [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
 - [[Naive API-to-MCP conversion]] (Nov 2025)

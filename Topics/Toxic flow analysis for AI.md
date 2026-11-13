@@ -5,7 +5,7 @@
 **Ring:** Assess
 **Created:** 2026-10-21
 
-*Series: after [[Serena]] · next: [[Agent Scan]]. Assumption: you know how prompt injection attacks MCP servers, from Layer 4 of [[Model Context Protocol (MCP)]].*
+*Assumption: you know how prompt injection attacks MCP servers, from Layer 4 of [[Model Context Protocol (MCP)]].*
 
 ---
 
@@ -22,7 +22,7 @@
 **Goal:** Find the toxic flows in your own agent setup, and know a simple rule for removing them.
 
 - [ ] Read: [Agents Rule of Two](https://ai.meta.com/blog/practical-ai-agent-security/) (Meta, Oct 2025) — a practical rule that follows from the lethal trifecta: in a session, an agent should have no more than two of untrusted input, sensitive data, and the ability to change things or communicate outside.
-- [ ] **Do:** Draw the flow graph of your Claude Code setup by hand. List each MCP server, skill and built-in tool (web fetch, shell, file access), and mark which part of the trifecta it provides. For example, [[Context7]] brings in untrusted content, file reads can reach private data, and web fetch can send data out. Find one path that connects all three, and decide which leg you'd cut. You'll compare your graph with an automated scan in [[Agent Scan]].
+- [ ] **Do:** Draw the flow graph of your Claude Code setup by hand. List each MCP server, skill and built-in tool (web fetch, shell, file access), and mark which part of the trifecta it provides. For example, [[Context7]] brings in untrusted content, file reads can reach private data, and web fetch can send data out. Find one path that connects all three, and decide which leg you'd cut. Automated scanning is covered in [[Agent Scan]].
 
 ---
 
@@ -42,7 +42,9 @@ Invariant Labs introduced the term in mid-2025, along with a tool that automates
 
 This plan is enough for a generalist. If you ever deploy agents for other people, study agent security more broadly as its own topic (~3 hours): sandboxing, permissions, and prompt injection defenses.
 
-**Related topics in Thoughtworks Radar:**
+---
+
+## Related topics
 
 - [[Agent Scan]] (Apr 2026), formerly MCP-Scan (Nov 2025)
 - [Sandboxed execution for coding agents](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents) (Apr 2026)

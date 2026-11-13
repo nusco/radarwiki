@@ -5,7 +5,7 @@
 **Ring:** Hold
 **Created:** 2026-10-21
 
-*Series: after [[Model Context Protocol (MCP)]] · next: [[FastMCP]]. Assumption: you've built the `radar-progress` server from the MCP plan.*
+*Assumption: you know how MCP tools work, from [[Model Context Protocol (MCP)]].*
 
 ---
 
@@ -22,7 +22,7 @@
 **Goal:** Know the main rules for designing tools for agents, and apply them to your own server.
 
 - [x] Read: [Writing effective tools for agents — with agents](https://www.anthropic.com/engineering/writing-tools-for-agents) (Anthropic, Sep 2025, ~15 min) — linked from the [[Context engineering]] blip. Combine many small operations into a few tools, return information that's meaningful to the agent, keep outputs token-efficient, and write descriptions the way you'd write a prompt.
-- [x] **Do:** Imagine the naive version of `radar-progress`: a file-system API turned into MCP, with `list_files` and `read_file` tools. Write down the calls an agent would need to answer "how far along am I with the November 2025 Radar?", and estimate the tokens they return (bytes ÷ 4 is close enough; `wc -c` gives the bytes). Compare with one call to your real server. Then check your real server against Anthropic's rules, and fix one thing. For example, make the error for an unknown edition list the valid ones.
+- [x] **Do:** Imagine two MCP servers that answer "how far along am I with the November 2025 Radar?" from the files in `Thoughtworks Radar`. The naive one is a file-system API turned into MCP, with `list_files` and `read_file` tools. The curated one has a single `radar_progress(edition)` tool that returns the ticked and unticked counts. Write down the calls an agent would need with the naive server, and estimate the tokens they return (bytes ÷ 4 is close enough; `wc -c` gives the bytes). Compare with the one call to the curated server. Then design the curated tool against Anthropic's rules: write its description, and the error it returns for an unknown edition (for example, one that lists the valid editions).
 
 ---
 
@@ -42,7 +42,9 @@ This entry appeared once, as *Hold*, in November 2025. It isn't in the April 202
 
 Small, and fully covered here. The design rules are more important than the anti-pattern itself, and they come back in [[Context engineering]].
 
-**Related topics in Thoughtworks Radar:**
+---
+
+## Related topics
 
 - [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
 - [[FastMCP]] (Nov 2025)
