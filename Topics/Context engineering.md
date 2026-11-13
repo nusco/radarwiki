@@ -36,7 +36,6 @@
 - [ ] Read: [Context engineering for agents](https://blog.langchain.com/context-engineering-for-agents/) (Lance Martin, LangChain) — another way to group the same techniques: write, select, compress, isolate.
 - [ ] Read: [Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching) (Claude docs) — the "context setup" technique from the newer blip. Read only the opening and "How prompt caching works", to see why stable context at the start of the prompt is cheaper.
 - [ ] Read: [Subagents](https://code.claude.com/docs/en/sub-agents) (Claude Code docs) — cited by the older blip. Sub-agents keep a side task's context out of the main conversation.
-
 ---
 
 ## Current state of the topic
