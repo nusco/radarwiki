@@ -21,17 +21,17 @@ Unlike AI-generated courses, the plans in Learning Wiki point to material create
 
 ### My Backlog
 
-**Curated activities**
-As a learner, I want every resource in a plan to be human-made, quality content, so that I learn from trustworthy sources rather than AI slop.
-- [ ] A "resource" in the plan can be anything, including, but not limited to, a blog post, a conference talk, or a page of official documentation. Well-regarded talks and established authors are preferred. Paid resources are fine when the user preferences trust them.
-- [ ] Resources are high-quality and look human-created. This is a requirement, not a preference: no content that looks LLM-generated, no slop, no content farms or SEO filler, even when the content looks otherwise good.
-- [ ] Resources come from live web search, never from the model's memory. Each page is fetched to confirm that it loads and contains what the plan says about it.
-- [ ] Each resource line very briefly says what it is and why it was chosen.
-
 **Timed activities**
 As a learner, I want to see how long each activity takes, to pace my own learning.
 - [ ] Each activity comes with a time estimate.
 - [ ] The entire level also has an estimate, that is the approximated sum of the activities (ex: "20-30 minutes", or "about one hour").
+
+**Current state of the topic**
+NOTE: Change this to be more general, like an intro paragraph of generated text with the history of the topic (in the beginning of the plan, not the end), or something more generally useful. Otherwise, consider whether to make it a personal preference for TW Radar blips and move it to preferences.md.
+As a learner, I want one generated paragraph that recaps the current state of the topic, to gain historical perspective.
+- [ ] Comes after the last level of the learning plan.
+- [ ] Shows the date it was written.
+- [ ] Tells whatever the learned needs to know that isn't already clear from the activities: is this topic still relevant today? Did anything major happened to it, like an OS product going commercial, or a renaming? Was it superseded by another competing technology?
 
 ---
 
@@ -102,11 +102,6 @@ As a learner, I want to generate my user preferences through an interview
 As a learner, I want the first Level 1 activity to be the topic's Thoughtworks Technology Radar blip, when one exists, so that every plan starts my way.
 - [ ] The agent detects whether the topic has a blip and links to it.
 - [ ] If there's no blip, the plan says so in one line.
-
-**PE-3 · MVP: "Current state of the blip"**
-As a learner, I want one generated paragraph on what has changed since the blip (is it still relevant? did it spread? was it superseded?), so that I know whether the blip is still accurate.
-- [ ] Based on the blip's history across Radar editions, plus a fresh web search.
-- [ ] Shows the date it was written. Refreshed by `refresh` (PM-4).
 
 **PE-4 · Next: Rituals in general**
 As a learner, I want to define my own rituals ("always start with X," "always end with a build exercise"), so that the blip habit is one example of a general feature rather than hard-coded.
