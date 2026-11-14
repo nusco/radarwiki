@@ -23,8 +23,8 @@ Unlike AI-generated courses, the plans in Learning Wiki point to material create
 
 **Curated activities**
 As a learner, I want every resource in a plan to be human-made, quality content, so that I learn from trustworthy sources rather than AI slop.
-- [ ] A "resource" in the plan can be anything reputable and easily accessed, including, but not limited to, a blog post, a conference talk, or a page of official documentation.
-- [ ] Resources are high-quality and human-created. This is a requirement, not a preference: no LLM-generated content, no slop, no content farms or SEO filler, even when the content looks otherwise good.
+- [ ] A "resource" in the plan can be anything, including, but not limited to, a blog post, a conference talk, or a page of official documentation. Well-regarded talks and established authors are preferred. Paid resources are fine when the user preferences trust them.
+- [ ] Resources are high-quality and look human-created. This is a requirement, not a preference: no content that looks LLM-generated, no slop, no content farms or SEO filler, even when the content looks otherwise good.
 - [ ] Resources come from live web search, never from the model's memory. Each page is fetched to confirm that it loads and contains what the plan says about it.
 - [ ] Each resource line very briefly says what it is and why it was chosen.
 
