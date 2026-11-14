@@ -10,7 +10,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 
 ## Standing rules
 
-- **Follow the user preferences.** Before you write or update a plan, read `preferences.md` in the wiki's root folder (the folder that contains `Topics`). It holds the learner's default length, pace, trusted and avoided sources, link style and rituals, and every plan must follow it. When the learner's request disagrees with the file, the request wins for that plan. If the file is missing, say so in one line, and ask the learner for anything you can't decide without it.
+- **Follow the user preferences.** Before you write or update a plan, look for a `preferences.md` file in the wiki's root folder (the folder that contains `Topics`). If it exists, this file holds the learner's default length, pace, trusted and avoided sources, link style and rituals, and every plan must follow it. When the learner's preferences disagrees with the file, the preferences win for that plan. If the file is missing, say so in one line, and ask the learner for anything you can't decide without it.
 - The $TOPIC can be a literal topic ("Zero trust architecture") or a URL referring to it (https://www.thoughtworks.com/radar/techniques/zero-trust-architecture)
 - Write the plan to a Markdown file in the `Topics` folder. Name the file, and write its links, in the link style from the user preferences.
 - List every activity (resources, **Do** exercises, "If you have extra time" items, and any items that the rituals add) as GitHub Markdown todo items, so the learner can tick them off to track progress.

@@ -1,3 +1,5 @@
+# User Preferences
+
 These are my preferences for every learning plan in this wiki. The `learning-plan` skill reads this file before it writes or updates a plan. When a request asks for something different, the request wins for that plan.
 
 ## Default length
