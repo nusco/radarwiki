@@ -21,10 +21,6 @@ Unlike AI-generated courses, the plans in Learning Wiki point to material create
 
 ### My Backlog
 
-**Checkbox activities**
-As a learner, I want to check off activities as I complete them, to track my progress.
-- [ ] Each activity is a checkbox in Markdown format.
-
 **Durable progress**
 As a learner, I want my progress to stay stable across changes to the plans, to avoid losing progress.
 - [ ] When the system updates a learning plan, it should avoid losing activities that are already checked off, or changing their content.

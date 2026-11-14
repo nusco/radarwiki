@@ -12,7 +12,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 
 - The $TOPIC can be a literal topic ("Zero trust architecture") or a URL referring to it (https://www.thoughtworks.com/radar/techniques/zero-trust-architecture)
 - Write the plan to a Markdown file in the `Topics` folder.
-- In the file, use Markdown syntax for links. Also, list resources as GitHub Markdown todo items.
+- In the file, use Markdown syntax for links. Also, list every activity (resources, **Do** exercises, "If you have extra time" items, and the **Close** item) as GitHub Markdown todo items, so the learner can tick them off to track progress.
 - Structure the file logically, beginning with the topic and the time required.
 - Open the file with metadata, one field per line. Example for a topic from a Thoughtworks Radar blip:
   ```
