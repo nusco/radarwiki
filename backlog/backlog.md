@@ -120,10 +120,6 @@ As a learner, I want to define my own rituals ("always start with X," "always en
 
 ## Epic 4: Progress and maintenance
 
-**PM-1 · MVP: Checkboxes for progress**
-As a learner, I want to tick off items as I study them, so that I can see my progress.
-- [ ] Standard `- [ ]` checkboxes, which work in any markdown editor.
-
 **PM-2 · MVP: Tweak one item**
 As a learner, I want to ask the agent to change a single item, for example an exercise I can't complete, so that I'm not stuck.
 - [ ] The agent can make the item easier, change it, or replace it with an alternative.
