@@ -21,14 +21,6 @@ Unlike AI-generated courses, the plans in Learning Wiki point to material create
 
 ### My Backlog
 
-**Layered plan**
-As a learner, I want my plans to be organized in levels so I can learn progressively.
-- [ ] A learning plan is organized in levels that go progressively deeper.
-- [ ] Each level has a title and a one-line goal that describes what the learner will be able to do.
-- [ ] The number of levels depends from the topic. Most require 2-4. Historical/obsolete topics might require 1.
-- [ ] Level 1 is typically the "what" and the "why", concisely expressed.
-- [ ] Following levels go deeper: deeper explanations, hands-on experiences, the role of the topic in the wider ecosystem, problems and issues, etc.
-
 **Curated activities**
 As a learner, I want every resource in a plan to be human-made, quality content, so that I learn from trustworthy sources rather than AI slop.
 - [ ] A "resource" in the plan can be a blog post, a conference talk, a page of official documentation, a discussion page, or anything else that is reputable and easily accessed.
