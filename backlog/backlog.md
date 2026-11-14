@@ -67,6 +67,10 @@ As a learner, I want a plan to name its prerequisite topics as links, so that I 
 
 ## Epic 2: Wiki linking
 
+First, check out how LLM Wiki does it:
+https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+https://llm-wiki.net/
+
 **WL-1 · MVP: Link the first mention**
 As a learner, I want the first mention of each related topic to be a link, even if that topic has no page yet, so that the wiki grows as I explore.
 
