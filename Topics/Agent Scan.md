@@ -16,19 +16,19 @@
 - [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/tools/agent-scan) — short. It's useful for an inventory, but it sends metadata to Snyk, and you should check its false positives yourself before making it a mandatory gate.
 - [ ] **Do:** Run `uvx snyk-agent-scan@latest inspect`. It lists the MCP servers, tools and skills it finds in your setup, without analyzing them or sending anything for analysis. This is the inventory the blip talks about.
 
-## Layer 2 — Scan, and compare with a manual check (0:15–0:45, ~30 min)
+## Layer 2 — Compare a manual check with the scanner (0:15–0:45, ~30 min)
 
 **Goal:** See what an automated scan catches that a manual check doesn't.
 
 - [ ] Skim: [The Agent Scan README](https://github.com/snyk/agent-scan) — read the section on what data it sends to Snyk, and the list of issues it reports.
 - [ ] **Do:** Pick three entries from the `inspect` inventory, including at least one MCP server and one skill if you have them. For each, mark which leg of the lethal trifecta it provides, if any: untrusted content, private data, or a way to send data out. Did the inventory list anything you'd forgotten you had? Then go through the issues the README says the scanner reports, and decide which ones a manual check like yours would catch and which ones only a scanner could catch.
-  - Optional: run a full scan (`uvx snyk-agent-scan@latest`). It needs a Snyk account and a `SNYK_TOKEN`, and the free tier can fail on the first try with "Daily usage limit reached for the public version of Agent-Scan". If you get that error, skip the full scan. Comparing your manual check with the README is enough for this exercise.
 
 ---
 
 ## If you have extra time
 
 - [ ] Read: [Introducing MCP-Scan](https://invariantlabs.ai/blog/introducing-mcp-scan) (Luca Beurer-Kellner and Marc Fischer, Invariant Labs, Apr 2025, ~4 min) — the original launch post. It shows which attacks the tool was built to catch (tool poisoning, rug pulls, tool shadowing), and that sending data off for analysis was part of the design from the start.
+- [ ] **Do:** Run a full scan (`uvx snyk-agent-scan@latest`) and compare its findings with your manual check from Layer 2. It needs a Snyk account and a `SNYK_TOKEN`, and the free tier can fail on the first try with "Daily usage limit reached for the public version of Agent-Scan". If you get that error, try again later or skip it.
 
 ---
 

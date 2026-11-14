@@ -21,13 +21,6 @@ Unlike AI-generated courses, the plans in Learning Wiki point to material create
 
 ### My Backlog
 
-
----
-
-From here on: machine-generated backlog to fish from later.
-
-## Epic 1: Learning plans
-
 **Layered plan**
 As a learner, I want to get a learning plan so that I study a topic that interests me.
 - [ ] A learning plan is organized in layers that go progressively deeper.
@@ -48,6 +41,12 @@ As a learner, I want every resource in a plan to be human-made, quality content,
 As a learner, I want to see how long each activity takes, to pace my own learning.
 - [ ] Each activity comes with a time estimate.
 - [ ] The entire layer also has an estimate, that is the approximated sum of the activities (ex: "20-30 minutes", or "about one hour").
+
+---
+
+From here on: machine-generated backlog to fish from later.
+
+## Epic 1: Learning plans
 
 **LP-3 · MVP: Verified links**
 As a learner, I want every link checked before it lands on the page, so that I never hit an invented or dead link.
