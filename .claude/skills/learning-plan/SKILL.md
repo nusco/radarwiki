@@ -35,16 +35,27 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 ## Maintaining existing plans
 
 - **Update existing plans when needed.** Whenever a change in the system is inconsistent with the existing plans (for example, because the user asked for changes that lead you to update this skill), update the existing plans in the `Topics` folder to follow the new version, without waiting for the learner to ask. If an update could be destructive, such as losing progress on a plan the learner has started, explain the problem plainly and ask before you make it. Describe the change in natural language, not as a code diff or another proposal that's hard to judge at a glance.
+
 - **Keep in-progress plans stable.** When you change a plan where some items are already ticked off, preserve the ticked items. Never untick an item without asking the learner. If a change would substantially alter a ticked item, describe the issue to the learner and let them decide.
-- **Leave completed plans alone.** A plan where every item is ticked off, except the optional "If you have extra time" items, is done: don't update it automatically, and don't add new items that would turn it back into "in progress". This includes the changes that the wiki rules above would make, such as moving material out of the plan or updating its structural links. If you think a completed plan really needs a change, ask the learner specifically.
+
+- **Leave completed plans alone.** A plan where every item is ticked off, ignoring the optional "If you have extra time" items, is done: don't update it automatically, and don't add new items that would return it to into "in progress". This includes the changes that the wiki rules above would make, such as moving material out of the plan or updating its structural links. If you think a completed plan really needs a change, ask the learner specifically.
 
 ## Steps
 
 1. **Pin down the inputs.** Get the topic and time budget from the arguments. If the budget is missing, choose one with the rules on default length in the user preferences and state it in one line, so the learner can change it. If the learner's background is unclear, state your assumption in one line instead of asking.
+
 2. **Cover what the source highlights.** If the topic comes from a specific source, such as an article or a Radar blip, list everything the source explicitly mentions or links to: concepts, tools, criticisms, related specs. Each one must end up in the plan: in a level, in "If you have extra time", in the recommendation for future learning, or as a related topic with its own plan. Skip one only for a clear reason, such as time or scope, duplicated information, or obsolescence, and state that reason in one line in the plan, so the learner knows it was a choice and not an oversight.
-3. **Split the time into levels that go progressively deeper**, usually 2–4, depending on the topic. Level 1 is the "what" and the "why", concisely expressed (that might be just one short description or a 5 minutes video). Following levels go deeper: deeper explanations, hands-on experience, the role of the topic in the wider ecosystem, problems and issues, and so on. Give each level a unified theme and title so that the user has good signposts to their progress. Each level must leave the learner with usable knowledge, so they can stop after any level. If time is tight, then have a minimum of two levels. The exception is a quick historical plan for an obsolete topic, which can have a single level.
+
+3. **Split the time into levels that go progressively deeper**, usually 2–4, depending on the topic.
+
+   - **Each level must leave the learner with usable knowledge**, so they can stop after any level. If time is tight, then have a minimum of two levels. The exception is a quick historical plan for an obsolete topic, which can have a single level.
+
+   - **At a bare minimum, the levels should explain the _what_, _why_ and _how_ of the topic.** For example, Level 1 might cover what the topic is and why it exists, maybe with a short descriptive resource, a very short video video, a product page, etc. Level 2 could show how the topic works. Following levels go deeper: deeper explanations, hands-on experience, the role of the topic in the wider ecosystem, problems and issues, and so on. Note that these categories are just an indication. If they're not appropriate for a specific topic, go for something else.
+
    - **Give each level one theme.** Everything in a level should serve the theme in its title. If a level needs to cover two concerns, split it into subsections, each with its own consistent theme and title. Don't mix concerns in a level (for example, security resources in a "Build a server" level, or a changelog in a "Design" level): it makes the learning feel chaotic. If an item doesn't fit any level's theme, move it to "If you have extra time" or the recommendation for future learning.
+   
    - **Start Level 1 with a concrete example.** After any opening items that the rituals ask for, the first item should be short and concrete, such as a worked example, a demo, a quick look at a real artifact, or a tiny hands-on step. It can be a **Read**, a **Skim** or a **Do**. Its job is to give the learner a concrete anchor for the broader, more theoretical material that follows, so save the announcements, overviews and design rationale for after it.
+
 4. **For each level, give:**
    - a heading with the time slot and estimated hours
    - a one-line **Goal** that says what the learner will be able to do
