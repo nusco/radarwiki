@@ -8,7 +8,8 @@ status: draft
 
 ## Vision
 
-Learning Wiki is a personal wiki of learning plans, stored as plain markdown on your own disk. An AI agent writes the **plans**. The **material** those plans point to is made by people: official docs, well-regarded courses, popular blog posts, sources you trust. Each page is a short, layered plan with checkboxes, sized to the time you have and the way you learn. Topics link to each other the way a wiki does, and clicking a topic that has no page yet gets you a new plan.
+Learning Wiki is a personal wiki of learning plans for the methodical self-learner, stored as plain markdown on your own disk. You can use it to learn any topic you care about.
+Unlike AI-generated courses, the plans in Learning Wiki point to material created by people: well-regarded courses, popular blog posts, sources you trust.
 
 ### Principles
 
@@ -18,30 +19,45 @@ Learning Wiki is a personal wiki of learning plans, stored as plain markdown on 
 4. **Works with any agent.** Claude Code is the reference agent, but nothing in the system depends on Claude-only features.
 5. **Never lose progress.** Edits are surgical: changing one item never resets your checked boxes.
 
-### Personas
+### My Backlog
 
-- **Learner (primary):** wants short, personalized plans (30 minutes to a weekend), tracks progress with checkboxes, and asks the agent to adjust things along the way.
-- **Sharer:** publishes Learning Wiki so other people can install it with one command.
-- **Other-agent user:** runs a different agent and model, such as Pi with an Ollama model, and expects the same result.
+**Checkbox activities**
+As a learner, I want to check off activities as I complete them, to track my progress.
+- [ ] Each activity is a checkbox in Markdown format.
 
-**Priority:** MVP = first usable version · Next = soon after · Later = nice to have
+**Durable progress**
+As a learner, I want my progress to stay stable across changes to the plans, to avoid losing progress.
+- [ ] When the system updates a learning plan, it should avoid losing activities that are already checked off, or changing their content.
+- [ ] Whenever it seems a good idea to change the state of a checked-off checkbox, ask the user.
+- [ ] If a learning plan is complete (all the non-optional activities are checked) then ask the user before meddling with it, including adding new activities.
+
 
 ---
 
+From here on: machine-generated backlog to fish from later.
+
 ## Epic 1: Learning plans
 
-**LP-1 · MVP: Layered plan for a topic**
-As a learner, I want to ask for a learning plan on a topic, so that I get a structured path instead of a pile of links.
-- [ ] The page has layers that go deeper: Layer 1 (what it is and what it does), Layer 2 (hands-on practice, e.g. an exercise), Layer 3 (where it fits in the wider ecosystem).
-- [ ] Each activity is a checkbox with a time estimate.
-- [ ] The time estimates add up to the requested length.
+**Layered plan**
+As a learner, I want to get a learning plan so that I study a topic that interests me.
+- [ ] A learning plan is organized in layers that go progressively deeper.
+- [ ] Each layer has a title and a brief (1-2 sentences) description that communicate its theme.
+- [ ] The number of layers depends to the topic. Most topics require 2-4 layers.
+- [ ] Layer 1 is typically the "what" and the "why", concisely expressed.
+- [ ] Layer 2 is typically some kind of hands-on experience, but only when appropriate to the topic.
+- [ ] Following layers go deeper: the role of the topic in the wider ecosystem, problems and issues, etc.
 
-**LP-2 · MVP: Only human-made, reputable sources**
-As a learner, I want every resource in a plan to be human-made, quality content, so that I learn from trustworthy sources rather than AI-generated text.
+**Curated activities**
+As a learner, I want every resource in a plan to be human-made, quality content, so that I learn from trustworthy sources rather than AI slop.
+- [ ] A "resource" in the plan can be a blog post, a conference talk, a page of official documentation, a discussion page, or anything else that is reputable and easily accessed.
+- [ ] Resources are high-quality and human-created. No slop, no content farms.
 - [ ] Resources come from live web search, never from the model's memory.
-- [ ] Source preference order: my trusted sources, then official documentation, then established courses and books, then popular, well-regarded posts.
-- [ ] Content farms and AI-generated pages are excluded.
-- [ ] Each resource line says what it is and why it was chosen.
+- [ ] Each resource line very briefly says what it is and why it was chosen.
+
+**Timed activities**
+As a learner, I want to see how long each activity takes, to pace my own learning.
+- [ ] Each activity comes with a time estimate.
+- [ ] The entire layer also has an estimate, that is the approximated sum of the activities (ex: "20-30 minutes", or "about one hour").
 
 **LP-3 · MVP: Verified links**
 As a learner, I want every link checked before it lands on the page, so that I never hit an invented or dead link.
