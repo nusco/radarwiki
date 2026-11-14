@@ -21,12 +21,6 @@ Unlike AI-generated courses, the plans in Learning Wiki point to material create
 
 ### My Backlog
 
-**Durable progress**
-As a learner, I want my progress to stay stable across changes to the plans, to avoid losing progress.
-- [ ] When the system updates a learning plan, it should avoid losing activities that are already checked off, or changing their content.
-- [ ] Whenever it seems a good idea to change the state of a checked-off checkbox, ask the user.
-- [ ] If a learning plan is complete (all the non-optional activities are checked) then ask the user before meddling with it, including adding new activities.
-
 
 ---
 

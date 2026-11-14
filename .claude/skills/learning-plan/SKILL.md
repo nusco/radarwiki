@@ -41,8 +41,8 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 ## Maintaining existing plans
 
 - **Update existing plans when needed.** Whenever a change in the system is inconsistent with the existing plans (for example, because the user asked for changes that lead you to update this skill), update the existing plans in the `Topics` folder to follow the new version, without waiting for the learner to ask. If an update could be destructive, such as losing progress on a plan the learner has started, explain the problem plainly and ask before you make it. Describe the change in natural language, not as a code diff or another proposal that's hard to judge at a glance.
-- **Keep in-progress plans stable.** When you change a plan where some items are already ticked off, preserve the ticked items. If a change would substantially alter a ticked item, describe the issue to the learner and let them decide.
-- **Leave completed plans alone.** A plan where every item is ticked off is done: don't update it automatically, and don't add new items that would turn it back into "in progress". If you think a completed plan really needs a change, ask the learner specifically.
+- **Keep in-progress plans stable.** When you change a plan where some items are already ticked off, preserve the ticked items. Never untick an item without asking the learner. If a change would substantially alter a ticked item, describe the issue to the learner and let them decide.
+- **Leave completed plans alone.** A plan where every item is ticked off, except the optional "If you have extra time" items, is done: don't update it automatically, and don't add new items that would turn it back into "in progress". This includes the changes that the wiki rules above would make, such as moving material out of the plan or updating its structural links. If you think a completed plan really needs a change, ask the learner specifically.
 
 ## Steps
 
