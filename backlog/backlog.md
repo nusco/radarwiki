@@ -21,11 +21,15 @@ Unlike AI-generated courses, the plans in Learning Wiki point to material create
 
 ### My Backlog
 
+**User Preferences**
+As a learner, I want a preferences file that every plan follows, so that I don't repeat my preferences each time.
+- [ ] `user-preferences.md` holds the default length, pace, trusted and avoided sources, link style and personal rituals.
+
 **Curated activities**
 As a learner, I want every resource in a plan to be human-made, quality content, so that I learn from trustworthy sources rather than AI slop.
-- [ ] A "resource" in the plan can be a blog post, a conference talk, a page of official documentation, a discussion page, or anything else that is reputable and easily accessed.
-- [ ] Resources are high-quality and human-created. No slop, no content farms.
-- [ ] Resources come from live web search, never from the model's memory.
+- [ ] A "resource" in the plan can be anything reputable and easily accessed, including, but not limited to, a blog post, a conference talk, or a page of official documentation.
+- [ ] Resources are high-quality and human-created. This is a requirement, not a preference: no LLM-generated content, no slop, no content farms or SEO filler, even when the content looks otherwise good.
+- [ ] Resources come from live web search, never from the model's memory. Each page is fetched to confirm that it loads and contains what the plan says about it.
 - [ ] Each resource line very briefly says what it is and why it was chosen.
 
 **Timed activities**
@@ -47,7 +51,7 @@ As a learner, I want every link checked before it lands on the page, so that I n
 
 **LP-4 · MVP: Choose the length**
 As a learner, I want to choose how long a plan takes (from 30 minutes to a weekend), so that it fits my time.
-- [ ] If neither my request nor my profile settles the length, the agent asks with a few choices (e.g. 1 hour / half a day / weekend).
+- [ ] If neither my request nor my user preferences settle the length, the agent asks with a few choices (e.g. 1 hour / half a day / weekend).
 - [ ] The length is recorded in the page's frontmatter.
 
 **LP-5 · MVP: Choose the pace**
@@ -73,7 +77,7 @@ As a learner, I want the first mention of each related topic to be a link, even 
 **WL-2 · MVP: Clicking a missing page gets a plan**
 As a learner, I want to click a link to a topic that has no plan and get one, so that I can follow my curiosity.
 - [ ] In Obsidian, clicking the link creates a stub (`status: pending`) using a Templater template.
-- [ ] I ask the agent (e.g. in a sidebar) to fill it in. It asks for length and pace only if my profile doesn't decide them.
+- [ ] I ask the agent (e.g. in a sidebar) to fill it in. It asks for length and pace only if my user preferences don't decide them.
 - [ ] The finished plan replaces the stub at the same path, so existing links keep working.
 
 **WL-3 · MVP: Fill all pending pages**
@@ -94,9 +98,8 @@ As a learner, I want clicking a missing page to start generation directly, with 
 
 ## Epic 3: Personalization
 
-**PE-1 · MVP: Profile**
-As a learner, I want a profile that every plan follows, so that I don't repeat my preferences each time.
-- [ ] `_profile.md` holds the default length, pace, trusted and avoided sources, link style and personal rituals.
+**User Preferences Generation**
+As a learner, I want to generate my user preferences through an interview
 - [ ] `init` creates it through a short interview, and I can edit it by hand.
 
 **PE-2 · MVP: Start from the Technology Radar blip**
@@ -155,12 +158,12 @@ As a sharer, I want people to install it with `npx skills add <repo>`, so that i
 
 **SP-3 · MVP: `init` in an empty folder**
 As a learner, I want to run `init` in an empty folder and end up with a working wiki, so that setup takes minutes.
-- [ ] A short interview creates the profile, a README and the page template.
+- [ ] A short interview creates the user preferences, a README and the page template.
 - [ ] Files are copied from `assets/`, not generated from scratch, so the result is the same every time, even with weaker models.
 
 **SP-4 · MVP: Safe to rerun**
 As a learner, I want to rerun `init` to repair or upgrade my wiki, so that I can update the system safely.
-- [ ] It never overwrites my profile or my pages.
+- [ ] It never overwrites my user preferences or my pages.
 
 **SP-5 · MVP: Setup for convenience settings**
 As a learner, I want `init` to configure my agent's permissions (for example, allowing web page fetches), so that checking links doesn't flood me with permission prompts.
@@ -176,7 +179,7 @@ As a learner, I want `init` to prepare the folder for Obsidian, so that clicking
 - [ ] Ends with a checklist of manual steps: open the folder as a vault, enable community plugins, reload.
 
 **SP-7 · Next: Scoped skill descriptions**
-As a learner, I want the skill to activate only inside a learning wiki (a folder containing `_profile.md`), so that a global install doesn't trigger it while I'm coding.
+As a learner, I want the skill to activate only inside a learning wiki (a folder containing `user-preferences.md`), so that a global install doesn't trigger it while I'm coding.
 
 **SP-8 · Later: Optional Claude Code plugin**
 As a sharer, I want an optional Claude Code plugin around the skill, for hooks and automatic dependency installs, without making the core depend on it.
@@ -205,7 +208,7 @@ As a Pi user, I want Learning Wiki to work with my Ollama model, so that I can u
 
 **PO-4 · Next: Link style setting**
 As a user of a plain editor, I want to choose standard markdown links instead of wikilinks, so that links work in my editor.
-- [ ] The style is set in the profile. The agent writes whichever is chosen. Files use a flat layout where filename equals title.
+- [ ] The style is set in the user preferences. The agent writes whichever is chosen. Files use a flat layout where filename equals title.
 
 **PO-5 · Next: Agents without web access**
 As an other-agent user, I want an agent that can't browse to say so rather than make things up, so that I can trust what's on the page.
@@ -247,6 +250,6 @@ As a sharer, I want an optional `AGENTS.md` for rules that should apply even whe
 - Flat folder or subfolders? A flat layout is recommended for portability (PO-4).
 - What happens to finished plans: archive them, or leave them in place with `status: done`?
 - How to detect a Radar blip: from the dataset, or by web search?
-- Defaults when the profile doesn't specify length or pace.
+- Defaults when the user preferences don't specify length or pace.
 - How far to take rituals beyond the Radar blip (PE-4).
 - Final name. Candidates: Redlink, Docent, Pointers. "Learning Wiki" for now.
