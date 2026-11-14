@@ -21,10 +21,6 @@ Unlike AI-generated courses, the plans in Learning Wiki point to material create
 
 ### My Backlog
 
-**User Preferences**
-As a learner, I want a preferences file that every plan follows, so that I don't repeat my preferences each time.
-- [ ] `user-preferences.md` holds the default length, pace, trusted and avoided sources, link style and personal rituals.
-
 **Curated activities**
 As a learner, I want every resource in a plan to be human-made, quality content, so that I learn from trustworthy sources rather than AI slop.
 - [ ] A "resource" in the plan can be anything reputable and easily accessed, including, but not limited to, a blog post, a conference talk, or a page of official documentation.
@@ -179,7 +175,7 @@ As a learner, I want `init` to prepare the folder for Obsidian, so that clicking
 - [ ] Ends with a checklist of manual steps: open the folder as a vault, enable community plugins, reload.
 
 **SP-7 · Next: Scoped skill descriptions**
-As a learner, I want the skill to activate only inside a learning wiki (a folder containing `user-preferences.md`), so that a global install doesn't trigger it while I'm coding.
+As a learner, I want the skill to activate only inside a learning wiki (a folder containing `preferences.md`), so that a global install doesn't trigger it while I'm coding.
 
 **SP-8 · Later: Optional Claude Code plugin**
 As a sharer, I want an optional Claude Code plugin around the skill, for hooks and automatic dependency installs, without making the core depend on it.
