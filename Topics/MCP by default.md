@@ -34,7 +34,7 @@
 
 ## If you have extra time
 
-- [ ] Read: [MCP vs. CLI for AI agents: when to use each](https://manveerc.substack.com/p/mcp-vs-cli-ai-agents) (Manveer Chawla, Mar 2026, long) — a decision framework that you apply to each integration separately.
+- [ ] Read: [MCP is dead, long live MCP](https://chrlschn.dev/blog/2026/03/mcp-is-dead-long-live-mcp/) (Charles Chen, Mar 2026, ~15 min) — the other side of the argument, from a practitioner who defends MCP for teams. CLIs win for tools the model already knows, like `git` or `gh`, but remote MCP servers give an organization central auth, telemetry and shared prompts. It's combative in places, but it's the clearest case for the uses the blip still accepts.
 - [ ] Read: [Scale with MCP tool search](https://code.claude.com/docs/en/mcp#scale-with-mcp-tool-search) (Claude Code docs) — the strongest answer to "MCP wastes context".
 
 ---
