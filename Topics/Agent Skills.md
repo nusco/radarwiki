@@ -9,7 +9,7 @@
 
 ---
 
-## Layer 1 — What a skill is (0:00–0:45, ~45 min)
+## Level 1 — What a skill is (0:00–0:45, ~45 min)
 
 **Goal:** Explain what a skill is (a folder with a `SKILL.md`) and how *progressive disclosure* keeps it cheap until it's needed.
 
@@ -17,7 +17,7 @@
 - [ ] **Do:** Open the `SKILL.md` of your `learning-plan` skill, the skill that writes these plans. Notice the two parts: the frontmatter (a name and a description that the agent always sees), and the body (instructions that load only when the skill is used).
 - [ ] Read: [Equipping agents for the real world with Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) (Anthropic, Oct 2025, ~10 min) — the original post, by the people who designed skills: why they work this way, and how progressive disclosure keeps them cheap.
 
-## Layer 2 — Write a good one (0:45–2:00, ~75 min)
+## Level 2 — Write a good one (0:45–2:00, ~75 min)
 
 **Goal:** Write a well-structured skill, and review one you already use.
 
@@ -25,7 +25,7 @@
 - [ ] Skim: [Extend Claude with skills](https://code.claude.com/docs/en/skills) (Claude Code docs) — read "Configure skills", especially supporting files and who can invoke a skill.
 - [ ] **Do:** Write a `radar-progress` skill that answers "how far along am I with a Radar edition?" (Claude Code can help). Put a script that counts ticked and unticked items in `Thoughtworks Radar/thoughtworks-radar-<edition>.md` into `scripts/`. Add a `references/` file that describes the Radar file format. Write the description so it says *when* to use the skill. Check that it triggers when you ask a plain-language question. Then review your `learning-plan` skill against the spec: does its description say when to use it, and is anything in it loaded but rarely needed?
 
-## Layer 3 — The risks of other people's skills (2:00–3:00, ~60 min)
+## Level 3 — The risks of other people's skills (2:00–3:00, ~60 min)
 
 **Goal:** Know why you shouldn't install other people's skills without reading them, and what to look for.
 

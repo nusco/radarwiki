@@ -9,7 +9,7 @@
 
 ---
 
-## Layer 1 — The argument (0:00–1:00, ~60 min)
+## Level 1 — The argument (0:00–1:00, ~60 min)
 
 **Goal:** Explain in two sentences why the Radar warns against making MCP the default way to connect agents to systems.
 
@@ -17,14 +17,14 @@
 - [ ] Read: [What if you don't need MCP at all?](https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/) (Mario Zechner, Nov 2025) — a concrete case. He replaces browser MCP servers with a few small scripts: about 225 tokens of instructions, instead of 13,000–18,000 tokens of tool definitions.
 - [ ] Read: [The MCP abstraction tax](https://justin.poehnelt.com/posts/mcp-abstraction-tax/) (Justin Poehnelt, Mar 2026, ~6 min) — cited by the blip. Every layer between the agent and the API loses some detail.
 
-## Layer 2 — The alternatives (1:00–1:45, ~45 min)
+## Level 2 — The alternatives (1:00–1:45, ~45 min)
 
 **Goal:** Know the two main alternatives: a CLI plus instructions, and code execution against MCP servers.
 
 - [ ] Read: [Claude Skills are awesome, maybe a bigger deal than MCP](https://simonwillison.net/2025/Oct/16/claude-skills/#skills-compared-to-mcp) (Simon Willison, Oct 2025) — also cited by the blip. Start at "Skills compared to MCP". [[Agent Skills]] has its own plan.
 - [ ] Read: [Code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp) (Anthropic, Nov 2025, ~10 min) — a middle path: keep the servers, but let the agent write code that calls them, so intermediate data never enters the context.
 
-## Layer 3 — Try it (1:45–2:30, ~45 min)
+## Level 3 — Try it (1:45–2:30, ~45 min)
 
 **Goal:** See the difference between the two approaches on your own task.
 

@@ -5,11 +5,11 @@
 **Ring:** Assess
 **Created:** 2026-10-21
 
-*Assumption: you know how prompt injection attacks MCP servers, from Layer 4 of [[Model Context Protocol (MCP)]].*
+*Assumption: you know how prompt injection attacks MCP servers, from Level 4 of [[Model Context Protocol (MCP)]].*
 
 ---
 
-## Layer 1 — The technique (0:00–0:45, ~45 min)
+## Level 1 — The technique (0:00–0:45, ~45 min)
 
 **Goal:** Explain toxic flow analysis: mapping the paths through an agent's tools where untrusted content, private data and an outbound channel meet.
 
@@ -17,7 +17,7 @@
 - [ ] Read: [Toxic flows in agentic systems](https://invariantlabs.ai/blog/toxic-flow-analysis) (Invariant Labs, Jul 2025, ~4 min) — the post that introduced the term, with the GitHub MCP exploit as its example.
 - [x] Read: [The lethal trifecta for AI agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) (Simon Willison) — private data plus untrusted content plus a way to send data out. Toxic flow analysis is the search for paths that combine all three.
 
-## Layer 2 — Apply it to your setup (0:45–1:45, ~60 min)
+## Level 2 — Apply it to your setup (0:45–1:45, ~60 min)
 
 **Goal:** Find the toxic flows in your own agent setup, and know a simple rule for removing them.
 

@@ -9,7 +9,7 @@
 
 ---
 
-## Layer 1 — Two FastMCPs (0:00–0:30, ~30 min)
+## Level 1 — Two FastMCPs (0:00–0:30, ~30 min)
 
 **Goal:** Explain the difference between the "FastMCP" inside the official SDK and the standalone FastMCP framework.
 
@@ -17,7 +17,7 @@
 - [ ] **Do:** Put the server example at the top of the [FastMCP welcome page](https://gofastmcp.com/getting-started/welcome), which imports the standalone framework (`from fastmcp import FastMCP`), side by side with the first example in the [official SDK's README](https://github.com/modelcontextprotocol/python-sdk). The code is almost the same. The SDK's version is FastMCP 1.0, and the newest SDK calls it `MCPServer`.
 - [ ] Read: [FastMCP welcome page](https://gofastmcp.com/getting-started/welcome) — what the standalone framework adds on top of the SDK: clients, auth, apps, and deployment.
 
-## Layer 2 — Go beyond the SDK (0:30–1:30, ~60 min)
+## Level 2 — Go beyond the SDK (0:30–1:30, ~60 min)
 
 **Goal:** Use standalone FastMCP features that the SDK doesn't have, starting with its Python client.
 

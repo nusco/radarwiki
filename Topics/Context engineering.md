@@ -7,7 +7,7 @@
 
 ---
 
-## Layer 1 — What it is (0:00–1:00, ~60 min)
+## Level 1 — What it is (0:00–1:00, ~60 min)
 
 **Goal:** Explain how context engineering differs from prompt engineering, and name its main techniques.
 
@@ -15,14 +15,14 @@
 - [ ] **Do:** Start Claude Code in this repository and run `/context`. Look at what fills the context before you've asked anything: the system prompt, `CLAUDE.md`, memory, skill descriptions, MCP tools. That's the context you'll learn to engineer.
 - [ ] Read: [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) (Anthropic, Sep 2025, ~15 min) — the reference article, cited by both versions of the blip. It covers system prompts, tools, just-in-time retrieval, compaction, notes and sub-agents.
 
-## Layer 2 — How contexts fail (1:00–2:00, ~60 min)
+## Level 2 — How contexts fail (1:00–2:00, ~60 min)
 
 **Goal:** Know why "just put everything in a big context window" doesn't work.
 
 - [ ] Read: [Context rot](https://www.trychroma.com/research/context-rot) (Chroma, Jul 2025) — the study behind the term. 18 models get less reliable as their input grows, even on simple tasks. Read the introduction and the conclusion (~10 min), and look at the charts in between. Skip the details of each experiment. The blip links to [an article about it](https://www.understandingai.org/p/context-rot-the-emerging-challenge) by Timothy B. Lee, but that one is partly paywalled.
 - [ ] Read: [How to fix your context](https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html) (Drew Breunig, Jun 2025) — four ways a context fails (poisoning, distraction, confusion, clash) and how to fix each one.
 
-## Layer 3 — Engineer your own context (2:00–3:00, ~60 min)
+## Level 3 — Engineer your own context (2:00–3:00, ~60 min)
 
 **Goal:** See what fills your own agent's context, and make it leaner.
 

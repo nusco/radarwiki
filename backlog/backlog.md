@@ -22,13 +22,12 @@ Unlike AI-generated courses, the plans in Learning Wiki point to material create
 ### My Backlog
 
 **Layered plan**
-As a learner, I want to get a learning plan so that I study a topic that interests me.
-- [ ] A learning plan is organized in layers that go progressively deeper.
-- [ ] Each layer has a title and a brief (1-2 sentences) description that communicate its theme.
-- [ ] The number of layers depends to the topic. Most topics require 2-4 layers.
-- [ ] Layer 1 is typically the "what" and the "why", concisely expressed.
-- [ ] Layer 2 is typically some kind of hands-on experience, but only when appropriate to the topic.
-- [ ] Following layers go deeper: the role of the topic in the wider ecosystem, problems and issues, etc.
+As a learner, I want my plans to be organized in levels so I can learn progressively.
+- [ ] A learning plan is organized in levels that go progressively deeper.
+- [ ] Each level has a title and a one-line goal that describes what the learner will be able to do.
+- [ ] The number of levels depends from the topic. Most require 2-4. Historical/obsolete topics might require 1.
+- [ ] Level 1 is typically the "what" and the "why", concisely expressed.
+- [ ] Following levels go deeper: deeper explanations, hands-on experiences, the role of the topic in the wider ecosystem, problems and issues, etc.
 
 **Curated activities**
 As a learner, I want every resource in a plan to be human-made, quality content, so that I learn from trustworthy sources rather than AI slop.
@@ -40,7 +39,7 @@ As a learner, I want every resource in a plan to be human-made, quality content,
 **Timed activities**
 As a learner, I want to see how long each activity takes, to pace my own learning.
 - [ ] Each activity comes with a time estimate.
-- [ ] The entire layer also has an estimate, that is the approximated sum of the activities (ex: "20-30 minutes", or "about one hour").
+- [ ] The entire level also has an estimate, that is the approximated sum of the activities (ex: "20-30 minutes", or "about one hour").
 
 ---
 
@@ -109,7 +108,7 @@ As a learner, I want a profile that every plan follows, so that I don't repeat m
 - [ ] `init` creates it through a short interview, and I can edit it by hand.
 
 **PE-2 · MVP: Start from the Technology Radar blip**
-As a learner, I want the first Layer 1 activity to be the topic's Thoughtworks Technology Radar blip, when one exists, so that every plan starts my way.
+As a learner, I want the first Level 1 activity to be the topic's Thoughtworks Technology Radar blip, when one exists, so that every plan starts my way.
 - [ ] The agent detects whether the topic has a blip and links to it.
 - [ ] If there's no blip, the plan says so in one line.
 

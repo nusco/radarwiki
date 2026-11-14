@@ -7,7 +7,7 @@
 
 ---
 
-## Layer 1 — What MCP Apps are (0:00–0:30, ~30 min)
+## Level 1 — What MCP Apps are (0:00–0:30, ~30 min)
 
 **Goal:** Explain how an MCP tool can show an interactive UI inside the chat, and why that's the first official MCP extension.
 
@@ -15,7 +15,7 @@
 - [ ] **Do:** In Claude (even on the free plan), add an interactive connector for a tool you already use, such as Figma, Canva, Slack or Asana, and ask it to show you something. Notice what's interactive and what's plain text. If you don't use any of those tools, read [the announcement](https://claude.com/blog/interactive-tools-in-claude) (Anthropic, Jan 2026, ~4 min) instead, which describes what each one shows.
 - [ ] Read: [MCP Apps – Bringing UI capabilities to MCP clients](https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/) (official MCP blog, Jan 2026) — the announcement of the extension, and where it came from.
 
-## Layer 2 — How they work (0:30–1:30, ~60 min)
+## Level 2 — How they work (0:30–1:30, ~60 min)
 
 **Goal:** Know the flow (the tool declares a UI, the host fetches and sandboxes it, the app calls tools back), and see it in a working app.
 

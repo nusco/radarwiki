@@ -7,14 +7,14 @@
 
 ---
 
-## Layer 1 — What it is (0:00–0:20, ~20 min)
+## Level 1 — What it is (0:00–0:20, ~20 min)
 
 **Goal:** Explain why coding agents benefit from working with symbols (functions, classes, references) instead of searching and replacing text.
 
 - [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/tools/serena) — short.
 - [ ] Skim: [Serena's tools](https://oraios.github.io/serena/01-about/035_tools.html) — the list the blip links to, which has since moved from the README to the docs. Look at `find_symbol`, `find_referencing_symbols` and `insert_after_symbol`, and compare them with the "read file" and "replace text" tools your agent uses by default.
 
-## Layer 2 — From a tool to a technique (0:20–0:45, ~25 min)
+## Level 2 — From a tool to a technique (0:20–0:45, ~25 min)
 
 **Goal:** Know where the idea went next, and how it compares with Claude Code's own language-server support.
 

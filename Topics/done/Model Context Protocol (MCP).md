@@ -9,7 +9,7 @@
 
 ---
 
-## Layer 1 — What MCP is (0:00–0:45, ~45 min)
+## Level 1 — What MCP is (0:00–0:45, ~45 min)
 
 **Goal:** Explain in two sentences what MCP is and what problem it solves.
 
@@ -17,7 +17,7 @@
 - [x] Read: [What is MCP?](https://modelcontextprotocol.io/docs/getting-started/intro) — the official one-page intro. It's short.
 - [x] Read: [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol) (Anthropic, Nov 2024) — the original announcement, with the reasons for creating MCP.
 
-## Layer 2 — How it works (0:45–2:30, ~105 min)
+## Level 2 — How it works (0:45–2:30, ~105 min)
 
 **Goal:** Know the parts (host, client, server), the three server primitives (tools, resources, prompts) and the two transports (stdio and Streamable HTTP).
 
@@ -25,7 +25,7 @@
 - [x] Read: [Server concepts](https://modelcontextprotocol.io/docs/learn/server-concepts) — when to use a tool, a resource, or a prompt, and who controls each one (the model, the app, or the user).
 - [x] Read: [The Model Context Protocol: Getting beneath the hype](https://www.thoughtworks.com/insights/blog/generative-ai/model-context-protocol-beneath-hype) (Thoughtworks, ~8 min) — linked from the blip. It weighs the benefits against the drawbacks.
 
-## Layer 3 — Build a server (2:30–4:45, ~135 min)
+## Level 3 — Build a server (2:30–4:45, ~135 min)
 
 **Goal:** Write a small MCP server, test it on its own, and use it from your agent.
 
@@ -34,7 +34,7 @@
 - [x] Skim: [FastMCP](https://gofastmcp.com/) — the framework the Radar mentions. The official Python SDK's high-level API grew out of it. [[FastMCP]] has its own plan.
 - [x] **Do:** Write a `radar-progress` MCP server with one tool. The tool takes a Radar edition (for example `2025-november`) and returns how many items in `Thoughtworks Radar/thoughtworks-radar-<edition>.md` are ticked and how many aren't. Call it with the Inspector first. Then add it to Claude Code with `claude mcp add` and ask, in plain words, "how far along am I with the November 2025 Radar?"
 
-## Layer 4 — Use it safely (4:45–6:00, ~75 min)
+## Level 4 — Use it safely (4:45–6:00, ~75 min)
 
 **Goal:** Understand why the Radar says to apply scrutiny, and know how to check the servers you install.
 
@@ -53,8 +53,8 @@
 
 ## If you have extra time
 
-- [x] [Introduction to Model Context Protocol (MCP)](https://www.pluralsight.com/courses/introduction-model-context-protocol-mcp) (Pluralsight, Tony Alicea, 43 min, updated Jan 2026): covers the same ground as Layers 1–2 as video. Watch it if the reading didn't quite stick.
-- [ ] [MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/) (DeepLearning.AI, free, 1h58): builds servers *and* a client app from scratch. A good next step after Layer 3.
+- [x] [Introduction to Model Context Protocol (MCP)](https://www.pluralsight.com/courses/introduction-model-context-protocol-mcp) (Pluralsight, Tony Alicea, 43 min, updated Jan 2026): covers the same ground as Levels 1–2 as video. Watch it if the reading didn't quite stick.
+- [ ] [MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/) (DeepLearning.AI, free, 1h58): builds servers *and* a client app from scratch. A good next step after Level 3.
 - [x] [The 2026-07-28 release candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) (official MCP blog): what changed in the latest spec, and why.
 - [x] [Why MCP's disregard for 40 years of RPC best practices will burn enterprises](https://julsimon.medium.com/why-mcps-disregard-for-40-years-of-rpc-best-practices-will-burn-enterprises-8ef85ce5bc9b) (Julien Simon): the critique the Radar quotes. It's on Medium, so it might be behind the paywall.
 

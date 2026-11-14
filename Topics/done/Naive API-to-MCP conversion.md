@@ -9,7 +9,7 @@
 
 ---
 
-## Layer 1 — The anti-pattern (0:00–0:30, ~30 min)
+## Level 1 — The anti-pattern (0:00–0:30, ~30 min)
 
 **Goal:** Explain why turning an existing API into MCP tools, one endpoint per tool, gives agents a bad interface.
 
@@ -17,7 +17,7 @@
 - [x] Skim: [The FastAPI-MCP README](https://github.com/tadata-org/fastapi_mcp) — one of the converters the blip names. Look at how little code it takes to turn a whole API into MCP tools. That's the temptation.
 - [x] Read: [Stop converting your REST APIs to MCP](https://www.jlowin.dev/blog/stop-converting-rest-apis-to-mcp) (Jeremiah Lowin, Jul 2025, ~4 min) — from the author of FastMCP, a framework that itself can do this conversion. Use it to get started quickly, then design curated tools.
 
-## Layer 2 — What a good agent tool looks like (0:30–1:30, ~60 min)
+## Level 2 — What a good agent tool looks like (0:30–1:30, ~60 min)
 
 **Goal:** Know the main rules for designing tools for agents, and apply them to your own server.
 
