@@ -1,15 +1,25 @@
 ---
-title: Learning Wiki — Product Backlog
+title: Professor Wiki — Product Backlog
 date: 2026-11-13
 status: draft
 ---
 
-# Learning Wiki — Product Backlog
+### Read before building
+
+- **gupsammy's `learn-anything` skill**: how it researches and vets sources, and its 80/20 plan shape. The original repo is unreachable. Find it [here](https://github.com/majiayu000/claude-skill-registry-data/blob/a21980a5b576646393ed574f158d7dd92fae4c3f/personal-development/learn-anything-gupsammy-claude-setup-2/SKILL.md).
+- **glebis's `learning-vault` skill**: setting up an Obsidian vault from inside a skill, including a bundled plugin, plus self-assessment.
+- **Karpathy's "LLM Wiki" pattern**: the same Obsidian + agent architecture. Its "lint" step is close to `refresh`.
+- **Metacademy**: prerequisite graph and time estimates (for LP-7).
+- **ChenChenyaqi's `learn-anything`**: one adapter per agent (compare `harnesses/`).
+- **setchy/thoughtworks-tech-radar-volumes**: blip history data (for PE-2 and PE-3).
+- **Wonderland (Obsidian plugin, archived)**: the closest existing click-a-missing-link experience.
+
+# Professor Wiki — Product Backlog
 
 ## Vision
 
-Learning Wiki is a personal wiki of learning plans for the methodical self-learner, stored as plain markdown on your own disk. You can use it to learn any topic you care about.
-Unlike AI-generated courses, the plans in Learning Wiki point to material created by people: well-regarded courses, popular blog posts, sources you trust.
+Professor Wiki is a personal wiki of learning plans for the methodical self-learner, stored as plain markdown on your own disk. You can use it to learn any topic you care about.
+Unlike AI-generated courses, the plans in Professor Wiki point to material created by people: well-regarded courses, popular blog posts, sources you trust.
 
 ### Principles
 
@@ -18,7 +28,7 @@ Unlike AI-generated courses, the plans in Learning Wiki point to material create
 3. **Skills only.** The whole system is one installable skill folder. An `init` workflow creates everything else.
 4. **Works with any agent.** Claude Code is the reference agent, but nothing in the system depends on Claude-only features.
 5. **Never lose progress.** Edits are surgical: changing one item never resets your checked boxes.
-6. **The system is mostly skill files.** This makes for easy setup: install the skills into an empty folder, then say "set up a learning wiki here."
+6. **The system is mostly skill files.** This makes for easy setup: install the skills into an empty folder, then say "set up a professor wiki here."
 
 
 ### My Backlog
@@ -142,12 +152,12 @@ As a learner, I want stale plans re-checked automatically (e.g. monthly), so tha
 
 **SP-1 · MVP: One umbrella skill**
 As a sharer, I want the whole system packaged as one skill folder, so that it installs and updates as a unit.
-- [ ] `learning-wiki/SKILL.md` routes requests to workflow files: `init`, `plan`, `tweak`, `refresh`, `fill-pending`.
+- [ ] `professor-wiki/SKILL.md` routes requests to workflow files: `init`, `plan`, `tweak`, `refresh`, `fill-pending`.
 - [ ] Shared material lives inside the same folder: `reference/` (page format, link rules, source quality), `scripts/` (link checker), `assets/` (templates), `harnesses/` (one file per agent).
 -  Structure: One skill folder, installed with `npx skills add`. Everything else is created by `init`, and there's nothing Claude-specific in it except one file in `harnesses/`.
 
     ```
-    learning-wiki/
+    professor-wiki/
     ├── SKILL.md            # entry point: routes to init / plan / tweak / refresh
     ├── init.md, plan.md, tweak.md, refresh.md
     ├── reference/          # page format, link rules, source quality
@@ -163,7 +173,7 @@ Notes:
     - Harness-specific knowledge still has to live somewhere. "Generate whatever reduces friction" assumes the agent knows its own harness's config format. Claude knows Claude Code's, but a local model in Pi may not know Pi's. Keep a small reference file per known harness (`harnesses/claude-code.md`, `harnesses/pi.md`) holding the config snippet and where it goes, and have `init` read only the one that applies. For harnesses you don't know, the fallback is: "tell the user which permissions to grant, and don't guess." Adding support for a new harness then means adding one file.
 
 **Scope the skill descriptions.**
-If someone installs the skills globally instead of per folder, a vague `plan` skill could trigger while they're writing code. Word every description to apply only "inside a learning wiki (a folder containing `_profile.md`).
+If someone installs the skills globally instead of per folder, a vague `plan` skill could trigger while they're writing code. Word every description to apply only "inside a professor wiki (a folder containing `_profile.md`).
 
 **SP-3 · MVP: `init` in an empty folder**
 As a learner, I want to run `init` in an empty folder and end up with a working wiki, so that setup takes minutes.
@@ -193,7 +203,7 @@ As a learner, I want `init` to prepare the folder for Obsidian, so that clicking
 - [ ] Ends with a checklist of manual steps: open the folder as a vault, enable community plugins, reload.
 
 **SP-7 · Next: Scoped skill descriptions**
-As a learner, I want the skill to activate only inside a learning wiki (a folder containing `preferences.md`), so that a global install doesn't trigger it while I'm coding.
+As a learner, I want the skill to activate only inside a professor wiki (a folder containing `preferences.md`), so that a global install doesn't trigger it while I'm coding.
 
 **SP-8 · Later: Optional Claude Code plugin**
 As a sharer, I want an optional Claude Code plugin around the skill, for hooks and automatic dependency installs, without making the core depend on it.
@@ -215,7 +225,7 @@ As an other-agent user, I want the skill to describe actions rather than one age
 - [ ] Skill frontmatter contains only `name` and `description`.
 
 **PO-3 · Next: Pi + Ollama**
-As a Pi user, I want Learning Wiki to work with my Ollama model, so that I can use local or open models.
+As a Pi user, I want Professor Wiki to work with my Ollama model, so that I can use local or open models.
 - [ ] `harnesses/pi.md` documents web tools (e.g. `ollama launch pi`, which installs Ollama's Pi web search package) and the context-window setting (64K or more).
 - [ ] Tested end to end with an Ollama cloud model.
 - [ ] The README sets expectations for small local models.
@@ -238,16 +248,6 @@ As a sharer, I want an optional `AGENTS.md` for rules that should apply even whe
 
 ## Prior art, risks and open questions
 
-### Read before building
-
-- **gupsammy's `learn-anything` skill**: how it researches and vets sources, and its 80/20 plan shape. The original repo is unreachable; there's a copy in `majiayu000/claude-skill-registry` and the full text on Skills.lc.
-- **glebis's `learning-vault` skill**: setting up an Obsidian vault from inside a skill, including a bundled plugin, plus self-assessment.
-- **Karpathy's "LLM Wiki" pattern**: the same Obsidian + agent architecture. Its "lint" step is close to `refresh`.
-- **Metacademy**: prerequisite graph and time estimates (for LP-7).
-- **ChenChenyaqi's `learn-anything`**: one adapter per agent (compare `harnesses/`).
-- **setchy/thoughtworks-tech-radar-volumes**: blip history data (for PE-2 and PE-3).
-- **Wonderland (Obsidian plugin, archived)**: the closest existing click-a-missing-link experience.
-
 ### Risks
 
 | Risk | Mitigation |
@@ -266,4 +266,4 @@ As a sharer, I want an optional `AGENTS.md` for rules that should apply even whe
 - How to detect a Radar blip: from the dataset, or by web search?
 - Defaults when the user preferences don't specify length or pace.
 - How far to take rituals beyond the Radar blip (PE-4).
-- Final name. Candidates: Redlink, Docent, Pointers. "Learning Wiki" for now.
+- ~~Final name.~~ Decided: "Professor Wiki".
