@@ -13,23 +13,23 @@
 
 **Goal:** Explain the difference between the "FastMCP" inside the official SDK and the standalone FastMCP framework.
 
-- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) (~1 min) — FastMCP 1.0 became part of the official SDK, and the standalone project kept going on its own.
-- [ ] **Do:** Put the server example at the top of the [FastMCP welcome page](https://gofastmcp.com/getting-started/welcome), which imports the standalone framework (`from fastmcp import FastMCP`), side by side with the first example in the [official SDK's README](https://github.com/modelcontextprotocol/python-sdk). The code is almost the same. The SDK's version is FastMCP 1.0, and the newest SDK calls it `MCPServer`.
-- [ ] Read: [FastMCP welcome page](https://gofastmcp.com/getting-started/welcome) (~3 min) — what the standalone framework adds on top of the SDK: clients, auth, apps, and deployment.
+- [ ] **~5 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) (~1 min) — FastMCP 1.0 became part of the official SDK, and the standalone project kept going on its own.
+- [ ] **~15 min** · **Do:** Put the server example at the top of the [FastMCP welcome page](https://gofastmcp.com/getting-started/welcome), which imports the standalone framework (`from fastmcp import FastMCP`), side by side with the first example in the [official SDK's README](https://github.com/modelcontextprotocol/python-sdk). The code is almost the same. The SDK's version is FastMCP 1.0, and the newest SDK calls it `MCPServer`.
+- [ ] **~10 min** · Read: [FastMCP welcome page](https://gofastmcp.com/getting-started/welcome) (~3 min) — what the standalone framework adds on top of the SDK: clients, auth, apps, and deployment.
 
 ## Level 2 — Go beyond the SDK (0:30–1:30, ~60 min)
 
 **Goal:** Use standalone FastMCP features that the SDK doesn't have, starting with its Python client.
 
-- [ ] Read: [Quickstart](https://gofastmcp.com/getting-started/quickstart) (~5 min) — servers, and the Python `Client` for calling them.
-- [ ] **Do:** Write a small server with standalone FastMCP (Claude Code can help). Give it one tool that takes a Radar edition (for example `2025-november`) and returns how many items in `Thoughtworks Radar/thoughtworks-radar-<edition>.md` are ticked and how many aren't, and one resource that lists the available editions. Then write a small Python script that uses FastMCP's `Client` to read the resource and call the tool, with no LLM involved.
+- [ ] **~15 min** · Read: [Quickstart](https://gofastmcp.com/getting-started/quickstart) (~5 min) — servers, and the Python `Client` for calling them.
+- [ ] **~45 min** · **Do:** Write a small server with standalone FastMCP (Claude Code can help). Give it one tool that takes a Radar edition (for example `2025-november`) and returns how many items in `Thoughtworks Radar/thoughtworks-radar-<edition>.md` are ticked and how many aren't, and one resource that lists the available editions. Then write a small Python script that uses FastMCP's `Client` to read the resource and call the tool, with no LLM involved.
 
 ---
 
 ## If you have extra time
 
-- [ ] Skim: [OpenAPI integration](https://gofastmcp.com/integrations/openapi) (~15 min in full) — note the tip recommending curated servers over converted ones (see [[Naive API-to-MCP conversion]]).
-- [ ] Skim the [FastMCP changelog](https://gofastmcp.com/updates) for the 3.0 release, to see where the framework is going.
+- [ ] **~15 min** · Skim: [OpenAPI integration](https://gofastmcp.com/integrations/openapi) (~15 min in full) — note the tip recommending curated servers over converted ones (see [[Naive API-to-MCP conversion]]).
+- [ ] **~10 min** · Skim the [FastMCP changelog](https://gofastmcp.com/updates) for the 3.0 release, to see where the framework is going.
 
 ---
 
@@ -51,4 +51,4 @@ Related Radar topics:
 
 ---
 
-- [ ] **Close:** [Review the blip](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.
+- [ ] **~10 min** · **Close:** [Review the blip](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.

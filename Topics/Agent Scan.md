@@ -13,22 +13,22 @@
 
 **Goal:** Know what Agent Scan checks today (MCP servers *and* skills), why an inventory of your agent's supply chain is worth having, and the blip's caveats.
 
-- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/tools/agent-scan) (~1 min) — it's useful for an inventory, but it sends metadata to Snyk, and you should check its false positives yourself before making it a mandatory gate.
-- [ ] **Do:** Run `uvx snyk-agent-scan@latest inspect`. It lists the MCP servers, tools and skills it finds in your setup, without analyzing them or sending anything for analysis. This is the inventory the blip talks about.
+- [ ] **~3 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/tools/agent-scan) (~1 min) — it's useful for an inventory, but it sends metadata to Snyk, and you should check its false positives yourself before making it a mandatory gate.
+- [ ] **~12 min** · **Do:** Run `uvx snyk-agent-scan@latest inspect`. It lists the MCP servers, tools and skills it finds in your setup, without analyzing them or sending anything for analysis. This is the inventory the blip talks about.
 
 ## Level 2 — How it compares with a manual check (0:15–0:45, ~30 min)
 
 **Goal:** See what an automated scan catches that a manual check doesn't.
 
-- [ ] Skim: [The Agent Scan README](https://github.com/snyk/agent-scan) (~14 min in full) — read only the section on what data it sends to Snyk, and the list of issues it reports.
-- [ ] **Do:** Pick three entries from the `inspect` inventory, including at least one MCP server and one skill if you have them. For each, mark which leg of the lethal trifecta it provides, if any: untrusted content, private data, or a way to send data out. Did the inventory list anything you'd forgotten you had? Then go through the issues the README says the scanner reports, and decide which ones a manual check like yours would catch and which ones only a scanner could catch.
+- [ ] **~10 min** · Skim: [The Agent Scan README](https://github.com/snyk/agent-scan) (~14 min in full) — read only the section on what data it sends to Snyk, and the list of issues it reports.
+- [ ] **~20 min** · **Do:** Pick three entries from the `inspect` inventory, including at least one MCP server and one skill if you have them. For each, mark which leg of the lethal trifecta it provides, if any: untrusted content, private data, or a way to send data out. Did the inventory list anything you'd forgotten you had? Then go through the issues the README says the scanner reports, and decide which ones a manual check like yours would catch and which ones only a scanner could catch.
 
 ---
 
 ## If you have extra time
 
-- [ ] Read: [Introducing MCP-Scan](https://invariantlabs.ai/blog/introducing-mcp-scan) (Luca Beurer-Kellner and Marc Fischer, Invariant Labs, Apr 2025, ~4 min) — the original launch post. It shows which attacks the tool was built to catch (tool poisoning, rug pulls, tool shadowing), and that sending data off for analysis was part of the design from the start.
-- [ ] **Do:** Run a full scan (`uvx snyk-agent-scan@latest`) and compare its findings with your manual check from Level 2. It needs a Snyk account and a `SNYK_TOKEN`, and the free tier can fail on the first try with "Daily usage limit reached for the public version of Agent-Scan". If you get that error, try again later or skip it.
+- [ ] **~12 min** · Read: [Introducing MCP-Scan](https://invariantlabs.ai/blog/introducing-mcp-scan) (Luca Beurer-Kellner and Marc Fischer, Invariant Labs, Apr 2025, ~4 min) — the original launch post. It shows which attacks the tool was built to catch (tool poisoning, rug pulls, tool shadowing), and that sending data off for analysis was part of the design from the start.
+- [ ] **~30 min** · **Do:** Run a full scan (`uvx snyk-agent-scan@latest`) and compare its findings with your manual check from Level 2. It needs a Snyk account and a `SNYK_TOKEN`, and the free tier can fail on the first try with "Daily usage limit reached for the public version of Agent-Scan". If you get that error, try again later or skip it.
 
 ---
 
@@ -52,4 +52,4 @@ Related Radar topics:
 
 ---
 
-- [ ] **Close:** [Review the blip](https://www.thoughtworks.com/radar/tools/agent-scan) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.
+- [ ] **~10 min** · **Close:** [Review the blip](https://www.thoughtworks.com/radar/tools/agent-scan) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.

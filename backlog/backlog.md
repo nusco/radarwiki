@@ -23,11 +23,6 @@ Unlike AI-generated courses, the plans in Learning Wiki point to material create
 
 ### My Backlog
 
-**Timed activities**
-As a learner, I want to see how long each activity takes, to pace my own learning.
-- [ ] Each activity comes with a time estimate.
-- [ ] The entire level also has an estimate, that is the approximated sum of the activities (ex: "20-30 minutes", or "about one hour").
-
 **Current state of the topic**
 NOTE: Change this to be more general, like an intro paragraph of generated text with the history of the topic (in the beginning of the plan, not the end), or something more generally useful. Otherwise, consider whether to make it a personal preference for TW Radar blips and move it to preferences.md.
 As a learner, I want one generated paragraph that recaps the current state of the topic, to gain historical perspective.
@@ -60,7 +55,7 @@ As a learner, I want to set my pace, from "speeds through content" to "goes down
 **LP-6 · Next: Small generated content, clearly separated**
 As a learner, I want short generated pieces (exercise briefs, one-line framing notes) where they help, so that the plan reads well, without being mistaken for real sources.
 - [ ] Generated text is short and visually set apart from linked resources.
-- [ ] Exercises state the goal, an estimated time and what "done" looks like.
+- [ ] Exercises state the goal and what "done" looks like. (Their time estimate is covered by "Timed activities".)
 
 **LP-7 · Later: Prerequisites**
 As a learner, I want a plan to name its prerequisite topics as links, so that I can fill gaps first. (This borrows Metacademy's prerequisite-graph idea.)

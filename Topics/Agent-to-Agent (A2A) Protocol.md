@@ -13,28 +13,28 @@
 
 **Goal:** Explain in two sentences what A2A does and why it complements MCP rather than competing with it.
 
-- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol) (~1 min) — Agent Cards, long-running tasks, and streaming. MCP connects an agent to its tools, and A2A connects agents to each other.
-- [ ] Read: [Announcing the Agent2Agent Protocol (A2A)](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/) (Google, Apr 2025, ~15 min) — the launch post. Start with its concrete example, "A real-world example: candidate sourcing", where a hiring agent hands work to other agents. Then read the rest for why Google made A2A, and its design principles.
+- [ ] **~5 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol) (~1 min) — Agent Cards, long-running tasks, and streaming. MCP connects an agent to its tools, and A2A connects agents to each other.
+- [ ] **~40 min** · Read: [Announcing the Agent2Agent Protocol (A2A)](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/) (Google, Apr 2025, ~15 min) — the launch post. Start with its concrete example, "A real-world example: candidate sourcing", where a hiring agent hands work to other agents. Then read the rest for why Google made A2A, and its design principles.
 
 ## Level 2 — How it works (0:45–1:15, ~30 min)
 
 **Goal:** Know the main concepts (Agent Card, Task, Message, Part, Artifact) and how agents interact.
 
-- [ ] Read: [Core concepts](https://a2a-protocol.org/latest/topics/key-concepts/) (~4 min) — the key page. The blip links to the [GitHub repository](https://github.com/a2aproject/A2A) instead, but the repository points to this documentation site, which is easier to read.
-- [ ] Read: [A2A and MCP](https://a2a-protocol.org/latest/topics/a2a-and-mcp/) (~5 min) — the official comparison, with a car repair shop example.
+- [ ] **~15 min** · Read: [Core concepts](https://a2a-protocol.org/latest/topics/key-concepts/) (~4 min) — the key page. The blip links to the [GitHub repository](https://github.com/a2aproject/A2A) instead, but the repository points to this documentation site, which is easier to read.
+- [ ] **~15 min** · Read: [A2A and MCP](https://a2a-protocol.org/latest/topics/a2a-and-mcp/) (~5 min) — the official comparison, with a car repair shop example.
 
 ## Level 3 — Design an agent card (1:15–2:00, ~45 min)
 
 **Goal:** Practice thinking about what an agent exposes to other agents, compared with what it keeps as its own tools.
 
-- [ ] Read: [Agent Discovery](https://a2a-protocol.org/latest/topics/agent-discovery/) (~4 min) — start with "The Role of the Agent Card", which lists what a card contains. Then read the three ways other agents find a card: a well-known URL, a curated registry, or direct configuration.
-- [ ] **Do:** Write the Agent Card (JSON) for an imagined "Radar study buddy" agent that other agents could ask to make or check learning plans. Choose its skills. Then sort its capabilities: which ones would be A2A skills that other agents see, and which would be internal MCP tools or Agent Skills, such as a script that counts your progress through a Radar edition, or the `learning-plan` skill?
+- [ ] **~15 min** · Read: [Agent Discovery](https://a2a-protocol.org/latest/topics/agent-discovery/) (~4 min) — start with "The Role of the Agent Card", which lists what a card contains. Then read the three ways other agents find a card: a well-known URL, a curated registry, or direct configuration.
+- [ ] **~30 min** · **Do:** Write the Agent Card (JSON) for an imagined "Radar study buddy" agent that other agents could ask to make or check learning plans. Choose its skills. Then sort its capabilities: which ones would be A2A skills that other agents see, and which would be internal MCP tools or Agent Skills, such as a script that counts your progress through a Radar edition, or the `learning-plan` skill?
 
 ---
 
 ## If you have extra time
 
-- [ ] [A2A: The Agent2Agent Protocol](https://www.deeplearning.ai/short-courses/a2a-the-agent2agent-protocol/) (DeepLearning.AI with Google Cloud and IBM, 1h27, partly paid) — build A2A servers and clients with code. More than a generalist needs, but it's the best next step if you want hands-on practice.
+- [ ] **~4.5 hours** · [A2A: The Agent2Agent Protocol](https://www.deeplearning.ai/short-courses/a2a-the-agent2agent-protocol/) (DeepLearning.AI with Google Cloud and IBM, 1h27, partly paid) — build A2A servers and clients with code. More than a generalist needs, but it's the best next step if you want hands-on practice.
 
 ---
 
@@ -57,4 +57,4 @@ Related Radar topics:
 
 ---
 
-- [ ] **Close:** [Review the blip](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.
+- [ ] **~10 min** · **Close:** [Review the blip](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.

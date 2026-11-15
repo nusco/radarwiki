@@ -11,7 +11,7 @@ These are my preferences for every learning plan in this wiki. The `learning-pla
 
 ## Pace
 
-- Design for slow, thoughtful learning. Assume that I'll re-read, pause/rewind videos, take notes, and pick up on new threads. Estimate every level at about **three times** the time needed to just read/watch the content. For example, two 30' videos take about 3 hours, a 10-minute article takes about 30 minutes, and hands-on exercises take at least three times what you'd expect.
+- Design for slow, thoughtful learning. Assume that I'll re-read, pause/rewind videos, take notes, and pick up on new threads. Estimate every activity at about **three times** the time needed to just read, watch or do the content. For example, two 30' videos take about 3 hours, a 10-minute article takes about 30 minutes, and hands-on exercises take at least three times what you'd expect.
 
 ## Trusted sources
 
@@ -46,4 +46,4 @@ These are my preferences for every learning plan in this wiki. The `learning-pla
 - **Start with the blip.** For a topic from a Radar blip, the blip is the first item of Level 1, before the concrete example.
 - **Current state of the topic.** After "If you have extra time", give a quick assessment of the current state of the topic. How did it evolve recently, across its history, and/or since the original resource I gave was published? Is there any timely need-to-know information, like the fact that the topic is now obsolete or irrelevant, or still evolving as we speak? Keep this short: one to three quick paragraphs.
 - **Related Radar topics.** At the end of the recommendation for future learning, list all related topics in the Thoughtworks Radar. Make them plain list items, not checkboxes: they're pointers, not tasks, so I never have to come back to a finished plan to check them off. Follow the rule on structural links: link a topic that has a plan to the plan, like `[[Agent Skills]] (Apr 2026)`, and link a topic without a plan to its blip.
-- **Close with the blip.** For a topic from a Radar blip, end the file with a horizontal rule and this to-do item, linking the blip: `- [ ] **Close:** [Review the blip](<blip URL>) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.`
+- **Close with the blip.** For a topic from a Radar blip, end the file with a horizontal rule and this to-do item, linking the blip: `- [ ] **~10 min** · **Close:** [Review the blip](<blip URL>) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.`

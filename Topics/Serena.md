@@ -11,26 +11,26 @@
 
 **Goal:** Explain why coding agents benefit from working with symbols (functions, classes, references) instead of searching and replacing text.
 
-- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/tools/serena) (~1 min).
-- [ ] Skim: [Serena's tools](https://oraios.github.io/serena/01-about/035_tools.html) (~10 min) — the list the blip links to, which has since moved from the README to the docs. Look at `find_symbol`, `find_referencing_symbols` and `insert_after_symbol`, and compare them with the "read file" and "replace text" tools your agent uses by default.
+- [ ] **~5 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/tools/serena) (~1 min).
+- [ ] **~15 min** · Skim: [Serena's tools](https://oraios.github.io/serena/01-about/035_tools.html) (~10 min) — the list the blip links to, which has since moved from the README to the docs. Look at `find_symbol`, `find_referencing_symbols` and `insert_after_symbol`, and compare them with the "read file" and "replace text" tools your agent uses by default.
 
 ## Level 2 — How it works (0:20–0:40, ~20 min)
 
 **Goal:** Know that Serena's tools run on language servers, the same Language Server Protocol (LSP) that gives your editor "go to definition", and try LSP-based code intelligence yourself.
 
-- [ ] Skim: [Code intelligence plugins](https://code.claude.com/docs/en/plugins/code-intelligence) (Claude Code docs, ~6 min) — Claude Code's built-in way to give the agent a language server. Serena does the same through MCP. Skim the page, then install the Python plugin and ask Claude Code to find every caller of a function in `Thoughtworks Radar/download-script/radar_to_todo.py`.
+- [ ] **~20 min** · Skim: [Code intelligence plugins](https://code.claude.com/docs/en/plugins/code-intelligence) (Claude Code docs, ~6 min) — Claude Code's built-in way to give the agent a language server. Serena does the same through MCP. Skim the page, then install the Python plugin and ask Claude Code to find every caller of a function in `Thoughtworks Radar/download-script/radar_to_todo.py`.
 
 ## Level 3 — From a tool to a technique (0:40–0:50, ~10 min)
 
 **Goal:** Know where the idea went next.
 
-- [ ] Read: [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Radar, Apr 2026, ~2 min) — a general technique, with Serena as one of several tools, next to the LSP support you just tried.
+- [ ] **~10 min** · Read: [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Radar, Apr 2026, ~2 min) — a general technique, with Serena as one of several tools, next to the LSP support you just tried.
 
 ---
 
 ## If you have extra time
 
-- [ ] If you work on a large codebase, install Serena (`uv tool install -p 3.13 serena-agent`, then `serena init`) and try a cross-file rename with it. Its advantage is small on small projects.
+- [ ] **~30 min** · If you work on a large codebase, install Serena (`uv tool install -p 3.13 serena-agent`, then `serena init`) and try a cross-file rename with it. Its advantage is small on small projects.
 
 ---
 
@@ -52,4 +52,4 @@ Related Radar topics:
 
 ---
 
-- [ ] **Close:** [Review the blip](https://www.thoughtworks.com/radar/tools/serena) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.
+- [ ] **~10 min** · **Close:** [Review the blip](https://www.thoughtworks.com/radar/tools/serena) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.

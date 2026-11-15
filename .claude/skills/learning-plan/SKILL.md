@@ -23,7 +23,10 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
   ```
   **Source** links where the topic came from. The rituals in the user preferences can replace it with other fields.
   **Created** is today's date in ISO format. Keep this date when you revise the plan later. Use it to tell how old the plan's time-sensitive parts are, such as "Current state of the topic", before you update them.
-- Size the content so that it fits the time budget at the pace in the user preferences, and still give the nominal length of each video or article next to its link.
+- Size the content so that it fits the time budget at the pace in the user preferences.
+- **Give every activity a time estimate.** Start each to-do item with how long the learner will spend on the activity, in bold and followed by a middle dot, like `- [ ] **~25 min** · Read: [Title](URL) (Author, Oct 2025, ~8 min) — ...`. This applies to every to-do item: resources, **Do** exercises, "If you have extra time" items, and the items that the rituals add. Work out each estimate from the time the content strictly needs (the length of the article or video, or the bare work in an exercise), adjusted for the pace in the user preferences. Use round numbers, like ~5 min, ~20 min, ~1 hour or ~1.5 hours.
+- **Give the nominal length too.** Next to the link of each video or article, give the length of the resource itself, when you know it, so the learner can tell the resource's length apart from the time the activity takes.
+- **Make the estimates add up.** Each level's estimate in its heading is roughly the sum of its activities' estimates, and **Time** is the sum of the levels. "If you have extra time" items and items outside the levels, such as the ones that the rituals add at the end, don't count toward **Time**.
 - When you choose or suggest a time budget, follow the rules on default length in the user preferences.
 - If the learner gave a time budget that seems inappropriate (too long for an obsolete topic, or too short for an important one) supersede it with your own estimate, but explicitly say so in one line so the learner can push back or ask you to change the estimate.
 - Plans must work well together. Before you write a plan, look at the existing plans in the `Topics` folder. If the new topic is related to one of them, link to it. Assume what the earlier plan covers instead of repeating it, avoid reusing its resources, and build the exercises on the earlier plan's exercises when that makes sense. Keep one plan per topic: two tools that your sources list separately get two plans.
@@ -57,7 +60,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
    - **Start Level 1 with a concrete example.** After any opening items that the rituals ask for, the first item should be short and concrete, such as a worked example, a demo, a quick look at a real artifact, or a tiny hands-on step. It can be a **Read**, a **Skim** or a **Do**. Its job is to give the learner a concrete anchor for the broader, more theoretical material that follows, so save the announcements, overviews and design rationale for after it.
 
 4. **For each level, give:**
-   - a heading with the time slot and estimated hours
+   - a heading with the time slot and estimated time, like `## Level 2 — How it works (0:45–1:15, ~30 min)`
    - a one-line **Goal** that says what the learner will be able to do
    - 1–4 **Read** / **Watch** resources, each with a link and a short reason it was picked
    - where practice fits the level, one hands-on **Do** exercise, with later exercises building on earlier ones
@@ -72,7 +75,6 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
    - Always point to existing human-written or human-curated content instead of writing your own explanations or walkthroughs.
    - Use what you read when you fetched the page to say exactly how the learner should use it. A page that explains concepts or walks through an example is a **Read**. A page that mostly describes a tool, such as an overview or a reference of options, is a **Skim**. Tell the learner to skim it and try the tool for a few minutes, and let a later **Do** exercise give them real practice with it. For example: "Skim: MCP Inspector — skim the page, then launch the Inspector and click around. You'll use it properly in the exercise below."
    - Use **Skim** only for tool pages like these. Never ask the learner to skim dense conceptual material, such as a list of vulnerabilities or a spec that assumes background knowledge: skimming it leaves them with nothing they understand. Either make it a **Read** that fits the level and the learner's background, or leave it out (and, if it matters, point to it in the recommendation for future learning).
-   - Give video lengths when you know them.
 6. **Add one to three short "If you have extra time" activities**: For example, an additional video or blog post that the user can study if they want to know more about the topic.
 7. **At the end, give your recommendation for future learning:**
    - Is the topic small and covered adequately by this plan?
