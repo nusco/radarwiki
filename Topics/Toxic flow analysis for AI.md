@@ -15,7 +15,7 @@
 
 - [ ] **~8 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) (~2 min) — read both versions. In April 2026 it extends from MCP servers to Agent Skills.
 - [ ] **~15 min** · Read: [Toxic flows in agentic systems](https://invariantlabs.ai/blog/toxic-flow-analysis) (Invariant Labs, Jul 2025, ~4 min) — the post that introduced the term, with the GitHub MCP exploit as its example.
-- [x] **~22 min** · Read: [The lethal trifecta for AI agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) (Simon Willison, Jun 2025, ~7 min) — private data plus untrusted content plus a way to send data out. Toxic flow analysis is the search for paths that combine all three.
+- [ ] **~22 min** · Read: [The lethal trifecta for AI agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) (Simon Willison, Jun 2025, ~7 min) — private data plus untrusted content plus a way to send data out. Toxic flow analysis is the search for paths that combine all three.
 
 ## Level 2 — Apply it to your setup (0:45–1:45, ~60 min)
 

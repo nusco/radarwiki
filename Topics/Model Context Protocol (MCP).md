@@ -13,26 +13,26 @@
 
 **Goal:** Explain in two sentences what MCP is and what problem it solves.
 
-- [x] **~5 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) — Thoughtworks' take: wide adoption, but gaps in architecture and security.
-- [x] **~15 min** · Read: [What is MCP?](https://modelcontextprotocol.io/docs/getting-started/intro) — the official one-page intro. It's short.
-- [x] **~25 min** · Read: [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol) (Anthropic, Nov 2024) — the original announcement, with the reasons for creating MCP.
+- [ ] **~5 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) — Thoughtworks' take: wide adoption, but gaps in architecture and security.
+- [ ] **~15 min** · Read: [What is MCP?](https://modelcontextprotocol.io/docs/getting-started/intro) — the official one-page intro. It's short.
+- [ ] **~25 min** · Read: [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol) (Anthropic, Nov 2024) — the original announcement, with the reasons for creating MCP.
 
 ## Level 2 — How it works (0:45–2:30, ~105 min)
 
 **Goal:** Know the parts (host, client, server), the three server primitives (tools, resources, prompts) and the two transports (stdio and Streamable HTTP).
 
-- [x] **~45 min** · Read: [Architecture overview](https://modelcontextprotocol.io/docs/learn/architecture) — the key page. Read the concepts carefully. You can skim the JSON-RPC examples.
-- [x] **~30 min** · Read: [Server concepts](https://modelcontextprotocol.io/docs/learn/server-concepts) — when to use a tool, a resource, or a prompt, and who controls each one (the model, the app, or the user).
-- [x] **~30 min** · Read: [The Model Context Protocol: Getting beneath the hype](https://www.thoughtworks.com/insights/blog/generative-ai/model-context-protocol-beneath-hype) (Thoughtworks, ~8 min) — linked from the blip. It weighs the benefits against the drawbacks.
+- [ ] **~45 min** · Read: [Architecture overview](https://modelcontextprotocol.io/docs/learn/architecture) — the key page. Read the concepts carefully. You can skim the JSON-RPC examples.
+- [ ] **~30 min** · Read: [Server concepts](https://modelcontextprotocol.io/docs/learn/server-concepts) — when to use a tool, a resource, or a prompt, and who controls each one (the model, the app, or the user).
+- [ ] **~30 min** · Read: [The Model Context Protocol: Getting beneath the hype](https://www.thoughtworks.com/insights/blog/generative-ai/model-context-protocol-beneath-hype) (Thoughtworks, ~8 min) — linked from the blip. It weighs the benefits against the drawbacks.
 
 ## Level 3 — Build a server (2:30–4:45, ~135 min)
 
 **Goal:** Write a small MCP server, test it on its own, and use it from your agent.
 
-- [x] **~45 min** · Read: [Build an MCP server](https://modelcontextprotocol.io/docs/develop/build-server) — the official quickstart. Follow the Python version.
-- [x] **~15 min** · Skim: [MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector) — a tool to call your server by hand, with no LLM in between. Skim the page, then launch the Inspector and click around for a few minutes. You'll use it properly in the exercise below.
-- [x] **~10 min** · Skim: [FastMCP](https://gofastmcp.com/) — the framework the Radar mentions. The official Python SDK's high-level API grew out of it. [[FastMCP]] has its own plan.
-- [x] **~65 min** · **Do:** Write a `radar-progress` MCP server with one tool. The tool takes a Radar edition (for example `2025-november`) and returns how many items in `Thoughtworks Radar/thoughtworks-radar-<edition>.md` are ticked and how many aren't. Call it with the Inspector first. Then add it to Claude Code with `claude mcp add` and ask, in plain words, "how far along am I with the November 2025 Radar?"
+- [ ] **~45 min** · Read: [Build an MCP server](https://modelcontextprotocol.io/docs/develop/build-server) — the official quickstart. Follow the Python version.
+- [ ] **~15 min** · Skim: [MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector) — a tool to call your server by hand, with no LLM in between. Skim the page, then launch the Inspector and click around for a few minutes. You'll use it properly in the exercise below.
+- [ ] **~10 min** · Skim: [FastMCP](https://gofastmcp.com/) — the framework the Radar mentions. The official Python SDK's high-level API grew out of it. [[FastMCP]] has its own plan.
+- [ ] **~65 min** · **Do:** Write a `radar-progress` MCP server with one tool. The tool takes a Radar edition (for example `2025-november`) and returns how many items in `Thoughtworks Radar/thoughtworks-radar-<edition>.md` are ticked and how many aren't. Call it with the Inspector first. Then add it to Claude Code with `claude mcp add` and ask, in plain words, "how far along am I with the November 2025 Radar?"
 
 ## Level 4 — Use it safely (4:45–6:00, ~75 min)
 
@@ -40,23 +40,23 @@
 
 ### How agents get attacked
 
-- [x] **~25 min** · Read: [Model Context Protocol has prompt injection security problems](https://simonwillison.net/2025/Apr/9/mcp-prompt-injection/) (Simon Willison) — tool poisoning, rug pulls and tool shadowing, explained clearly.
+- [ ] **~25 min** · Read: [Model Context Protocol has prompt injection security problems](https://simonwillison.net/2025/Apr/9/mcp-prompt-injection/) (Simon Willison) — tool poisoning, rug pulls and tool shadowing, explained clearly.
 - Why some *combinations* of servers are dangerous, the Radar's "toxic flows", is covered in [[Toxic flow analysis for AI]].
 
 ### Checking what you install
 
-- [x] **~15 min** · Read: [Introducing the MCP Registry](https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/) (official MCP blog, Sep 2025, ~4 min) — linked from the blip. The official catalog of public MCP servers, still in preview. Notice what it checks (who published a server) and what it leaves to others (whether the server is safe).
-- [x] **~35 min** · **Do:** Run `claude mcp list` to see which servers you have. Besides your new `radar-progress` server, the list may include connectors from your claude.ai account. Pick one server you didn't write, or `radar-progress` if it's the only one, and skim a handful of its tool descriptions in the `/mcp` menu as an attacker would: a description that tells the model what to *do*, rather than what the tool does, is a red flag. Then look up a well-known server in the registry (for example, `curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=filesystem"`). Is it there, and does its namespace match the people you think wrote it?
+- [ ] **~15 min** · Read: [Introducing the MCP Registry](https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/) (official MCP blog, Sep 2025, ~4 min) — linked from the blip. The official catalog of public MCP servers, still in preview. Notice what it checks (who published a server) and what it leaves to others (whether the server is safe).
+- [ ] **~35 min** · **Do:** Run `claude mcp list` to see which servers you have. Besides your new `radar-progress` server, the list may include connectors from your claude.ai account. Pick one server you didn't write, or `radar-progress` if it's the only one, and skim a handful of its tool descriptions in the `/mcp` menu as an attacker would: a description that tells the model what to *do*, rather than what the tool does, is a red flag. Then look up a well-known server in the registry (for example, `curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=filesystem"`). Is it there, and does its namespace match the people you think wrote it?
   - Mapping the trifecta across your whole setup is covered in [[Toxic flow analysis for AI]], and automated scanning in [[Agent Scan]].
 
 ---
 
 ## If you have extra time
 
-- [x] **~2 hours** · [Introduction to Model Context Protocol (MCP)](https://www.pluralsight.com/courses/introduction-model-context-protocol-mcp) (Pluralsight, Tony Alicea, 43 min, updated Jan 2026): covers the same ground as Levels 1–2 as video. Watch it if the reading didn't quite stick.
+- [ ] **~2 hours** · [Introduction to Model Context Protocol (MCP)](https://www.pluralsight.com/courses/introduction-model-context-protocol-mcp) (Pluralsight, Tony Alicea, 43 min, updated Jan 2026): covers the same ground as Levels 1–2 as video. Watch it if the reading didn't quite stick.
 - [ ] **~6 hours** · [MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/) (DeepLearning.AI, free, 1h58): builds servers *and* a client app from scratch. A good next step after Level 3.
-- [x] **~30 min** · [The 2026-07-28 release candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) (official MCP blog): what changed in the latest spec, and why.
-- [x] **~30 min** · [Why MCP's disregard for 40 years of RPC best practices will burn enterprises](https://julsimon.medium.com/why-mcps-disregard-for-40-years-of-rpc-best-practices-will-burn-enterprises-8ef85ce5bc9b) (Julien Simon): the critique the Radar quotes. It's on Medium, so it might be behind the paywall.
+- [ ] **~30 min** · [The 2026-07-28 release candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) (official MCP blog): what changed in the latest spec, and why.
+- [ ] **~30 min** · [Why MCP's disregard for 40 years of RPC best practices will burn enterprises](https://julsimon.medium.com/why-mcps-disregard-for-40-years-of-rpc-best-practices-will-burn-enterprises-8ef85ce5bc9b) (Julien Simon): the critique the Radar quotes. It's on Medium, so it might be behind the paywall.
 
 ---
 
@@ -92,4 +92,4 @@ These 6 hours are enough to understand the blip, judge MCP servers, and write si
 
 ---
 
-- [x] **~10 min** · **Close:** [Review the blip](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.
+- [ ] **~10 min** · **Close:** [Review the blip](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.

@@ -11,9 +11,9 @@
 
 **Goal:** Explain how context engineering differs from prompt engineering, and name its main techniques.
 
-- [x] **~10 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/context-engineering) (~3 min) — read both versions. In November 2025 it was *Assess*, with a list of practices. In April 2026 it's *Adopt*, and the Radar calls it a core architectural concern.
-- [x] **~10 min** · **Do:** Start Claude Code in this repository and run `/context`. Look at what fills the context before you've asked anything: the system prompt, `CLAUDE.md`, memory, skill descriptions, MCP tools. That's the context you'll learn to engineer.
-- [x] **~40 min** · Read: [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) (Anthropic, Sep 2025, ~15 min) — the reference article, cited by both versions of the blip. It covers system prompts, tools, just-in-time retrieval, compaction, notes and sub-agents.
+- [ ] **~10 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/context-engineering) (~3 min) — read both versions. In November 2025 it was *Assess*, with a list of practices. In April 2026 it's *Adopt*, and the Radar calls it a core architectural concern.
+- [ ] **~10 min** · **Do:** Start Claude Code in this repository and run `/context`. Look at what fills the context before you've asked anything: the system prompt, `CLAUDE.md`, memory, skill descriptions, MCP tools. That's the context you'll learn to engineer.
+- [ ] **~40 min** · Read: [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) (Anthropic, Sep 2025, ~15 min) — the reference article, cited by both versions of the blip. It covers system prompts, tools, just-in-time retrieval, compaction, notes and sub-agents.
 
 ## Level 2 — How contexts fail (1:00–2:00, ~60 min)
 
