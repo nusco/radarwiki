@@ -1,11 +1,13 @@
 
 ## Agents
 
+- [ ] [[Context engineering]]
+- [ ] [[LLM-powered autonomous agents](https://www.thoughtworks.com/radar/techniques/llm-powered-autonomous-agents)
 - [ ] [[Agent Skills]]
+- [ ] [[Context graph]]
 - [ ] [[FastMCP]]
 - [ ] [[MCP Apps]]
 - [ ] [[MCP by default]]
-- [ ] [[Context engineering]]
 - [ ] [[Context7]]
 - [ ] [[Serena]]
 - [ ] [[Toxic flow analysis for AI]]

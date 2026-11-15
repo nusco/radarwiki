@@ -5,7 +5,7 @@
 **Ring:** Trial
 **Created:** 2026-10-21
 
-*Assumption: you use one non-trivial skill yourself: `learning-plan`, the skill that writes these plans.*
+*Assumption: you use one non-trivial skill yourself: the one that writes these plans.*
 
 ---
 
