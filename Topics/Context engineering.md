@@ -11,7 +11,7 @@
 
 **Goal:** Explain how context engineering differs from prompt engineering, and name its main techniques.
 
-- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/context-engineering) — read both versions. In November 2025 it was *Assess*, with a list of practices. In April 2026 it's *Adopt*, and the Radar calls it a core architectural concern.
+- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/context-engineering) (~3 min) — read both versions. In November 2025 it was *Assess*, with a list of practices. In April 2026 it's *Adopt*, and the Radar calls it a core architectural concern.
 - [ ] **Do:** Start Claude Code in this repository and run `/context`. Look at what fills the context before you've asked anything: the system prompt, `CLAUDE.md`, memory, skill descriptions, MCP tools. That's the context you'll learn to engineer.
 - [ ] Read: [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) (Anthropic, Sep 2025, ~15 min) — the reference article, cited by both versions of the blip. It covers system prompts, tools, just-in-time retrieval, compaction, notes and sub-agents.
 
@@ -20,22 +20,23 @@
 **Goal:** Know why "just put everything in a big context window" doesn't work.
 
 - [ ] Read: [Context rot](https://www.trychroma.com/research/context-rot) (Chroma, Jul 2025) — the study behind the term. 18 models get less reliable as their input grows, even on simple tasks. Read the introduction and the conclusion (~10 min), and look at the charts in between. Skip the details of each experiment. The blip links to [an article about it](https://www.understandingai.org/p/context-rot-the-emerging-challenge) by Timothy B. Lee, but that one is partly paywalled.
-- [ ] Read: [How to fix your context](https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html) (Drew Breunig, Jun 2025) — four ways a context fails (poisoning, distraction, confusion, clash) and how to fix each one.
+- [ ] Read: [How to fix your context](https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html) (Drew Breunig, Jun 2025, ~10 min) — four ways a context fails (poisoning, distraction, confusion, clash) and how to fix each one.
 
 ## Level 3 — Engineer your own context (2:00–3:00, ~60 min)
 
 **Goal:** See what fills your own agent's context, and make it leaner.
 
-- [ ] Read: [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) and [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Radar, Apr 2026) — two short entries that turn the theory into a habit.
+- [ ] Read: [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) and [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Radar, Apr 2026, ~2 min each) — two short entries that turn the theory into a habit.
 - [ ] **Do:** Run `/context` again, and sort what you see into two groups: always loaded (system prompt, `CLAUDE.md`, memory, skill descriptions, MCP tool names) and loaded on demand (skill bodies, deferred tools, files). Make one change, then measure again. For example, disable an MCP server you don't use here, or move a rarely needed instruction into a skill.
 
 ---
 
 ## If you have extra time
 
-- [ ] Read: [Context engineering for agents](https://www.langchain.com/blog/context-engineering-for-agents) (LangChain, Jul 2025) — another way to group the same techniques: write, select, compress, isolate.
-- [ ] Read: [Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching) (Claude docs) — the "context setup" technique from the newer blip. Read only the opening and "How prompt caching works", to see why stable context at the start of the prompt is cheaper.
-- [ ] Read: [Subagents](https://code.claude.com/docs/en/sub-agents) (Claude Code docs) — cited by the older blip. Sub-agents keep a side task's context out of the main conversation.
+- [ ] Read: [Context engineering for agents](https://www.langchain.com/blog/context-engineering-for-agents) (LangChain, Jul 2025, ~12 min) — another way to group the same techniques: write, select, compress, isolate.
+- [ ] Read: [Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching) (Claude docs, ~5 min for these sections) — the "context setup" technique from the newer blip. Read only the opening and "How prompt caching works", to see why stable context at the start of the prompt is cheaper.
+- [ ] Read: [Subagents](https://code.claude.com/docs/en/sub-agents) (Claude Code docs, ~5 min for the opening) — cited by the older blip. Read only the opening, up to the built-in subagents: sub-agents keep a side task's context out of the main conversation.
+
 ---
 
 ## Current state of the topic
@@ -48,11 +49,9 @@ The term became popular in mid-2025, when people started saying that "prompt eng
 
 This is one of the most relevant topics for a generalist, and 3 hours gives a generalist a solid understanding. If you ever build an agent yourself, plan another ~3 hours on memory, compaction and sub-agents. That's better done as part of a hands-on agent-building plan.
 
-**Left out from the blip:** the two research papers cited by the newer version ([dynamic tool selection](https://arxiv.org/abs/2509.20386v1) and [active context compression](https://arxiv.org/abs/2601.07190)) are research-level, and the Anthropic article covers the same ideas for a generalist. The older version's prompt-engineering basics ([tips](https://www.promptingguide.ai/introduction/tips), [few-shot](https://www.promptingguide.ai/techniques/fewshot)) are assumed knowledge. Its [just-in-time tooling](https://jentic.com/blog/just-in-time-tooling) post is mostly a product pitch, and [[MCP by default]] covers the same idea as MCP tool search.
+**Left out from the blip:** the two research papers cited by the newer version ([dynamic tool selection](https://arxiv.org/abs/2509.20386v1) and [active context compression](https://arxiv.org/abs/2601.07190)) are research-level, and the Anthropic article covers the same ideas for a generalist. The older version's prompt-engineering basics ([tips](https://www.promptingguide.ai/introduction/tips), [few-shot](https://www.promptingguide.ai/techniques/fewshot)) are assumed knowledge. Its [just-in-time tooling](https://jentic.com/blog/just-in-time-tooling) post is mostly a product pitch, and [[MCP by default]] covers the same idea as MCP tool search. The newer version's [Writing effective tools for agents](https://www.anthropic.com/engineering/writing-tools-for-agents) is in [[Naive API-to-MCP conversion]], where it fits best.
 
----
-
-## Related topics
+Related Radar topics:
 
 - [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026)
 - [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Apr 2026)

@@ -1,4 +1,4 @@
-**Time:** ~2.5 hours
+**Time:** ~2 hours 45 minutes
 **Radar edition:** April 2026
 **Blip:** [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default)
 **Quadrant:** Techniques
@@ -9,22 +9,22 @@
 
 ---
 
-## Level 1 — The argument (0:00–1:00, ~60 min)
+## Level 1 — The argument (0:00–1:15, ~75 min)
 
 **Goal:** Explain in two sentences why the Radar warns against making MCP the default way to connect agents to systems.
 
-- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/mcp-by-default) — short. MCP is worth it for structured contracts, OAuth boundaries and governed multi-tenant access. Otherwise, a CLI with clear help text and JSON output is often better.
-- [ ] Read: [What if you don't need MCP at all?](https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/) (Mario Zechner, Nov 2025) — a concrete case. He replaces browser MCP servers with a few small scripts: about 225 tokens of instructions, instead of 13,000–18,000 tokens of tool definitions.
+- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/mcp-by-default) (~1 min) — MCP is worth it for structured contracts, OAuth boundaries and governed multi-tenant access. Otherwise, a CLI with clear help text and JSON output is often better.
+- [ ] Read: [What if you don't need MCP at all?](https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/) (Mario Zechner, Nov 2025, ~15 min) — a concrete case. He replaces browser MCP servers with a few small scripts: about 225 tokens of instructions, instead of 13,000–18,000 tokens of tool definitions.
 - [ ] Read: [The MCP abstraction tax](https://justin.poehnelt.com/posts/mcp-abstraction-tax/) (Justin Poehnelt, Mar 2026, ~6 min) — cited by the blip. Every layer between the agent and the API loses some detail.
 
-## Level 2 — The alternatives (1:00–1:45, ~45 min)
+## Level 2 — The alternatives (1:15–2:00, ~45 min)
 
 **Goal:** Know the two main alternatives: a CLI plus instructions, and code execution against MCP servers.
 
-- [ ] Read: [Claude Skills are awesome, maybe a bigger deal than MCP](https://simonwillison.net/2025/Oct/16/claude-skills/#skills-compared-to-mcp) (Simon Willison, Oct 2025) — also cited by the blip. Start at "Skills compared to MCP". [[Agent Skills]] has its own plan.
+- [ ] Read: [Claude Skills are awesome, maybe a bigger deal than MCP](https://simonwillison.net/2025/Oct/16/claude-skills/#skills-compared-to-mcp) (Simon Willison, Oct 2025, ~5 min from that section) — also cited by the blip. Start at "Skills compared to MCP". [[Agent Skills]] has its own plan.
 - [ ] Read: [Code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp) (Anthropic, Nov 2025, ~10 min) — a middle path: keep the servers, but let the agent write code that calls them, so intermediate data never enters the context.
 
-## Level 3 — Try it (1:45–2:30, ~45 min)
+## Level 3 — Try it (2:00–2:45, ~45 min)
 
 **Goal:** See the difference between the two approaches on your own task.
 
@@ -35,7 +35,7 @@
 ## If you have extra time
 
 - [ ] Read: [MCP is dead, long live MCP](https://chrlschn.dev/blog/2026/03/mcp-is-dead-long-live-mcp/) (Charles Chen, Mar 2026, ~15 min) — the other side of the argument, from a practitioner who defends MCP for teams. CLIs win for tools the model already knows, like `git` or `gh`, but remote MCP servers give an organization central auth, telemetry and shared prompts. It's combative in places, but it's the clearest case for the uses the blip still accepts.
-- [ ] Read: [Scale with MCP tool search](https://code.claude.com/docs/en/mcp#scale-with-mcp-tool-search) (Claude Code docs) — the strongest answer to "MCP wastes context".
+- [ ] Read: [Scale with MCP tool search](https://code.claude.com/docs/en/mcp#scale-with-mcp-tool-search) (Claude Code docs, ~3 min for this section) — the strongest answer to "MCP wastes context".
 
 ---
 
@@ -49,9 +49,7 @@ This entry reflects the backlash against MCP that started in late 2025, when sin
 
 Small, and covered here. It's a design judgment, not a technology. The ideas continue in [[Agent Skills]] and [[Context engineering]].
 
----
-
-## Related topics
+Related Radar topics:
 
 - [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
 - [[Naive API-to-MCP conversion]] (Nov 2025)

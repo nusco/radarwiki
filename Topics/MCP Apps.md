@@ -7,13 +7,13 @@
 
 ---
 
-## Level 1 — What MCP Apps are (0:00–0:30, ~30 min)
+## Level 1 — What MCP Apps are, and why (0:00–0:30, ~30 min)
 
-**Goal:** Explain how an MCP tool can show an interactive UI inside the chat, and why that's the first official MCP extension.
+**Goal:** Explain how an MCP tool can show an interactive UI inside the chat, and why that was worth the first official MCP extension.
 
-- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/platforms/mcp-apps) — short. `ui://` resources, sandboxed iframes, and a text fallback. It also asks whether the extra complexity is worth it.
+- [ ] Read: [The Radar blip](https://www.thoughtworks.com/radar/platforms/mcp-apps) (~1 min) — `ui://` resources, sandboxed iframes, and a text fallback. It also asks whether the extra complexity is worth it.
 - [ ] **Do:** In Claude (even on the free plan), add an interactive connector for a tool you already use, such as Figma, Canva, Slack or Asana, and ask it to show you something. Notice what's interactive and what's plain text. If you don't use any of those tools, read [the announcement](https://claude.com/blog/interactive-tools-in-claude) (Anthropic, Jan 2026, ~4 min) instead, which describes what each one shows.
-- [ ] Read: [MCP Apps – Bringing UI capabilities to MCP clients](https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/) (official MCP blog, Jan 2026) — the announcement of the extension, and where it came from.
+- [ ] Read: [MCP Apps – Bringing UI capabilities to MCP clients](https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/) (official MCP blog, Jan 2026, ~8 min) — the announcement of the extension, and where it came from.
 
 ## Level 2 — How they work (0:30–1:30, ~60 min)
 
@@ -26,8 +26,8 @@
 
 ## If you have extra time
 
-- [ ] Read: [MCP Apps overview](https://modelcontextprotocol.io/extensions/apps/overview) (official docs) — the page the blip links to. It's the full reference, and longer than you need if the WorkOS article was clear.
-- [ ] Skim the [build guide](https://modelcontextprotocol.io/extensions/apps/build) to see what adding a UI to your own server would take.
+- [ ] Read: [MCP Apps overview](https://modelcontextprotocol.io/extensions/apps/overview) (official docs, ~6 min) — the page the blip links to. It's the full reference, and longer than you need if the WorkOS article was clear.
+- [ ] Skim the [build guide](https://modelcontextprotocol.io/extensions/apps/build) (~10 min) to see what adding a UI to your own server would take.
 
 ---
 
@@ -41,9 +41,7 @@ MCP Apps grew out of the community project MCP-UI and OpenAI's similar work for 
 
 This plan covers it for a generalist. If you build agent products with a UI, also look at AG-UI, the competing approach that the blip compares it with.
 
----
-
-## Related topics
+Related Radar topics:
 
 - [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
 - [AG-UI Protocol](https://www.thoughtworks.com/radar/platforms/ag-ui-protocol) (Nov 2025, Apr 2026)
