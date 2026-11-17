@@ -33,6 +33,17 @@ Unlike AI-generated courses, the plans in Professor Wiki point to material creat
 
 ### My Backlog
 
+**Start from a Technology Radar blip**
+As a learner, I want the first Level 1 activity to be the topic's Thoughtworks Technology Radar blip, when one exists, so that every plan starts my way.
+- [ ] The agent detects whether the topic has a blip and links to it.
+- [ ] If there's no blip, the plan says so in one line.
+- [ ] This is preferences-specific.
+
+**Produce small activities**
+As a learner, I want short generated pieces (exercise briefs, one-line framing notes) where they help, so that the plan reads well, without being mistaken for real sources.
+- [ ] Generated text is short and visually set apart from linked resources.
+- [ ] Exercises state the goal and what "done" looks like. (Their time estimate is covered by "Timed activities".)
+
 ---
 
 From here on: machine-generated backlog to fish from later.
@@ -49,16 +60,6 @@ As a learner, I want every link checked before it lands on the page, so that I n
 As a learner, I want to choose how long a plan takes (from 30 minutes to a weekend), so that it fits my time.
 - [ ] If neither my request nor my user preferences settle the length, the agent asks with a few choices (e.g. 1 hour / half a day / weekend).
 - [ ] The length is recorded in the page's frontmatter.
-
-**LP-5 · MVP: Choose the pace**
-As a learner, I want to set my pace, from "speeds through content" to "goes down every rabbit hole," so that the amount of material suits me.
-- [ ] Pace changes how many items there are, how deep they go, and whether optional extras appear.
-- [ ] Optional extras are visibly marked as optional.
-
-**LP-6 · Next: Small generated content, clearly separated**
-As a learner, I want short generated pieces (exercise briefs, one-line framing notes) where they help, so that the plan reads well, without being mistaken for real sources.
-- [ ] Generated text is short and visually set apart from linked resources.
-- [ ] Exercises state the goal and what "done" looks like. (Their time estimate is covered by "Timed activities".)
 
 **LP-7 · Later: Prerequisites**
 As a learner, I want a plan to name its prerequisite topics as links, so that I can fill gaps first. (This borrows Metacademy's prerequisite-graph idea.)
@@ -101,14 +102,6 @@ As a learner, I want clicking a missing page to start generation directly, with 
 **User Preferences Generation**
 As a learner, I want to generate my user preferences through an interview
 - [ ] `init` creates it through a short interview, and I can edit it by hand.
-
-**PE-2 · MVP: Start from the Technology Radar blip**
-As a learner, I want the first Level 1 activity to be the topic's Thoughtworks Technology Radar blip, when one exists, so that every plan starts my way.
-- [ ] The agent detects whether the topic has a blip and links to it.
-- [ ] If there's no blip, the plan says so in one line.
-
-**PE-4 · Next: Rituals in general**
-As a learner, I want to define my own rituals ("always start with X," "always end with a build exercise"), so that the blip habit is one example of a general feature rather than hard-coded.
 
 ---
 
@@ -258,5 +251,4 @@ As a sharer, I want an optional `AGENTS.md` for rules that should apply even whe
 - What happens to finished plans: archive them, or leave them in place with `status: done`?
 - How to detect a Radar blip: from the dataset, or by web search?
 - Defaults when the user preferences don't specify length or pace.
-- How far to take rituals beyond the Radar blip (PE-4).
 - ~~Final name.~~ Decided: "Professor Wiki".
