@@ -9,6 +9,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+Google launched A2A in April 2025 and gave it to the Linux Foundation two months later. IBM's competing ACP protocol merged into it in August 2025. Version 1.0, the first stable release, came out in early 2026. By April 2026, the Linux Foundation counted more than 150 supporting organizations and integrations in the big cloud platforms. Still, A2A gets much less attention than MCP. It isn't in the April 2026 Radar, and many multi-agent systems still connect their agents inside a single framework instead of over a protocol. A2A matters most where agents from different vendors or teams need to work together.
+
+---
+
 ## Level 1 — What A2A is for (0:00–0:45, ~45 min)
 
 **Goal:** Explain in two sentences what A2A does and why it complements MCP rather than competing with it.
@@ -35,12 +41,6 @@
 ## If you have extra time
 
 - [ ] **~4.5 hours** · [A2A: The Agent2Agent Protocol](https://www.deeplearning.ai/short-courses/a2a-the-agent2agent-protocol/) (DeepLearning.AI with Google Cloud and IBM, 1h27, partly paid) — build A2A servers and clients with code. More than a generalist needs, but it's the best next step if you want hands-on practice.
-
----
-
-## Current state of the topic
-
-Google launched A2A in April 2025 and gave it to the Linux Foundation two months later. IBM's competing ACP protocol merged into it in August 2025. Version 1.0, the first stable release, came out in early 2026. By April 2026, the Linux Foundation counted more than 150 supporting organizations and integrations in the big cloud platforms. Still, A2A gets much less attention than MCP. It isn't in the April 2026 Radar, and many multi-agent systems still connect their agents inside a single framework instead of over a protocol. A2A matters most where agents from different vendors or teams need to work together.
 
 ---
 

@@ -22,7 +22,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
   **Created:** 2026-10-21
   ```
   **Source** links where the topic came from. The rituals in the user preferences can replace it with other fields.
-  **Created** is today's date in ISO format. Keep this date when you revise the plan later. Use it to tell how old the plan's time-sensitive parts are, such as "Current state of the topic", before you update them.
+  **Created** is today's date in ISO format. Keep this date when you revise the plan later. Use it to tell how old the plan's time-sensitive parts are before you update them, unless a part shows its own date.
 - Size the content so that it fits the time budget at the pace in the user preferences.
 - **Give every activity a time estimate.** Start each to-do item with how long the learner will spend on the activity, in bold and followed by a middle dot, like `- [ ] **~25 min** · Read: [Title](URL) (Author, Oct 2025, ~8 min) — ...`. This applies to every to-do item: resources, **Do** exercises, "If you have extra time" items, and the items that the rituals add. Work out each estimate from the time the content strictly needs (the length of the article or video, or the bare work in an exercise), adjusted for the pace in the user preferences. Use round numbers, like ~5 min, ~20 min, ~1 hour or ~1.5 hours.
 - **Give the nominal length too.** Next to the link of each video or article, give the length of the resource itself, when you know it, so the learner can tell the resource's length apart from the time the activity takes.

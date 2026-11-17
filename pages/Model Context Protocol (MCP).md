@@ -9,6 +9,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+Anthropic released MCP in November 2024. By November 2025, OpenAI, Google, Microsoft, JetBrains and Apple had adopted it, and in December 2025 Anthropic donated it to the Linux Foundation's Agentic AI Foundation, so it's now a vendor-neutral standard. The protocol is still changing fast: the newest spec (`2026-07-28`) makes it stateless, with no more session handshake, and adds official extensions such as [[MCP Apps]] and *Tasks* (long-running work). Some tutorials from 2025 describe the older session-based protocol, but the official docs in this plan describe the current one. MCP has also lost some of its novelty. The April 2026 Radar doesn't list MCP itself any more, and puts [[MCP by default]] in *Caution*: a good CLI or an Agent Skill is often simpler and works better. So learn MCP as one option among several, not as the default.
+
+---
+
 ## Level 1 — What MCP is (0:00–0:45, ~45 min)
 
 **Goal:** Explain in two sentences what MCP is and what problem it solves.
@@ -57,16 +63,6 @@
 - [ ] **~6 hours** · [MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/) (DeepLearning.AI, free, 1h58): builds servers *and* a client app from scratch. A good next step after Level 3.
 - [ ] **~30 min** · [The 2026-07-28 release candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) (official MCP blog): what changed in the latest spec, and why.
 - [ ] **~30 min** · [Why MCP's disregard for 40 years of RPC best practices will burn enterprises](https://julsimon.medium.com/why-mcps-disregard-for-40-years-of-rpc-best-practices-will-burn-enterprises-8ef85ce5bc9b) (Julien Simon): the critique the Radar quotes. It's on Medium, so it might be behind the paywall.
-
----
-
-## Current state of MCP
-
-Anthropic released MCP in November 2024. By the time of this blip (November 2025), OpenAI, Google, Microsoft, JetBrains and Apple had adopted it, and it had a preview registry for finding servers. That registry is still labeled "preview" today, even though it lists thousands of servers. In December 2025, Anthropic donated MCP to the Linux Foundation's Agentic AI Foundation, so it's now a vendor-neutral standard.
-
-The protocol is still changing fast. The newest spec (`2026-07-28`) is the biggest revision so far. It makes the protocol stateless: there's no more session handshake, so remote servers can run behind ordinary load balancers. It also adds official extensions such as *MCP Apps* (interactive UIs inside the chat) and *Tasks* (long-running work), and it brings authorization closer to standard OAuth. Some tutorials from 2025 describe the older session-based protocol. The official docs linked above describe the current one.
-
-MCP has also lost some of its novelty. The April 2026 Radar doesn't list MCP itself any more. Instead, it puts **MCP by default** in *Caution*: it says MCP is often an unnecessary layer, and that a good CLI or an Agent Skill is often simpler and works better. So learn MCP, but treat it as one option among several, not as the default.
 
 ---
 

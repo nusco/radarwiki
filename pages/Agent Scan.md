@@ -9,6 +9,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+MCP-Scan started at Invariant Labs. It became Agent Scan after Snyk acquired the company, and it now covers skills and agent configurations, not just MCP servers. It's one of the few tools for inventorying an agent's supply chain, but it's still in *Assess*: the analysis runs in Snyk's cloud, and its signal quality isn't proven yet.
+
+---
+
 ## Level 1 — What it finds, and why (0:00–0:15, ~15 min)
 
 **Goal:** Know what Agent Scan checks today (MCP servers *and* skills), why an inventory of your agent's supply chain is worth having, and the blip's caveats.
@@ -29,12 +35,6 @@
 
 - [ ] **~12 min** · Read: [Introducing MCP-Scan](https://invariantlabs.ai/blog/introducing-mcp-scan) (Luca Beurer-Kellner and Marc Fischer, Invariant Labs, Apr 2025, ~4 min) — the original launch post. It shows which attacks the tool was built to catch (tool poisoning, rug pulls, tool shadowing), and that sending data off for analysis was part of the design from the start.
 - [ ] **~30 min** · **Do:** Run a full scan (`uvx snyk-agent-scan@latest`) and compare its findings with your manual check from Level 2. It needs a Snyk account and a `SNYK_TOKEN`, and the free tier can fail on the first try with "Daily usage limit reached for the public version of Agent-Scan". If you get that error, try again later or skip it.
-
----
-
-## Current state of the topic
-
-MCP-Scan started at Invariant Labs. It became Agent Scan after Snyk acquired the company, and it now covers skills and agent configurations, not just MCP servers. It's one of the few tools for inventorying an agent's supply chain, but it's still in *Assess*: the analysis runs in Snyk's cloud, and its signal quality isn't proven yet.
 
 ---
 

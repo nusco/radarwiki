@@ -7,6 +7,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+Context7 is one of the most popular MCP servers for coding agents. It isn't in the April 2026 Radar. It now offers a CLI-plus-skill mode next to its MCP server, which is a good example of the shift described in [[MCP by default]]. One thing to watch for: the docs it brings in are third-party content entering your agent's context, so think of it as an untrusted input in [[Toxic flow analysis for AI]].
+
+---
+
 ## Level 1 — What it is, and why (0:00–0:15, ~15 min)
 
 **Goal:** Explain how Context7 reduces hallucinated code: it fetches current, version-specific library docs into the context when the agent needs them.
@@ -26,12 +32,6 @@
 ## If you have extra time
 
 - [ ] **~20 min** · Read: [Introducing Context7](https://upstash.com/blog/context7-llmtxt-cursor) (Enes Akar, Upstash, Mar 2025, 6 min) — the launch post. It explains how Context7 parses and ranks docs into snippets, from before it had an MCP server.
-
----
-
-## Current state of the topic
-
-Context7 is one of the most popular MCP servers for coding agents. It isn't in the April 2026 Radar. It now offers a CLI-plus-skill mode next to its MCP server, which is a good example of the shift described in [[MCP by default]]. One thing to watch for: the docs it brings in are third-party content entering your agent's context, so think of it as an untrusted input in [[Toxic flow analysis for AI]].
 
 ---
 

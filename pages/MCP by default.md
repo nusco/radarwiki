@@ -9,6 +9,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+This entry reflects the backlash against MCP that started in late 2025, when single servers (GitHub's is the usual example) were shown to use up much of the context before the agent did anything. Since then, the *context cost* argument has weakened: Claude Code now uses tool search by default, so it loads MCP tool definitions only when they're needed. The *abstraction tax* argument still holds. The consensus in 2026: choose for each integration, and focus on tool design more than on the protocol. Use MCP for remote access, OAuth and governance. Use a CLI or a skill for local work by a single developer. [[Context7]] shows the trend: it now offers a CLI-plus-skill mode alongside its MCP server.
+
+---
+
 ## Level 1 — The argument (0:00–1:15, ~75 min)
 
 **Goal:** Explain in two sentences why the Radar warns against making MCP the default way to connect agents to systems.
@@ -36,12 +42,6 @@
 
 - [ ] **~45 min** · Read: [MCP is dead, long live MCP](https://chrlschn.dev/blog/2026/03/mcp-is-dead-long-live-mcp/) (Charles Chen, Mar 2026, ~15 min) — the other side of the argument, from a practitioner who defends MCP for teams. CLIs win for tools the model already knows, like `git` or `gh`, but remote MCP servers give an organization central auth, telemetry and shared prompts. It's combative in places, but it's the clearest case for the uses the blip still accepts.
 - [ ] **~10 min** · Read: [Scale with MCP tool search](https://code.claude.com/docs/en/mcp#scale-with-mcp-tool-search) (Claude Code docs, ~3 min for this section) — the strongest answer to "MCP wastes context".
-
----
-
-## Current state of the topic
-
-This entry reflects the backlash against MCP that started in late 2025, when single servers (GitHub's is the usual example) were shown to use up much of the context before the agent did anything. Since then, the *context cost* argument has weakened: Claude Code now uses tool search by default, so it loads MCP tool definitions only when they're needed. The *abstraction tax* argument still holds. The consensus in 2026: choose for each integration, and focus on tool design more than on the protocol. Use MCP for remote access, OAuth and governance. Use a CLI or a skill for local work by a single developer. [[Context7]] shows the trend: it now offers a CLI-plus-skill mode alongside its MCP server.
 
 ---
 

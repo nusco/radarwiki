@@ -7,6 +7,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+MCP Apps grew out of the community project MCP-UI and OpenAI's similar work for ChatGPT apps. It became the first official MCP extension in January 2026, with Anthropic and OpenAI developing it together. It's already supported by Claude, ChatGPT, VS Code Copilot, Goose and others, and FastMCP supports it too. It's still young: the Radar puts it in *Assess*, and host support differs from client to client. It's the clearest example of something only MCP can do, which makes it a useful counterpoint to [[MCP by default]].
+
+---
+
 ## Level 1 — What MCP Apps are, and why (0:00–0:30, ~30 min)
 
 **Goal:** Explain how an MCP tool can show an interactive UI inside the chat, and why that was worth the first official MCP extension.
@@ -28,12 +34,6 @@
 
 - [ ] **~20 min** · Read: [MCP Apps overview](https://modelcontextprotocol.io/extensions/apps/overview) (official docs, ~6 min) — the page the blip links to. It's the full reference, and longer than you need if the WorkOS article was clear.
 - [ ] **~15 min** · Skim the [build guide](https://modelcontextprotocol.io/extensions/apps/build) (~10 min) to see what adding a UI to your own server would take.
-
----
-
-## Current state of the topic
-
-MCP Apps grew out of the community project MCP-UI and OpenAI's similar work for ChatGPT apps. It became the first official MCP extension in January 2026, with Anthropic and OpenAI developing it together. It's already supported by Claude, ChatGPT, VS Code Copilot, Goose and others, and FastMCP supports it too. It's still young: the Radar puts it in *Assess*, and host support differs from client to client. It's the clearest example of something only MCP can do, which makes it a useful counterpoint to [[MCP by default]].
 
 ---
 

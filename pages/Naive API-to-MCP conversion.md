@@ -9,6 +9,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+This entry appeared once, as *Hold*, in November 2025. It isn't in the April 2026 Radar, but its ideas live on in [[MCP by default]], which takes them further: sometimes the best MCP server is no MCP server at all. Converters are still common. FastMCP 3 still includes an OpenAPI provider, but its docs say LLMs work better with curated servers than with converted ones.
+
+---
+
 ## Level 1 — The anti-pattern (0:00–0:30, ~30 min)
 
 **Goal:** Explain why turning an existing API into MCP tools, one endpoint per tool, gives agents a bad interface.
@@ -29,12 +35,6 @@
 ## If you have extra time
 
 - [ ] **~10 min** · Skim the README of [MCP Link](https://github.com/automation-ai-labs/mcp-link), the other converter the blip names. It turns any OpenAPI spec into an MCP server, even as a hosted service.
-
----
-
-## Current state of the topic
-
-This entry appeared once, as *Hold*, in November 2025. It isn't in the April 2026 Radar, but its ideas live on in [[MCP by default]], which takes them further: sometimes the best MCP server is no MCP server at all. Converters are still common. FastMCP 3 still includes an OpenAPI provider, but its docs say LLMs work better with curated servers than with converted ones.
 
 ---
 

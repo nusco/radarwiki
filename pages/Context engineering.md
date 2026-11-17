@@ -7,6 +7,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+The term became popular in mid-2025, when people started saying that "prompt engineering" no longer described the work of building agents. It moved from *Assess* to *Adopt* within one Radar cycle, which is unusually fast. Many recent tools apply its ideas: [[Agent Skills]] (progressive disclosure), tool search for MCP (see [[MCP by default]]), [[Context7]] (fresh docs on demand), and [[Serena]] (precise code retrieval instead of reading whole files). Larger context windows haven't made it less important. Context rot means that what you put in the context still matters more than how much fits.
+
+---
+
 ## Level 1 — What it is (0:00–1:00, ~60 min)
 
 **Goal:** Explain how context engineering differs from prompt engineering, and name its main techniques.
@@ -36,12 +42,6 @@
 - [ ] **~35 min** · Read: [Context engineering for agents](https://www.langchain.com/blog/context-engineering-for-agents) (LangChain, Jul 2025, ~12 min) — another way to group the same techniques: write, select, compress, isolate.
 - [ ] **~15 min** · Read: [Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching) (Claude docs, ~5 min for these sections) — the "context setup" technique from the newer blip. Read only the opening and "How prompt caching works", to see why stable context at the start of the prompt is cheaper.
 - [ ] **~15 min** · Read: [Subagents](https://code.claude.com/docs/en/sub-agents) (Claude Code docs, ~5 min for the opening) — cited by the older blip. Read only the opening, up to the built-in subagents: sub-agents keep a side task's context out of the main conversation.
-
----
-
-## Current state of the topic
-
-The term became popular in mid-2025, when people started saying that "prompt engineering" no longer described the work of building agents. It moved from *Assess* to *Adopt* within one Radar cycle, which is unusually fast. Many recent tools apply its ideas: [[Agent Skills]] (progressive disclosure), tool search for MCP (see [[MCP by default]]), [[Context7]] (fresh docs on demand), and [[Serena]] (precise code retrieval instead of reading whole files). Larger context windows haven't made it less important. Context rot means that what you put in the context still matters more than how much fits.
 
 ---
 

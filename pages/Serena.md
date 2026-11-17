@@ -7,6 +7,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+Serena isn't in the April 2026 Radar on its own. Instead, the Radar now has a broader technique, *Code intelligence as agentic tooling*, that covers Serena alongside LSP integrations in Claude Code and OpenCode, the JetBrains MCP server, and OpenRewrite. Serena itself has reached version 2, with a new interface. For a generalist, the lesson is the technique more than the tool: deterministic tools that understand code save tokens and avoid broken edits. That's [[Context engineering]] applied to code.
+
+---
+
 ## Level 1 — What it is, and why (0:00–0:20, ~20 min)
 
 **Goal:** Explain why coding agents benefit from working with symbols (functions, classes, references) instead of searching and replacing text.
@@ -31,12 +37,6 @@
 ## If you have extra time
 
 - [ ] **~30 min** · If you work on a large codebase, install Serena (`uv tool install -p 3.13 serena-agent`, then `serena init`) and try a cross-file rename with it. Its advantage is small on small projects.
-
----
-
-## Current state of the topic
-
-Serena isn't in the April 2026 Radar on its own. Instead, the Radar now has a broader technique, *Code intelligence as agentic tooling*, that covers Serena alongside LSP integrations in Claude Code and OpenCode, the JetBrains MCP server, and OpenRewrite. Serena itself has reached version 2, with a new interface. For a generalist, the lesson is the technique more than the tool: deterministic tools that understand code save tokens and avoid broken edits. That's [[Context engineering]] applied to code.
 
 ---
 

@@ -33,13 +33,6 @@ Unlike AI-generated courses, the plans in Professor Wiki point to material creat
 
 ### My Backlog
 
-**Show current state of the topic**
-As Thoughtworks Radar learner, I want one generated paragraph that recaps the current state of the topic, to gain historical perspective.
-- [ ] Comes before the first level of the learning plan, so that I know what I'm getting into.
-- [ ] Shows the date it was written.
-- [ ] Tells whatever the learned needs to know that isn't already clear from the activities: is this topic still relevant today? Did anything major happened to it, like an OS product going commercial, or a renaming? Was it superseded by another competing technology?
-- [ ] This is specifically for TW Radar, so it goes in `preferences.md`, not in the skill itself.
-
 ---
 
 From here on: machine-generated backlog to fish from later.

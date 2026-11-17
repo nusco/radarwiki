@@ -9,6 +9,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+Invariant Labs introduced the term in mid-2025, along with a tool that automates it (now [[Agent Scan]], which has the tool's history). The technique is still in *Assess*, because prompt injection itself is unsolved: no filter reliably stops it. That's why rules that limit capabilities, like the trifecta and the Rule of Two, are the best defense. Since April 2026 the concern covers skills too, after studies such as Snyk's ToxicSkills (see [[Agent Skills]]).
+
+---
+
 ## Level 1 — What it is, and why (0:00–0:45, ~45 min)
 
 **Goal:** Explain toxic flow analysis: mapping the paths through an agent's tools where untrusted content, private data and an outbound channel meet.
@@ -29,12 +35,6 @@
 ## If you have extra time
 
 - [ ] **~5 min** · Read the [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw) entry (~1 min), the "permission-hungry" agent the newer blip uses as its example.
-
----
-
-## Current state of the topic
-
-Invariant Labs introduced the term in mid-2025, along with a tool that automates it (now [[Agent Scan]], which has the tool's history). The technique is still in *Assess*, because prompt injection itself is unsolved: no filter reliably stops it. That's why rules that limit capabilities, like the trifecta and the Rule of Two, are the best defense. Since April 2026 the concern covers skills too, after studies such as Snyk's ToxicSkills (see [[Agent Skills]]).
 
 ---
 

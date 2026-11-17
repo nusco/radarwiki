@@ -9,6 +9,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+Anthropic introduced skills in October 2025 and published them as an open standard in December 2025. By the April 2026 Radar, many coding agents and assistants had adopted the format, skills were shared through plugin marketplaces, and they were a big part of why the Radar started cautioning against [[MCP by default]]. The open problems are quality, since there's little evidence of how well skills work, and security: a skill can carry hidden instructions or scripts, so [[Toxic flow analysis for AI]] and [[Agent Scan]] now cover skills as well as MCP servers. The blip page now says that Agent Skills isn't in the current Radar edition (November 2026). For a technique that's this widely adopted, that more likely means it's no longer news than that it has faded.
+
+---
+
 ## Level 1 — What a skill is, and why (0:00–0:45, ~45 min)
 
 **Goal:** Explain what a skill is (a folder with a `SKILL.md`), and why *progressive disclosure* makes it cheap until it's needed.
@@ -39,16 +45,6 @@
 - [ ] **~45 min** · Watch: [Don't Build Agents, Build Skills Instead](https://www.ai.engineer/talks/CEvIs9y1uog-agent-skills) (Barry Zhang & Mahesh Murag, Anthropic, AI Engineer Code Summit, 16 min) — the case for skills as packaged expertise, and how they relate to MCP.
 - [ ] **~1 hour** · Watch: [Building Great Agent Skills: The Missing Manual](https://www.ai.engineer/talks/UNzCG3lw6O0-building-great-agent-skills) (Matt Pocock, AI Engineer World's Fair 2026, 21 min) — a practitioner's way to judge a skill: who should invoke it (the model or you), separating steps from references, steering with wording, and pruning instructions that do nothing. It picks up where the best practices leave off, and it's a good lens for reviewing `learning-plan`.
 - [ ] **~25 min** · Read: [Evaluating skill output quality](https://agentskills.io/skill-creation/evaluating-skills) (~8 min) — cited by the blip. It shows how to tell whether a skill actually helps: run test cases with and without the skill, and grade the outputs.
-
----
-
-## Current state of the topic
-
-Anthropic introduced skills in October 2025 and published them as an open standard in December 2025. By the April 2026 Radar, many coding agents and assistants had adopted the format, and skills were shared through plugin marketplaces. Skills are a big part of why the Radar now cautions against [[MCP by default]].
-
-The open problems are quality, since there's little evidence of how well skills work, and security. A skill can carry hidden instructions or scripts, so [[Toxic flow analysis for AI]] and [[Agent Scan]] now cover skills as well as MCP servers.
-
-The blip page now says that Agent Skills isn't in the current Radar edition (a November 2026 edition is out, but it isn't in the `Thoughtworks Radar` folder yet). For a technique that's this widely adopted, dropping off the Radar more likely means it's no longer news than that it has faded.
 
 ---
 

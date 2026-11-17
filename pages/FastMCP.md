@@ -9,6 +9,12 @@
 
 ---
 
+## Current state of the topic (as of 2026-11-15)
+
+FastMCP 3.0 has been stable since February 2026. Its public API is mostly the same as before, but internally it has a new provider/transform design (filesystem, OpenAPI, proxy and skills providers) and it supports MCP Apps. The project moved from its author's personal account to PrefectHQ, and Prefect sells a hosted gateway (Horizon) for running FastMCP servers. FastMCP isn't in the April 2026 Radar. That's not a bad sign: it's an established framework now, not news.
+
+---
+
 ## Level 1 — Two FastMCPs (0:00–0:30, ~30 min)
 
 **Goal:** Explain the difference between the "FastMCP" inside the official SDK and the standalone FastMCP framework.
@@ -30,12 +36,6 @@
 
 - [ ] **~15 min** · Skim: [OpenAPI integration](https://gofastmcp.com/integrations/openapi) (~15 min in full) — note the tip recommending curated servers over converted ones (see [[Naive API-to-MCP conversion]]).
 - [ ] **~10 min** · Skim the [FastMCP changelog](https://gofastmcp.com/updates) for the 3.0 release, to see where the framework is going.
-
----
-
-## Current state of the topic
-
-FastMCP 3.0 has been stable since February 2026. Its public API is mostly the same as before, but internally it has a new provider/transform design (filesystem, OpenAPI, proxy and skills providers) and it supports MCP Apps. The project moved from its author's personal account to PrefectHQ, and Prefect sells a hosted gateway (Horizon) for running FastMCP servers. FastMCP isn't in the April 2026 Radar. That's not a bad sign: it's an established framework now, not news.
 
 ---
 
