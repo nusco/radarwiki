@@ -33,11 +33,6 @@ Unlike AI-generated courses, the plans in Professor Wiki point to material creat
 
 ### My Backlog
 
-**Produce small activities**
-As a learner, I want short generated pieces (exercise briefs, one-line framing notes) where they help, so that the plan reads well, without being mistaken for real sources.
-- [ ] Generated text is short and visually set apart from linked resources.
-- [ ] Exercises state the goal and what "done" looks like. (Their time estimate is covered by "Timed activities".)
-
 **Keep up to date with the TW radar**
 As a TW Radar-focused learning, I want the Wiki to track the latest editions, so that I don't miss updated information.
 - [ ] (HOW? Decide)

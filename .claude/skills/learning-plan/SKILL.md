@@ -14,6 +14,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
 - The $TOPIC can be a literal topic ("Zero trust architecture") or a URL referring to it (https://www.thoughtworks.com/radar/techniques/zero-trust-architecture)
 - Write the plan to a Markdown file in the `pages` folder. Name the file, and write its links, in the link style from the user preferences.
 - List every activity (resources, **Do** exercises, "If you have extra time" items, and any items that the rituals add) as GitHub Markdown todo items, so the learner can tick them off to track progress.
+- **Keep generated text small, and set it apart.** Write your own text only where it helps the plan read well: a goal, an assumption, an exercise brief, a one-line pointer. Keep it short, and never format it like a resource: only human-made content gets a **Read**, **Watch** or **Skim** label and a link with author and date.
 - Structure the file logically, beginning with the topic and the time required.
 - Open the file with metadata, one field per line:
   ```
@@ -64,7 +65,7 @@ Create a self-study plan for: $TOPIC, with a specific $TIME_BUDGET
    - a heading with the time slot and estimated time, like `## Level 2 — How it works (0:45–1:15, ~30 min)`
    - a one-line **Goal** that says what the learner will be able to do
    - 1–4 **Read** / **Watch** resources, each with a link and a short reason it was picked
-   - where practice fits the level, one hands-on **Do** exercise, with later exercises building on earlier ones
+   - where practice fits the level, one hands-on **Do** exercise that ends with something concrete to produce, compare or decide, so the learner knows when it's done. Later exercises build on earlier ones.
 5. **Curate resources carefully:**
    - A resource can be anything, including, but not limited to, a blog post, a conference talk, or a page of official documentation. Paid resources are fine only when the user preferences trust them.
    - Follow the trusted and avoided sources in the user preferences.
