@@ -36,13 +36,20 @@ Unlike AI-generated courses, the plans in Professor Wiki point to material creat
 **Start from a Technology Radar blip**
 As a learner, I want the first Level 1 activity to be the topic's Thoughtworks Technology Radar blip, when one exists, so that every plan starts my way.
 - [ ] The agent detects whether the topic has a blip and links to it.
-- [ ] If there's no blip, the plan says so in one line.
+- [ ] If there's no blip, the system warns me that something is wrong and refrains from creating the page.
 - [ ] This is preferences-specific.
 
 **Produce small activities**
 As a learner, I want short generated pieces (exercise briefs, one-line framing notes) where they help, so that the plan reads well, without being mistaken for real sources.
 - [ ] Generated text is short and visually set apart from linked resources.
 - [ ] Exercises state the goal and what "done" looks like. (Their time estimate is covered by "Timed activities".)
+
+**Keep up to date with the TW radar**
+As a TW Radar-focused learning, I want the Wiki to track the latest editions, so that I don't miss updated information.
+- [ ] (HOW? Decide)
+- [ ] (Also update blips that were re-categorized)
+- [ ] The download script fails as it is. The search index now holds 2,025 blips, and the script asks for all of them in one request, which can't return more than 2,000. It stops with "only 2000 distinct ones were downloaded", without writing anything. Asking for one quadrant at a time fixes it. Each quadrant has between 451 and 624 blips, and together they add up to exactly 2,025.
+- [ ] One existing plan changes with November 2026. Toxic flow analysis for AI moved from Assess to Trial, so its metadata, its "Current state" paragraph, and the edition dates in the plans that link to it would need updating.
 
 ---
 
