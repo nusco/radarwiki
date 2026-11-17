@@ -33,12 +33,6 @@ Unlike AI-generated courses, the plans in Professor Wiki point to material creat
 
 ### My Backlog
 
-**Start from a Technology Radar blip**
-As a learner, I want the first Level 1 activity to be the topic's Thoughtworks Technology Radar blip, when one exists, so that every plan starts my way.
-- [ ] The agent detects whether the topic has a blip and links to it.
-- [ ] If there's no blip, the system warns me that something is wrong and refrains from creating the page.
-- [ ] This is preferences-specific.
-
 **Produce small activities**
 As a learner, I want short generated pieces (exercise briefs, one-line framing notes) where they help, so that the plan reads well, without being mistaken for real sources.
 - [ ] Generated text is short and visually set apart from linked resources.

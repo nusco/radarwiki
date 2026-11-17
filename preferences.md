@@ -33,7 +33,7 @@ These are my preferences for every learning plan in this wiki. The `learning-pla
 
 ## Rituals
 
-- **Find the blip.** A topic is from a Radar blip if I give its blip URL, or if the Radar has a blip for it. Before you start a plan, look for one in the `Thoughtworks Radar` folder. A blip can use a different name for the topic (for example, MCP-Scan is in the Radar as Agent Scan), so match the topic, not just the name. If there's no blip, keep the **Source:** metadata line and add `**Blip:** none (not in the Radar)` after it.
+- **Find the blip.** A topic is from a Radar blip if I give its blip URL, or if the Radar has a blip for it. Before you start a plan, look for one in the `Thoughtworks Radar` folder. A blip can use a different name for the topic (for example, MCP-Scan is in the Radar as Agent Scan), so match the topic, not just the name. I expect every topic to have a blip, so if you can't find one, something is wrong: maybe I misspelled the topic, or the folder is missing an edition. Don't write the plan. Tell me that you found no blip, and list any close matches in the folder.
 - **Radar metadata.** For a topic from a Radar blip, replace the **Source:** metadata line with four lines, like this:
   ```
   **Time:** ~45 minutes
