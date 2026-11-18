@@ -101,6 +101,14 @@ As a learner, I want to distinguish different blips that have the same name, to 
   - "(language)" doesn't work as a short label for every blip: Zap is a Go logging library, so "Zap (language)" would be wrong. "(framework)" or "(library)" would fit it better. If the short form has to be chosen per blip, it's close to the short description alternative.
   - `tools/gremlin` is a SaaS tool for chaos experiments. `languages-and-frameworks/gremlin` has no description on its page, and is probably the graph query language.
 
+**Visualize as Obsidian graph**
+As a learner I want to visualize the Radar Wiki as a graph in Obsidian, to see related topics.
+
+**Visualize progress in graph**
+As a learner I want to visualize the learning plans in the Obsidian grap with different color to see which ones I completed.
+
+
+
 ---
 
 From here on: machine-generated backlog to fish from later.
