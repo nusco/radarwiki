@@ -25,7 +25,7 @@ The term became popular in mid-2025, when people started saying that "prompt eng
 
 **Goal:** Know why "just put everything in a big context window" doesn't work.
 
-- [ ] **~30 min** · Read: [Context rot](https://www.trychroma.com/research/context-rot) (Chroma, Jul 2025) — the study behind the term. 18 models get less reliable as their input grows, even on simple tasks. Read the introduction and the conclusion (~10 min), and look at the charts in between. Skip the details of each experiment. The blip links to [an article about it](https://www.understandingai.org/p/context-rot-the-emerging-challenge) by Timothy B. Lee, but that one is partly paywalled.
+- [ ] **~30 min** · Read: [Context rot](https://www.trychroma.com/research/context-rot) (Chroma, Jul 2025) — the study behind the term. 18 models get less reliable as their input grows, even on simple tasks. Read the introduction and the conclusion (~10 min), and look at the charts in between. Skip the details of each experiment.
 - [ ] **~30 min** · Read: [How to fix your context](https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html) (Drew Breunig, Jun 2025, ~10 min) — four ways a context fails (poisoning, distraction, confusion, clash) and how to fix each one.
 
 ## Level 3 — Engineer your own context (2:00–3:00, ~60 min)
@@ -39,6 +39,7 @@ The term became popular in mid-2025, when people started saying that "prompt eng
 
 ## If you have extra time
 
+- [ ] **~25 min** · Read: [Context rot: the emerging challenge that could hold back LLM progress](https://www.understandingai.org/p/context-rot-the-emerging-challenge) (Timothy B. Lee, Nov 2025, ~10 min free part) — linked by the blip. It isn't a summary of the Chroma study, which it mentions only in passing. It puts context rot in a wider story: the earlier needle-in-a-haystack tests, why attention gets more expensive as the input grows, and why this matters for agents that work for hours or days. Read it if you want the "why" behind Level 2. The paywall cuts in just before Lee explains why he thinks context rot happens. Stop there, because the rest isn't needed.
 - [ ] **~35 min** · Read: [Context engineering for agents](https://www.langchain.com/blog/context-engineering-for-agents) (LangChain, Jul 2025, ~12 min) — another way to group the same techniques: write, select, compress, isolate.
 - [ ] **~15 min** · Read: [Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching) (Claude docs, ~5 min for these sections) — the "context setup" technique from the newer blip. Read only the opening and "How prompt caching works", to see why stable context at the start of the prompt is cheaper.
 - [ ] **~15 min** · Read: [Subagents](https://code.claude.com/docs/en/sub-agents) (Claude Code docs, ~5 min for the opening) — cited by the older blip. Read only the opening, up to the built-in subagents: sub-agents keep a side task's context out of the main conversation.
