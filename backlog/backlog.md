@@ -31,17 +31,61 @@ Unlike AI-generated courses, the plans in RadarWiki point to material created by
 ### My Backlog
 
 **Curate Updated Blips**
-As a TW Radar-focused learning, I want updated Blips to be consistent in the Wiki, so that I avoid duplicated pages and missing information.
+As a learner, I want updated Blips to be consistent in the Wiki, so that I avoid duplicated pages and missing information.
 - [ ] If a blip appears in different editions of the Radar, recap its history when you write its learning plan, telling me in which Radars it appeared and in which rings. For example, it's interesting to me that a blip moved from "Trial" to "Adopt".
-- [ ] If a blip was renamed, use the latest name for the learning plan, but also add a note about the renaming. (This happened at least twice: when `aws-bedrock-agentcore` was renamed to `amazon-bedrock-agentcore`, and when `local-coding-assistants` was renamed `local-coding-models`. This rule applies to these two cases from the past, and any future case as well.)
+- [ ] Hold and Caution are the same ring, renamed in April 2026. In a blip's history, keep the name each edition used, but don't present a change from Hold to Caution as a move.
+- [ ] If a blip was renamed, use the latest name for the learning plan and in other Wiki pages that refer to it, but also add a note about the renaming. (This happened at least twice: when `aws-bedrock-agentcore` was renamed to `amazon-bedrock-agentcore`, and when `local-coding-assistants` was renamed `local-coding-models`. This rule applies to these two cases from the past, and any future case as well.)
+- [ ] One special case of renaming: if a blip was renamed in capitalization only, just rename it in the learning plan (both in the file name and the content) and other Wiki pages that refer to it, but don't worry about adding a note. This is probably a typo that was later fixed.
 - [ ] If a blip was moved to another quadrant, just tell me in the appropriate metadata section in the learning plan. (This happened at least once, when `litellm` moved from `languages-and-frameworks` to `platforms`. Again, this rule applies to these two cases from the past, and any future case as well.)
+- [ ] Blips that the Radar lists as separate stay separate, even if they seem to be the same topic (see "Manage aliased blips").
 
 **Keep up to date with the TW Radar**
-As a TW Radar-focused learning, I want the Wiki to track the latest editions, so that I don't miss updated information.
+As a learner, I want the Wiki to track the latest editions, so that I don't miss updated information.
 - [ ] Whenever the system is asked to update anything (for example, to revise a learning plan), it also checks that the `Thoughtworks Radar` folder contains all editions of the Radar, including the latest ones. The radar is on `https://www.thoughtworks.com/radar/`.
 - [ ] If any editions of the radar are missing, the system creates files for them. See `thoughtworks-radar-2010-april` for an example of the naming convention and structure of these files.
 - [ ] The system does not create learning plans for these new blips, unless specifically asked to. The Wiki pages are still created on an as-needed basis.
 - [ ] If the new Radar edition updates a previous blip that already had a matching learning plan, then the system does update that learning plan. One such example is the "Toxic flow analysis" blip, that moved  from Assess to Trial in the latest Radar (November 2026). So its metadata, its "Current state" paragraph, and the edition dates in the plans that link to it need updating.
+
+**Manage aliased blips**
+As a learner, I want to tell the maintainer that two blips are aliases of each other, so that I can resolve the redundancy (_somehow_).
+- [ ] We should decide how discovery (when possible), notification and the fix happen. The canonical case is https://www.thoughtworks.com/radar/tools/mcp-scan that became https://www.thoughtworks.com/radar/tools/agent-scan, so two separate blips (both still living) but one actual topic. Arguably, the old name's plan should point to the new name's plan, or some other wiki-ish solution.
+- [ ] We should decide what happens to the older blip's learning plan: it could not exist, exist and point to the newer blip's plan, or be an alias linked to it. The canonical case is https://www.thoughtworks.com/radar/tools/mcp-scan, which became https://www.thoughtworks.com/radar/tools/agent-scan: two separate blips, both still live, but one actual topic.
+- [ ] Notes for refinement:
+  - The Radar doesn't always reveal an alias. Nothing on the MCP-Scan or Agent Scan pages connects them. That link came from researching the tool.
+  - Some blips do mention a former name, which could help discovery, but each case needs judgment. Candidates:
+
+    | Earlier blip | Later blip | Text in the later blip | Same topic? |
+    |---|---|---|---|
+    | Azure Cognitive Search | Azure AI Search | "formerly known as Cognitive Search" | Yes |
+    | Snowplow Analytics & Piwik | Matomo | "formerly Piwik" | Partly: the old blip covered two tools |
+    | Presto | Trino | "previously known as PrestoSQL" | Unclear: needs judgment, because Presto and PrestoSQL aren't quite the same thing |
+
+  - Until this is done, a request for a plan on the older blip creates a separate plan.
+  - The `[[Agent Scan|MCP-Scan]]` link example in `SKILL.md` may need revisiting.
+
+**Manage homonymous blips**
+
+As a learner, I want to distinguish different blips that have the same name, to avoid confusing different topics.
+- [ ] Examples:
+          https://www.thoughtworks.com/radar/search?q=gremlin
+          https://www.thoughtworks.com/radar/search?q=zap
+- [ ] To be decided. We should probably disambiguate the blip name in the file name and any list of multiple blips, adding the quadrant name:
+        - "Gremlin (Tools)"
+        - "Gremlin (Languages & Frameworks)"
+    or, shorter:
+        - "Gremlin (tool)"
+        - "Gremlin (language)"
+- [ ] Also deal with the case where blips differ only by capitalization. "ZAP" and "Zap" count as homonyms. On a Mac, ZAP.md and Zap.md would normally be the same file. They also mustn't be mistaken for the capitalization rename in "Curate Updated Blips", which is about one blip whose name changed.
+- [ ] An ambiguous request should prompt a question. If you ask for "a plan on Gremlin", the maintainer should ask which one. The skill now says that a blip under the name you used is the blip, which doesn't settle it when there are two.
+- [ ] When to disambiguate. I'd add the quadrant from the first plan, even if the other blip has no plan yet, so the file never needs renaming later.
+- [ ] Quadrants can change. If a blip moves, as litellm did, its file name goes stale. A short description, like "Gremlin (chaos engineering)", would avoid that, so it's worth keeping as an alternative.
+- [ ] So, notes for refinement:
+  - ZAP (OWASP security proxy) and Zap (Go logging library) differ only by capitalization, so they collide as file names on case-insensitive file systems. They aren't a capitalization rename: those are one blip, and these are two.
+  - If a request is ambiguous, like "a plan on Gremlin", the maintainer asks which blip I mean.
+  - Decide whether to disambiguate from the first plan, even if the other blip has no plan yet.
+  - A blip can change quadrant, which would make a quadrant-based name stale. A short description of the topic is an alternative.
+  - "(language)" doesn't work as a short label for every blip: Zap is a Go logging library, so "Zap (language)" would be wrong. "(framework)" or "(library)" would fit it better. If the short form has to be chosen per blip, it's close to the short description alternative.
+  - `tools/gremlin` is a SaaS tool for chaos experiments. `languages-and-frameworks/gremlin` has no description on its page, and is probably the graph query language.
 
 ---
 
