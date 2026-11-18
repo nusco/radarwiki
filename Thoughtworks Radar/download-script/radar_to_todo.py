@@ -31,6 +31,8 @@ SITE = "https://www.thoughtworks.com"
 USER_AGENT = "Mozilla/5.0 (radar-to-todo script)"
 CACHE_FILE = Path(__file__).with_name(".radar-cache.json")
 PARALLEL_REQUESTS = 4
+# The search index never returns more results than this for a single request.
+MAX_RESULTS_PER_REQUEST = 2000
 
 QUADRANTS = {
     "techniques": "Techniques",
@@ -82,30 +84,49 @@ def fetch_all_blips():
         "Authorization": f"Bearer {config['RADAR_SEARCH_TOKEN']}",
         "Content-Type": "application/json",
     }
+
+    def search(quadrant_filter, number_of_results):
+        query = {
+            "q": "",
+            "searchHub": config["RADAR_SEARCH_HUB"],
+            "pipeline": config["RADAR_PIPELINE"],
+            "locale": "en",
+            "context": {"countryLocale": "en-global"},
+            "aq": f'@tw_country_locale=="en-global" {quadrant_filter}'.strip(),
+            "numberOfResults": number_of_results,
+        }
+        return json.loads(fetch(url, json.dumps(query).encode(), headers))
+
     # Results come in no guaranteed order, so paging could skip some blips and repeat
-    # others. Instead, ask for everything in one request, and check that we got it all.
-    query = {
-        "q": "",
-        "searchHub": config["RADAR_SEARCH_HUB"],
-        "pipeline": config["RADAR_PIPELINE"],
-        "locale": "en",
-        "context": {"countryLocale": "en-global"},
-        "aq": '@tw_country_locale=="en-global"',
-        "numberOfResults": 5000,
-    }
-    response = json.loads(fetch(url, json.dumps(query).encode(), headers))
+    # others. The index holds more blips than one request can return, so ask for one
+    # quadrant at a time, and check that we got them all.
+    #
+    # LIMITATION: this only works while every quadrant fits in one request. The largest
+    # had 624 blips in November 2026, against a limit of MAX_RESULTS_PER_REQUEST. If a
+    # quadrant ever outgrows the limit, the check below fails and nothing is written.
+    # The requests will then need splitting further, for example by ring.
+    filters = [f'@tw_radar_quadrant=="{quadrant}"' for quadrant in QUADRANTS]
+    # Safety net: the Radar has four quadrants, so a blip outside them means broken
+    # source data. We still download it, so that it can't go missing unnoticed.
+    known_quadrants = ", ".join(f'"{quadrant}"' for quadrant in QUADRANTS)
+    filters.append(f"NOT @tw_radar_quadrant==({known_quadrants})")
+
+    results = {}
+    for quadrant_filter in filters:
+        for result in search(quadrant_filter, MAX_RESULTS_PER_REQUEST)["results"]:
+            results[result["clickUri"]] = result
     blips = [{
         "name": result["raw"].get("tw_radar_display_name") or result["title"],
         "url": result["clickUri"],
         "quadrant": result["raw"].get("tw_radar_quadrant", ""),
         "ring": result["raw"].get("tw_radar_ring_label", "").capitalize(),
         "volume_date": result["raw"].get("tw_radar_volume_date", ""),
-    } for result in response["results"]]
+    } for result in results.values()]
 
-    distinct = len({b["url"] for b in blips})
-    if distinct != response["totalCount"]:
-        raise CheckFailed(f"the search index reports {response['totalCount']} blips, "
-                          f"but only {distinct} distinct ones were downloaded.")
+    total = search("", 0)["totalCount"]
+    if len(blips) != total:
+        raise CheckFailed(f"the search index reports {total} blips, "
+                          f"but {len(blips)} distinct ones were downloaded.")
     return blips
 
 

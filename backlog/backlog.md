@@ -30,10 +30,6 @@ Unlike AI-generated courses, the plans in RadarWiki point to material created by
 
 ### My Backlog
 
-**Download all the TW Radar blips**
-As a TW Radar-focused learning, I want the system to correctly download all the blips without missing any.
-- [ ] Bug: The download script fails as it is. The search index currently holds 2,025 blips, and the script asks for all of them in one request, which can't return more than 2,000. It stops with "only 2000 distinct ones were downloaded", without writing anything. Asking for one quadrant at a time fixes it. Each quadrant has between 451 and 624 blips, and together they add up to exactly 2,025.
-
 **Curate Updated Blips**
 As a TW Radar-focused learning, I want updated Blips to be consistent in the Wiki, so that I avoid duplicated pages and missing information.
 - [ ] If a blip appears in different editions of the Radar, recap its history when you write its learning plan, telling me in which Radars it appeared and in which rings. For example, it's interesting to me that a blip moved from "Trial" to "Adopt".
