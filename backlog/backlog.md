@@ -23,20 +23,33 @@ Unlike AI-generated courses, the plans in RadarWiki point to material created by
 
 1. **The agent writes the plan; people made the content.** Every linked resource is found through a real search and checked before it goes on the page. The agent never cites from memory.
 2. **The files are the product; the editor only displays them.** Pages are plain markdown with headings, links and `- [ ]` checkboxes, which I read in Obsidian.
-3. **Every plan starts from a Radar blip.** The system is built for the Radar, and generalizing it can wait until there's a real need.
+3. **Every plan starts from a Radar blip.** The system is built for the Radar, and generalizing it can wait until there's a real need. The source of truth is the Radar website (its [search pages](https://www.thoughtworks.com/radar/search) and blip pages), not the PDFs. (The two sources can be inconsistent.)
 4. **Mostly skills.** The system is skill files, plus a script that downloads the Radar.
 5. **Never lose progress.** Edits are surgical: changing one item never resets your checked boxes.
 
+### Note
+
+Contact MV about the inconsistencies I'm finding between the Radar PDFs and the search system. I compared the first seven Radars (2010–2012) with the search system, without checking rings, and I also checked MCP in the April 2025 PDF. So there may be more. I found:
+
+- MCP: in the April 2025 PDF (Platforms, Assess, blip 40), but missing from its blip history.
+- RDF triple stores: in the April 2010 PDF (blip 23), but missing from its blip history.
+- RDFa: shown for April 2010, though the PDF doesn't list it as a blip.
+- RDF & SPARQL: in the January 2010 PDF, but shown as RDFa on the site.
+
+Are they interested in fixing these, or should we live with them?
 
 ### My Backlog
 
 **Curate Updated Blips**
 As a learner, I want updated Blips to be consistent in the Wiki, so that I avoid duplicated pages and missing information.
-- [ ] If a blip appears in different editions of the Radar, recap its history when you write its learning plan, telling me in which Radars it appeared and in which rings. For example, it's interesting to me that a blip moved from "Trial" to "Adopt".
+- [ ] If a blip appears in different editions of the Radar, recap its history when you write its learning plan, telling me in which Radars it appeared and in which rings, according to the Radar website. For example, it's interesting to me that a blip moved from "Trial" to "Adopt".
 - [ ] Hold and Caution are the same ring, renamed in April 2026. In a blip's history, keep the name each edition used, but don't present a change from Hold to Caution as a move.
-- [ ] If a blip was renamed, use the latest name for the learning plan and in other Wiki pages that refer to it, but also add a note about the renaming. (This happened at least twice: when `aws-bedrock-agentcore` was renamed to `amazon-bedrock-agentcore`, and when `local-coding-assistants` was renamed `local-coding-models`. This rule applies to these two cases from the past, and any future case as well.)
-- [ ] One special case of renaming: if a blip was renamed in capitalization only, just rename it in the learning plan (both in the file name and the content) and other Wiki pages that refer to it, but don't worry about adding a note. This is probably a typo that was later fixed.
-- [ ] If a blip was moved to another quadrant, just tell me in the appropriate metadata section in the learning plan. (This happened at least once, when `litellm` moved from `languages-and-frameworks` to `platforms`. Again, this rule applies to these two cases from the past, and any future case as well.)
+- [ ] If the blip of an existing learning plan is renamed, use the latest name for the learning plan and in other Wiki pages that refer to it, but also add a note about the renaming. (Examples of this kind of change: `aws-bedrock-agentcore` became `amazon-bedrock-agentcore`, and `local-coding-assistants` became `local-coding-models`.)
+- [ ] One special case of renaming: if the blip of an existing learning plan is renamed in capitalization only, just rename it in the learning plan (both in the file name and the content) and other Wiki pages that refer to it, but don't worry about adding a note. This is probably a typo that was later fixed.
+- [ ] If the blip of an existing learning plan is moved to another quadrant, just tell me in the appropriate metadata section in the learning plan. (Example of this kind of change: `litellm` moved from `languages-and-frameworks` to `platforms`.)
+- [ ] A new learning plan uses the blip's current name and quadrant from the Radar website, with no note about changes that happened before the plan existed.
+- [ ] The edition files in the `Thoughtworks Radar` folder are not regenerated or corrected to match the website.
+- [ ] Edition lists already in existing learning plans stay as they are, even if the website disagrees with them (for example, the plans that list MCP as "Apr 2025, Nov 2025"). New or updated text follows the website.
 - [ ] Blips that the Radar lists as separate stay separate, even if they seem to be the same topic (see "Manage aliased blips").
 
 **Keep up to date with the TW Radar**
