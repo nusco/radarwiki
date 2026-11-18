@@ -83,7 +83,7 @@ Create a self-study plan for the Thoughtworks Technology Radar blip on: $TOPIC, 
 
 ## Steps
 
-1. **Find the blip.** If the learner gave the blip's URL, that's the blip. Otherwise, look for it in the `Thoughtworks Radar` folder. A blip can use a different name for the topic (for example, MCP-Scan is in the Radar as Agent Scan), so match the topic, not just the name. Every topic should have a blip, so if you can't find one, something is wrong: maybe the learner misspelled the topic, or the folder is missing an edition. Don't write the plan. Tell the learner that you found no blip, and list any close matches in the folder.
+1. **Find the blip.** If the learner gave the blip's URL, that's the blip. Otherwise, look for it in the `Thoughtworks Radar` folder. A blip can use a different name for the topic (for example, Grafana Agent is in the Radar as Grafana Alloy), so match the topic, not just the name. But if the Radar has a blip under the name the learner used, that's the blip, even if another blip seems to cover the same topic: blips that the Radar lists separately stay separate. Every topic should have a blip, so if you can't find one, something is wrong: maybe the learner misspelled the topic, or the folder is missing an edition. Don't write the plan. Tell the learner that you found no blip, and list any close matches in the folder.
 
 2. **Pin down the inputs.** Get the topic and time budget from the arguments. If the budget is missing, choose one with the rules on default length in the learning preferences and state it in one line, so the learner can change it. If the learner's background is unclear, state your assumption in one line instead of asking.
 
