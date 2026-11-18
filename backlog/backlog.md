@@ -1,5 +1,5 @@
 ---
-title: Professor Wiki — Product Backlog
+title: RadarWiki — Product Backlog
 date: 2026-11-13
 status: draft
 ---
@@ -12,21 +12,20 @@ status: draft
 - **setchy/thoughtworks-tech-radar-volumes**: blip history data (for PE-2 and PE-3).
 - **Wonderland (Obsidian plugin, archived)**: the closest existing click-a-missing-link experience.
 
-# Professor Wiki — Product Backlog
+# RadarWiki — Product Backlog
 
 ## Vision
 
-Professor Wiki is a personal wiki of learning plans for the methodical self-learner, stored as plain markdown on your own disk. You can use it to learn any topic you care about.
-Unlike AI-generated courses, the plans in Professor Wiki point to material created by people: well-regarded courses, popular blog posts, sources you trust.
+RadarWiki is a personal wiki of learning plans for Thoughtworks Technology Radar blips, stored as plain markdown on disk.
+Unlike AI-generated courses, the plans in RadarWiki point to material created by people: well-regarded courses, popular blog posts, sources you trust.
 
 ### Principles
 
 1. **The agent writes the plan; people made the content.** Every linked resource is found through a real search and checked before it goes on the page. The agent never cites from memory.
-2. **The files are the product; the editor only displays them.** Pages are plain markdown with frontmatter, headings, links and `- [ ]` checkboxes. Obsidian is the first editor supported, not a requirement.
-3. **Skills only.** The whole system is one installable skill folder. An `init` workflow creates everything else.
-4. **Works with any agent.** Claude Code is the reference agent, but nothing in the system depends on Claude-only features.
+2. **The files are the product; the editor only displays them.** Pages are plain markdown with headings, links and `- [ ]` checkboxes, which I read in Obsidian.
+3. **Every plan starts from a Radar blip.** The system is built for the Radar, and generalizing it can wait until there's a real need.
+4. **Mostly skills.** The system is skill files, plus a script that downloads the Radar.
 5. **Never lose progress.** Edits are surgical: changing one item never resets your checked boxes.
-6. **The system is mostly skill files.** This makes for easy setup: install the skills into an empty folder, then say "set up a professor wiki here."
 
 
 ### My Backlog
@@ -34,14 +33,6 @@ Unlike AI-generated courses, the plans in Professor Wiki point to material creat
 **Download all the TW Radar blips**
 As a TW Radar-focused learning, I want the system to correctly download all the blips without missing any.
 - [ ] Bug: The download script fails as it is. The search index currently holds 2,025 blips, and the script asks for all of them in one request, which can't return more than 2,000. It stops with "only 2000 distinct ones were downloaded", without writing anything. Asking for one quadrant at a time fixes it. Each quadrant has between 451 and 624 blips, and together they add up to exactly 2,025.
-
-**Focus the Wiki on the TW Radar**
-As a TW Radar-focused learner, I want the system to be built specifically around the Radar, so that I don't pay for a generalization I don't need yet.
-- [ ] The project is called RadarWiki in the README and in the backlog's title, vision and principles, and both describe what it is now: a personal wiki of learning plans for Thoughtworks Radar blips. The GitHub repo and the local folder keep their names for now.
-- [ ] Everything in `preferences.md` moves into the `learning-plan` skill. My learning preferences (such as length, pace and sources) get their own section in `SKILL.md`.
-- [ ] The skill is written for Radar blips: every plan starts from a blip, and its description says so. The generic **Source** metadata field and the "if the topic is from a Radar blip" conditions go away.
-- [ ] Nothing refers to user preferences or `preferences.md` anymore, and the file is deleted.
-- [ ] The behavior of the skill doesn't change otherwise: every rule from `preferences.md` still applies, and a request that asks for something different still wins for that plan. No file in `pages` changes.
 
 **Curate Updated Blips**
 As a TW Radar-focused learning, I want updated Blips to be consistent in the Wiki, so that I avoid duplicated pages and missing information.
@@ -51,7 +42,6 @@ As a TW Radar-focused learning, I want updated Blips to be consistent in the Wik
 
 **Keep up to date with the TW Radar**
 As a TW Radar-focused learning, I want the Wiki to track the latest editions, so that I don't miss updated information.
-- [ ] This user story is specific to the TW Radar user, so it should be part of preferences.md, not of the main SKILL.md.
 - [ ] Whenever the system is asked to update anything (for example, to revise a learning plan), it also checks that the `Thoughtworks Radar` folder contains all editions of the Radar, including the latest ones. The radar is on `https://www.thoughtworks.com/radar/`.
 - [ ] If any editions of the radar are missing, the system creates files for them. See `thoughtworks-radar-2010-april` for an example of the naming convention and structure of these files.
 - [ ] The system does not create learning plans for these new blips, unless specifically asked to. The Wiki pages are still created on an as-needed basis.
@@ -156,4 +146,4 @@ As a learner, I want stale plans re-checked automatically (e.g. monthly), so tha
 - Flat folder or subfolders?
 - What happens to finished plans: archive them, or leave them in place with `status: done`?
 - How to detect a Radar blip: from the dataset, or by web search?
-- ~~Final name.~~ Decided: "Professor Wiki".
+- ~~Final name.~~ Decided: "RadarWiki".
