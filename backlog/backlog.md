@@ -37,6 +37,11 @@ Unlike AI-generated courses, the plans in Professor Wiki point to material creat
 As a TW Radar-focused learning, I want the system to correctly download all the blips without missing any.
 - [ ] Bug: The download script fails as it is. The search index currently holds 2,025 blips, and the script asks for all of them in one request, which can't return more than 2,000. It stops with "only 2000 distinct ones were downloaded", without writing anything. Asking for one quadrant at a time fixes it. Each quadrant has between 451 and 624 blips, and together they add up to exactly 2,025.
 
+**Curate Updated Blips**
+As a TW Radar-focused learning, I want updated Blips to be consistent in the Wiki, so that I avoid duplicated pages and missing information.
+- [ ] If a blip appears in different editions of the Radar, recap its history when you write its learning plan, telling me in which Radars it appeared and in which rings. For example, it's interesting to me that a blip moved from "Trial" to "Adopt".
+- [ ] If a blip was renamed, use the latest name for the learning plan, but also add a note about the renaming. (This happened at least twice: when `aws-bedrock-agentcore` was renamed to `amazon-bedrock-agentcore`, and when `local-coding-assistants` was renamed `local-coding-models`. This rule applies to these two cases from the past, and any future case as well.)
+- [ ] If a blip was moved to another quadrant, just tell me in the appropriate metadata section in the learning plan. (This happened at least once, when `litellm` moved from `languages-and-frameworks` to `platforms`. Again, this rule applies to these two cases from the past, and any future case as well.)
 
 **Keep up to date with the TW Radar**
 As a TW Radar-focused learning, I want the Wiki to track the latest editions, so that I don't miss updated information.
