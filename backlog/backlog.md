@@ -33,12 +33,18 @@ Unlike AI-generated courses, the plans in Professor Wiki point to material creat
 
 ### My Backlog
 
-**Keep up to date with the TW radar**
+**Download all the TW Radar blips**
+As a TW Radar-focused learning, I want the system to correctly download all the blips without missing any.
+- [ ] Bug: The download script fails as it is. The search index currently holds 2,025 blips, and the script asks for all of them in one request, which can't return more than 2,000. It stops with "only 2000 distinct ones were downloaded", without writing anything. Asking for one quadrant at a time fixes it. Each quadrant has between 451 and 624 blips, and together they add up to exactly 2,025.
+
+
+**Keep up to date with the TW Radar**
 As a TW Radar-focused learning, I want the Wiki to track the latest editions, so that I don't miss updated information.
-- [ ] (HOW? Decide)
-- [ ] (Also update blips that were re-categorized)
-- [ ] The download script fails as it is. The search index now holds 2,025 blips, and the script asks for all of them in one request, which can't return more than 2,000. It stops with "only 2000 distinct ones were downloaded", without writing anything. Asking for one quadrant at a time fixes it. Each quadrant has between 451 and 624 blips, and together they add up to exactly 2,025.
-- [ ] One existing plan changes with November 2026. Toxic flow analysis for AI moved from Assess to Trial, so its metadata, its "Current state" paragraph, and the edition dates in the plans that link to it would need updating.
+- [ ] This user story is specific to the TW Radar user, so it should be part of preferences.md, not of the main SKILL.md.
+- [ ] Whenever the system is asked to update anything (for example, to revise a learning plan), it also checks that the `Thoughtworks Radar` folder contains all editions of the Radar, including the latest ones. The radar is on `https://www.thoughtworks.com/radar/`.
+- [ ] If any editions of the radar are missing, the system creates files for them. See `thoughtworks-radar-2010-april` for an example of the naming convention and structure of these files.
+- [ ] The system does not create learning plans for these new blips, unless specifically asked to. The Wiki pages are still created on an as-needed basis.
+- [ ] If the new Radar edition updates a previous blip that already had a matching learning plan, then the system does update that learning plan. One such example is the "Toxic flow analysis" blip, that moved  from Assess to Trial in the latest Radar (November 2026). So its metadata, its "Current state" paragraph, and the edition dates in the plans that link to it need updating.
 
 ---
 
