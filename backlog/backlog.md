@@ -54,6 +54,7 @@ As a learner, I want updated Blips to be consistent in the Wiki, so that I avoid
 
 **Keep up to date with the TW Radar**
 As a learner, I want the Wiki to track the latest editions, so that I don't miss updated information.
+- [ ] The system writes to the README which edition of the Radar it's updated to.
 - [ ] Whenever the system is asked to update anything (for example, to revise a learning plan), it also checks that the `Thoughtworks Radar` folder contains all editions of the Radar, including the latest ones. The radar is on `https://www.thoughtworks.com/radar/`.
 - [ ] If any editions of the radar are missing, the system creates files for them. See `thoughtworks-radar-2010-april` for an example of the naming convention and structure of these files.
 - [ ] The system does not create learning plans for these new blips, unless specifically asked to. The Wiki pages are still created on an as-needed basis.
