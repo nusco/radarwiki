@@ -40,6 +40,11 @@ Are they interested in fixing these, or should we live with them?
 
 ### My Backlog
 
+**GH-friendly metadata**
+As a learner, I want the metadata on top of the Wiki pages to look good on GitHub, so that I can inspect a page on the GH project page visually.
+- [ ] The metadata should be a bullet list (plain bullets, no checkboxes).
+- [ ] Also update the existing pages.
+
 **Curate Updated Blips**
 As a learner, I want updated Blips to be consistent in the Wiki, so that I avoid duplicated pages and missing information.
 - [ ] If a blip appears in different editions of the Radar, recap its history when you write its learning plan, telling me in which Radars it appeared and in which rings, according to the Radar website. For example, it's interesting to me that a blip moved from "Trial" to "Adopt".
