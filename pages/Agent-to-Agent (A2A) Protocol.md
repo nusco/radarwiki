@@ -1,9 +1,9 @@
-**Time:** ~2 hours
-**Radar edition:** November 2025
-**Blip:** [Agent-to-Agent (A2A) Protocol](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol)
-**Quadrant:** Platforms
-**Ring:** Assess
-**Created:** 2026-10-21
+- **Time:** ~2 hours
+- **Radar edition:** November 2025
+- **Blip:** [Agent-to-Agent (A2A) Protocol](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol)
+- **Quadrant:** Platforms
+- **Ring:** Assess
+- **Created:** 2026-10-21
 
 *Assumption: you know MCP from [[Model Context Protocol (MCP)]].*
 

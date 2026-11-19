@@ -1,9 +1,9 @@
-**Time:** ~50 minutes
-**Radar edition:** November 2025
-**Blip:** [Serena](https://www.thoughtworks.com/radar/tools/serena)
-**Quadrant:** Tools
-**Ring:** Assess
-**Created:** 2026-10-21
+- **Time:** ~50 minutes
+- **Radar edition:** November 2025
+- **Blip:** [Serena](https://www.thoughtworks.com/radar/tools/serena)
+- **Quadrant:** Tools
+- **Ring:** Assess
+- **Created:** 2026-10-21
 
 ---
 

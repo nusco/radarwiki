@@ -1,9 +1,9 @@
-**Time:** ~45 minutes
-**Radar edition:** April 2026
-**Blip:** [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan), formerly [MCP-Scan (November 2025)](https://www.thoughtworks.com/radar/tools/mcp-scan)
-**Quadrant:** Tools
-**Ring:** Assess
-**Created:** 2026-10-21
+- **Time:** ~45 minutes
+- **Radar edition:** April 2026
+- **Blip:** [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan), formerly [MCP-Scan (November 2025)](https://www.thoughtworks.com/radar/tools/mcp-scan)
+- **Quadrant:** Tools
+- **Ring:** Assess
+- **Created:** 2026-10-21
 
 *Assumption: you know the lethal trifecta and toxic flows, from [[Toxic flow analysis for AI]].*
 

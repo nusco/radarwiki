@@ -16,14 +16,14 @@ Create a self-study plan for the Thoughtworks Technology Radar blip on: $TOPIC, 
 - List every activity (resources, **Do** exercises, "If you have extra time" items, and the items that link the blip) as GitHub Markdown todo items, so the learner can tick them off to track progress.
 - **Keep generated text small, and set it apart.** Write your own text only where it helps the plan read well: a goal, an assumption, an exercise brief, a one-line pointer. Keep it short, and never format it like a resource: only human-made content gets a **Read**, **Watch** or **Skim** label and a link with author and date.
 - Structure the file logically, beginning with the topic and the time required.
-- Open the file with metadata, one field per line:
+- Open the file with metadata, as a bulleted list with one field per item. Use plain bullets, not todo items:
   ```
-  **Time:** ~45 minutes
-  **Radar edition:** November 2025
-  **Blip:** [Serena](https://www.thoughtworks.com/radar/tools/serena)
-  **Quadrant:** Tools
-  **Ring:** Assess
-  **Created:** 2026-10-21
+  - **Time:** ~45 minutes
+  - **Radar edition:** November 2025
+  - **Blip:** [Serena](https://www.thoughtworks.com/radar/tools/serena)
+  - **Quadrant:** Tools
+  - **Ring:** Assess
+  - **Created:** 2026-10-21
   ```
   **Radar edition** lists every edition the blip appears in (like "November 2025 and April 2026").
   **Quadrant** is Techniques, Tools, Platforms, or Languages & Frameworks: it's the path segment after `/radar/` in the blip URL.

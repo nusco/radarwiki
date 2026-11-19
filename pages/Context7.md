@@ -1,9 +1,9 @@
-**Time:** ~45 minutes
-**Radar edition:** November 2025
-**Blip:** [Context7](https://www.thoughtworks.com/radar/tools/context7)
-**Quadrant:** Tools
-**Ring:** Trial
-**Created:** 2026-10-21
+- **Time:** ~45 minutes
+- **Radar edition:** November 2025
+- **Blip:** [Context7](https://www.thoughtworks.com/radar/tools/context7)
+- **Quadrant:** Tools
+- **Ring:** Trial
+- **Created:** 2026-10-21
 
 ---
 

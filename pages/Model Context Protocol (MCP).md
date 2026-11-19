@@ -1,9 +1,9 @@
-**Time:** ~6 hours
-**Radar edition:** November 2025
-**Blip:** [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp)
-**Quadrant:** Platforms
-**Ring:** Trial
-**Created:** 2026-10-19
+- **Time:** ~6 hours
+- **Radar edition:** November 2025
+- **Blip:** [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp)
+- **Quadrant:** Platforms
+- **Ring:** Trial
+- **Created:** 2026-10-19
 
 *Assumption: you use Claude Code (or a similar agent) and can read and write a little Python.*
 

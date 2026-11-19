@@ -1,9 +1,9 @@
-**Time:** ~2 hours 45 minutes
-**Radar edition:** April 2026
-**Blip:** [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default)
-**Quadrant:** Techniques
-**Ring:** Caution
-**Created:** 2026-10-21
+- **Time:** ~2 hours 45 minutes
+- **Radar edition:** April 2026
+- **Blip:** [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default)
+- **Quadrant:** Techniques
+- **Ring:** Caution
+- **Created:** 2026-10-21
 
 *Assumption: you know what an MCP server is and how to add one to Claude Code, from [[Model Context Protocol (MCP)]].*
 

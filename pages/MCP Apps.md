@@ -1,9 +1,9 @@
-**Time:** ~1.5 hours
-**Radar edition:** April 2026
-**Blip:** [MCP Apps](https://www.thoughtworks.com/radar/platforms/mcp-apps)
-**Quadrant:** Platforms
-**Ring:** Assess
-**Created:** 2026-10-21
+- **Time:** ~1.5 hours
+- **Radar edition:** April 2026
+- **Blip:** [MCP Apps](https://www.thoughtworks.com/radar/platforms/mcp-apps)
+- **Quadrant:** Platforms
+- **Ring:** Assess
+- **Created:** 2026-10-21
 
 ---
 

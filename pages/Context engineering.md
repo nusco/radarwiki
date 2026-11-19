@@ -1,9 +1,9 @@
-**Time:** ~3 hours
-**Radar edition:** April 2026
-**Blip:** [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering)
-**Quadrant:** Techniques
-**Ring:** Adopt
-**Created:** 2026-10-21
+- **Time:** ~3 hours
+- **Radar edition:** April 2026
+- **Blip:** [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering)
+- **Quadrant:** Techniques
+- **Ring:** Adopt
+- **Created:** 2026-10-21
 
 ---
 

@@ -1,9 +1,9 @@
-**Time:** ~1.75 hours
-**Radar edition:** November 2025 and April 2026
-**Blip:** [Toxic flow analysis for AI](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)
-**Quadrant:** Techniques
-**Ring:** Assess
-**Created:** 2026-10-21
+- **Time:** ~1.75 hours
+- **Radar edition:** November 2025 and April 2026
+- **Blip:** [Toxic flow analysis for AI](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai)
+- **Quadrant:** Techniques
+- **Ring:** Assess
+- **Created:** 2026-10-21
 
 *Assumption: you know how prompt injection attacks MCP servers, from Level 4 of [[Model Context Protocol (MCP)]].*
 

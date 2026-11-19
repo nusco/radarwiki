@@ -1,9 +1,9 @@
-**Time:** ~1.5 hours
-**Radar edition:** November 2025
-**Blip:** [FastMCP](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp)
-**Quadrant:** Languages & Frameworks
-**Ring:** Trial
-**Created:** 2026-10-21
+- **Time:** ~1.5 hours
+- **Radar edition:** November 2025
+- **Blip:** [FastMCP](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp)
+- **Quadrant:** Languages & Frameworks
+- **Ring:** Trial
+- **Created:** 2026-10-21
 
 *Assumption: you know what MCP tools and resources are, from [[Model Context Protocol (MCP)]], and can read a little Python.*
 

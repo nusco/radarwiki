@@ -1,9 +1,9 @@
-**Time:** ~3 hours 15 minutes
-**Radar edition:** April 2026
-**Blip:** [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills)
-**Quadrant:** Techniques
-**Ring:** Trial
-**Created:** 2026-10-21
+- **Time:** ~3 hours 15 minutes
+- **Radar edition:** April 2026
+- **Blip:** [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills)
+- **Quadrant:** Techniques
+- **Ring:** Trial
+- **Created:** 2026-10-21
 
 *Assumption: you use one non-trivial skill yourself: the one that writes these plans.*
 

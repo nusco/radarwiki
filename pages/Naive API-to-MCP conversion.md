@@ -1,9 +1,9 @@
-**Time:** ~1.5 hours
-**Radar edition:** November 2025
-**Blip:** [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
-**Quadrant:** Techniques
-**Ring:** Hold
-**Created:** 2026-10-21
+- **Time:** ~1.5 hours
+- **Radar edition:** November 2025
+- **Blip:** [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion)
+- **Quadrant:** Techniques
+- **Ring:** Hold
+- **Created:** 2026-10-21
 
 *Assumption: you know how MCP tools work, from [[Model Context Protocol (MCP)]].*
 
