@@ -58,7 +58,7 @@ Related Radar topics:
 - [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Apr 2026)
 - [Context graph](https://www.thoughtworks.com/radar/techniques/context-graph) (Apr 2026)
 - [Curated shared instructions for software teams](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams) (Nov 2025, Apr 2026)
-- [AGENTS.md](https://www.thoughtworks.com/radar/techniques/agents-md) (Nov 2025)
+- [[AGENTS.md.md|AGENTS.md]] (Nov 2025)
 - [[Agent Skills]] (Apr 2026)
 - [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Apr 2026)
 - [[Context7]] (Nov 2025)

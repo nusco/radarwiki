@@ -137,6 +137,8 @@ First, check out how LLM Wiki does it:
 https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 https://llm-wiki.net/
 
+Note: potential bug. When you click on a link named `AGENTS.md` for a page that doesn't exist, Obsidian creates a page named `AGENTS` in a file named `AGENTS.md`. It should be a file named `AGENTS.md.md`.
+
 **WL-1 · MVP: Link the first mention**
 As a learner, I want the first mention of each related topic to be a link, even if that topic has no page yet, so that the wiki grows as I explore.
 
