@@ -57,12 +57,12 @@ This plan covers it. AGENTS.md is a small convention, and the bigger ideas behin
 
 Related Radar topics:
 
-- [[Context engineering]] (Nov 2025, Apr 2026)
-- [Curated shared instructions for software teams](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams) (Nov 2025, Apr 2026)
-- [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Apr 2026, Nov 2026)
-- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026, Nov 2026)
-- [Anchoring coding agents to a reference application](https://www.thoughtworks.com/radar/techniques/anchoring-coding-agents-to-a-reference-application) (Nov 2025)
-- [[Agent Skills]] (Apr 2026)
+- [[Context engineering]]
+- [Curated shared instructions for software teams](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams)
+- [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat)
+- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure)
+- [Anchoring coding agents to a reference application](https://www.thoughtworks.com/radar/techniques/anchoring-coding-agents-to-a-reference-application)
+- [[Agent Skills]]
 
 ---
 

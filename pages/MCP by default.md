@@ -51,11 +51,11 @@ Small, and covered here. It's a design judgment, not a technology. The ideas con
 
 Related Radar topics:
 
-- [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
-- [[Naive API-to-MCP conversion]] (Nov 2025)
-- [[Agent Skills]] (Apr 2026)
-- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026)
-- [[MCP Apps]] (Apr 2026): a case where MCP does something a CLI can't
+- [[Model Context Protocol (MCP)]]
+- [[Naive API-to-MCP conversion]]
+- [[Agent Skills]]
+- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure)
+- [[MCP Apps]]: a case where MCP does something a CLI can't
 
 ---
 

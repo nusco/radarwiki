@@ -63,18 +63,18 @@ This plan covers Pi for a generalist. If you want more, the closest next step is
 
 Related Radar topics:
 
-- [[Agent Skills]] (Apr 2026)
-- [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
-- [[MCP by default]] (Apr 2026)
-- [[Context engineering]] (Nov 2025, Apr 2026)
-- [OpenCode](https://www.thoughtworks.com/radar/tools/opencode) (Apr 2026)
-- [Claude Code](https://www.thoughtworks.com/radar/tools/claude-code) (Nov 2025, Apr 2026)
-- [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw) (Apr 2026)
-- [Sandboxed execution for coding agents](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents) (Apr 2026)
-- [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Apr 2026)
-- [Agent Development Kit (ADK)](https://www.thoughtworks.com/radar/languages-and-frameworks/agent-development-kit-adk) (Nov 2025, Apr 2026)
-- [LangGraph](https://www.thoughtworks.com/radar/languages-and-frameworks/langgraph) (Apr 2025, Nov 2025, Apr 2026)
-- [Mastra](https://www.thoughtworks.com/radar/languages-and-frameworks/mastra) (Apr 2026)
+- [[Agent Skills]]
+- [[Model Context Protocol (MCP)]]
+- [[MCP by default]]
+- [[Context engineering]]
+- [OpenCode](https://www.thoughtworks.com/radar/tools/opencode)
+- [Claude Code](https://www.thoughtworks.com/radar/tools/claude-code)
+- [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw)
+- [Sandboxed execution for coding agents](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents)
+- [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling)
+- [Agent Development Kit (ADK)](https://www.thoughtworks.com/radar/languages-and-frameworks/agent-development-kit-adk)
+- [LangGraph](https://www.thoughtworks.com/radar/languages-and-frameworks/langgraph)
+- [Mastra](https://www.thoughtworks.com/radar/languages-and-frameworks/mastra)
 
 ---
 

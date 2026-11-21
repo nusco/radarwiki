@@ -32,7 +32,7 @@ The term became popular in mid-2025, when people started saying that "prompt eng
 
 **Goal:** See what fills your own agent's context, and make it leaner.
 
-- [ ] **~15 min** · Read: [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) and [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Radar, Apr 2026, ~2 min each) — two short entries that turn the theory into a habit.
+- [ ] **~15 min** · Read: [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) and [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Radar, Apr 2026 and Nov 2026, ~2 min each) — two short entries that turn the theory into a habit.
 - [ ] **~45 min** · **Do:** Run `/context` again, and sort what you see into two groups: always loaded (system prompt, `CLAUDE.md`, memory, skill descriptions, MCP tool names) and loaded on demand (skill bodies, deferred tools, files). Make one change, then measure again. For example, disable an MCP server you don't use here, or move a rarely needed instruction into a skill.
 
 ---
@@ -54,14 +54,14 @@ This is one of the most relevant topics for a generalist, and 3 hours gives a ge
 
 Related Radar topics:
 
-- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) (Apr 2026)
-- [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Apr 2026)
-- [Context graph](https://www.thoughtworks.com/radar/techniques/context-graph) (Apr 2026)
-- [Curated shared instructions for software teams](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams) (Nov 2025, Apr 2026)
-- [[AGENTS.md.md|AGENTS.md]] (Nov 2025)
-- [[Agent Skills]] (Apr 2026)
-- [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling) (Apr 2026)
-- [[Context7]] (Nov 2025)
+- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure)
+- [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat)
+- [Context graph](https://www.thoughtworks.com/radar/techniques/context-graph)
+- [Curated shared instructions for software teams](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams)
+- [[AGENTS.md.md|AGENTS.md]]
+- [[Agent Skills]]
+- [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling)
+- [[Context7]]
 
 ---
 

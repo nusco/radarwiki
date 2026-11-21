@@ -45,9 +45,9 @@ This plan covers it for a generalist. Go deeper only if you build Python MCP ser
 
 Related Radar topics:
 
-- [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
-- [[Naive API-to-MCP conversion]] (Nov 2025)
-- [[MCP Apps]] (Apr 2026)
+- [[Model Context Protocol (MCP)]]
+- [[Naive API-to-MCP conversion]]
+- [[MCP Apps]]
 
 ---
 

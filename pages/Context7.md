@@ -41,9 +41,9 @@ This plan covers it.
 
 Related Radar topics:
 
-- [[Context engineering]] (Nov 2025, Apr 2026)
-- [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
-- [[MCP by default]] (Apr 2026)
+- [[Context engineering]]
+- [[Model Context Protocol (MCP)]]
+- [[MCP by default]]
 
 ---
 

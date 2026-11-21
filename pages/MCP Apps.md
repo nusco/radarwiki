@@ -43,9 +43,9 @@ This plan covers it for a generalist. If you build agent products with a UI, als
 
 Related Radar topics:
 
-- [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
-- [AG-UI Protocol](https://www.thoughtworks.com/radar/platforms/ag-ui-protocol) (Nov 2025, Apr 2026)
-- [[MCP by default]] (Apr 2026)
+- [[Model Context Protocol (MCP)]]
+- [AG-UI Protocol](https://www.thoughtworks.com/radar/platforms/ag-ui-protocol)
+- [[MCP by default]]
 
 ---
 

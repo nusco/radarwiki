@@ -46,10 +46,10 @@ Small, and fully covered here. The design rules are more important than the anti
 
 ## Related topics
 
-- [[Model Context Protocol (MCP)]] (Apr 2025, Nov 2025)
-- [[FastMCP]] (Nov 2025)
-- [[MCP by default]] (Apr 2026)
-- [GraphQL as data access pattern for LLMs](https://www.thoughtworks.com/radar/techniques/graphql-as-data-access-pattern-for-llms) (Nov 2025)
+- [[Model Context Protocol (MCP)]]
+- [[FastMCP]]
+- [[MCP by default]]
+- [GraphQL as data access pattern for LLMs](https://www.thoughtworks.com/radar/techniques/graphql-as-data-access-pattern-for-llms)
 
 ---
 

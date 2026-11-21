@@ -74,17 +74,17 @@ These 6 hours are enough to understand the blip, judge MCP servers, and write si
 
 ## Related topics
 
-- [[Naive API-to-MCP conversion]] (Nov 2025)
-- [[FastMCP]] (Nov 2025)
-- [[MCP Apps]] (Apr 2026)
-- [[MCP by default]] (Apr 2026)
-- [[Agent Skills]] (Apr 2026): an alternative to MCP for many use cases
-- [[Context engineering]] (Nov 2025, Apr 2026)
-- [[Context7]] (Nov 2025)
-- [[Serena]] (Nov 2025)
-- [[Toxic flow analysis for AI]] (Nov 2025, Apr 2026)
-- [[Agent Scan]] (Apr 2026), formerly MCP-Scan (Nov 2025)
-- [[Agent-to-Agent (A2A) Protocol]] (Nov 2025)
+- [[Naive API-to-MCP conversion]]
+- [[FastMCP]]
+- [[MCP Apps]]
+- [[MCP by default]]
+- [[Agent Skills]]: an alternative to MCP for many use cases
+- [[Context engineering]]
+- [[Context7]]
+- [[Serena]]
+- [[Toxic flow analysis for AI]]
+- [[Agent Scan]], formerly MCP-Scan
+- [[Agent-to-Agent (A2A) Protocol]]
 
 ---
 
