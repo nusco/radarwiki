@@ -182,24 +182,3 @@ As a learner, I want an overview of plans in progress, completion percentages, p
 
 **PM-7 · Later: Scheduled refresh**
 As a learner, I want stale plans re-checked automatically (e.g. monthly), so that maintenance happens without my asking.
-
----
-
-## Prior art, risks and open questions
-
-### Risks
-
-| Risk | Mitigation |
-|---|---|
-| Invented or dead links (the top risk) | LP-2, LP-3. Instruct explicitly: "only use resources you actually found." |
-| Weak models skip verification or rewrite whole pages | Required link-check script (LP-3), PM-3 in every workflow |
-| Duplicate topic pages | WL-4 |
-| Lost progress | PM-2, PM-3 |
-| Link rot over time | PM-4, PM-5, PM-7 |
-
-### Open questions
-
-- Flat folder or subfolders?
-- What happens to finished plans: archive them, or leave them in place with `status: done`?
-- How to detect a Radar blip: from the dataset, or by web search?
-- ~~Final name.~~ Decided: "RadarWiki".
