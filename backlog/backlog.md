@@ -22,7 +22,7 @@ Unlike AI-generated courses, the plans in RadarWiki point to material created by
 ### Principles
 
 1. **The agent writes the plan; people made the content.** Every linked resource is found through a real search and checked before it goes on the page. The agent never cites from memory.
-2. **The files are the product; the editor only displays them.** Pages are plain markdown with headings, links and `- [ ]` checkboxes, which I read in Obsidian.
+2. **The pages are the deliverable.** Pages are plain markdown with headings, links and `- [ ]` checkboxes, which I read in Obsidian.
 3. **Every plan starts from a Radar blip.** The system is built for the Radar, and generalizing it can wait until there's a real need. The source of truth is the Radar website (its [search pages](https://www.thoughtworks.com/radar/search) and blip pages), not the PDFs. (The two sources can be inconsistent.)
 4. **Mostly skills.** The system is skill files, plus a script that downloads the Radar.
 5. **Never lose progress.** Edits are surgical: changing one item never resets your checked boxes.
@@ -40,6 +40,20 @@ Are they interested in fixing these, or should we live with them?
 
 ### My Backlog
 
+**Keep up to date with the TW Radar**
+As a learner, I want the Wiki to track the latest editions, so that I don't miss updated information.
+- [ ] The README says which edition of the Radar the Wiki is up to date with, in one sentence like "Up to date with the Thoughtworks Radar, November 2026 (volume 35)". The sentence changes only once the edition file exists.
+- [ ] Whenever the system is asked to write or revise a learning plan, it checks how long it's been since the newest edition in the `Thoughtworks Radar` folder. If it's more than 25 weeks, it checks whether a new edition is out on `https://www.thoughtworks.com/radar/`. If a Radar is late, it checks on every request until the new edition is out.
+- [ ] If a new edition is out, the system tells the user, along with what it would change in existing plans, and asks before downloading the edition and updating anything.
+- [ ] If any editions of the radar are missing, the system creates files for them. See `thoughtworks-radar-2010-april` for an example of the naming convention and structure of these files.
+- [ ] Downloading a new edition goes slowly enough that the site doesn't block it, however long that takes.
+- [ ] The system does not create learning plans for these new blips, unless specifically asked to. The Wiki pages are still created on an as-needed basis.
+- [ ] If the new edition includes a blip that already has a learning plan, the system updates that plan, even if the blip stayed in the same ring. By the Radar's policy, every appearance is news. The update covers everything that depends on the edition, to keep the plans consistent: the metadata, the "Current state" paragraph, text like "read both versions", and the edition dates in other plans that link to the blip. For example: the "Toxic flow analysis" blip moved from Assess to Trial in the latest Radar (November 2026).
+- [ ] Plans also update the edition dates they give for blips that have no plan, like "OpenClaw (Apr 2026)" in a related-topic list.
+- [ ] These updates apply to completed plans too, as an exception to "leave completed plans alone": edition dates and metadata add no tasks and reset no progress.
+- [ ] Blips that drop out of the new edition need no update: by the Radar's policy, there's nothing new to say about them.
+- [ ] Renames and quadrant moves are covered in "Curate Updated Blips".
+
 **Curate Updated Blips**
 As a learner, I want updated Blips to be consistent in the Wiki, so that I avoid duplicated pages and missing information.
 - [ ] If a blip appears in different editions of the Radar, recap its history when you write its learning plan, telling me in which Radars it appeared and in which rings, according to the Radar website. For example, it's interesting to me that a blip moved from "Trial" to "Adopt".
@@ -51,14 +65,6 @@ As a learner, I want updated Blips to be consistent in the Wiki, so that I avoid
 - [ ] The edition files in the `Thoughtworks Radar` folder are not regenerated or corrected to match the website.
 - [ ] Edition lists already in existing learning plans stay as they are, even if the website disagrees with them (for example, the plans that list MCP as "Apr 2025, Nov 2025"). New or updated text follows the website.
 - [ ] Blips that the Radar lists as separate stay separate, even if they seem to be the same topic (see "Manage aliased blips").
-
-**Keep up to date with the TW Radar**
-As a learner, I want the Wiki to track the latest editions, so that I don't miss updated information.
-- [ ] The system writes to the README which edition of the Radar it's updated to.
-- [ ] Whenever the system is asked to update anything (for example, to revise a learning plan), it also checks that the `Thoughtworks Radar` folder contains all editions of the Radar, including the latest ones. The radar is on `https://www.thoughtworks.com/radar/`.
-- [ ] If any editions of the radar are missing, the system creates files for them. See `thoughtworks-radar-2010-april` for an example of the naming convention and structure of these files.
-- [ ] The system does not create learning plans for these new blips, unless specifically asked to. The Wiki pages are still created on an as-needed basis.
-- [ ] If the new Radar edition updates a previous blip that already had a matching learning plan, then the system does update that learning plan. One such example is the "Toxic flow analysis" blip, that moved  from Assess to Trial in the latest Radar (November 2026). So its metadata, its "Current state" paragraph, and the edition dates in the plans that link to it need updating.
 
 **Manage aliased blips**
 As a learner, I want to tell the maintainer that two blips are aliases of each other, so that I can resolve the redundancy (_somehow_).
