@@ -42,13 +42,25 @@ Create a self-study plan for the Thoughtworks Technology Radar blip on: $TOPIC, 
   - If a related topic has no plan yet, an existing plan can cover it briefly. When that topic gets its own plan, apply the rule above.
 - **Structural links go to plans, not sources.** A structural link is one that helps the learner find their way between topics, such as the related topics in "Recommendation for future learning", a series list, or an entry in an index file (for example, a hypothetical `Index.md` listing all topics). When a topic has a plan, make that link a link to the plan, and don't add a second link to the topic's blip next to it. Link to the blip itself only when the learner needs to read it: the **Blip** metadata line, a reading resource inside a level, or the first and closing items that link the blip. A topic that has no plan yet keeps its blip link. When you write a new plan, replace the structural links to its blip in the other plans and in any index file, such as `Index.md`, if one exists, with links to the new plan.
 
+## Keeping up with the Radar
+
+Before you write or revise a plan, check that the `Thoughtworks Radar` folder has the latest edition. The folder has one file per edition, numbered by volume, like `034-thoughtworks-radar-2026-april.md`. Run the download script from the folder, because it writes there.
+
+1. **Check the date.** If the newest edition in the folder is less than 25 weeks old, go on with the request.
+2. **Check the website.** Otherwise, run `python3 download-script/radar_to_todo.py < /dev/null`. It reads the [Radar archive](https://www.thoughtworks.com/radar/archive) and lists the published volumes, without downloading anything. If none is newer than the folder, go on with the request. While a Radar is late, you'll check on every request, and that's fine.
+3. **Ask first.** If there are new editions, tell the learner which ones, and which existing plans they would change: read the blip page of each plan, and look for the new editions in its history. Then ask before you download anything or change any plan. If the learner says no, go on with the request.
+4. **Download the new editions.** Run `printf '<volumes>\n' | python3 download-script/radar_to_todo.py`, with only the new volumes, like `35` or `35-36`. Never select a volume that's already in the folder: its file holds the learner's ticks. The script reads every blip page slowly, so the site doesn't block it. It can take an hour, so let it finish.
+5. **Update the README.** Set its sentence on the edition to the newest one, like "Up to date with the Thoughtworks Radar, November 2026 (volume 35)."
+6. **Update the plans.** For each plan whose blip appears in a new edition, even in the same ring, update everything that depends on the edition: **Radar edition** and **Ring** in the metadata, the current state paragraph and its date, text that counts or names editions (like "read both versions"), and the edition dates in other plans that link to it. Also update the edition dates that plans give for blips without a plan, like "[OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw) (Apr 2026)" in a list of related topics. This applies to completed plans too: these changes add no tasks and reset no progress. Leave alone blips that dropped out of the new edition, and don't write plans for new blips unless the learner asks.
+7. Go on with the request.
+
 ## Maintaining existing plans
 
 - **Update existing plans when needed.** Whenever a change in the system is inconsistent with the existing plans (for example, because the user asked for changes that lead you to update this skill), update the existing plans in the `pages` folder to follow the new version, without waiting for the learner to ask. If an update could be destructive, such as losing progress on a plan the learner has started, explain the problem plainly and ask before you make it. Describe the change in natural language, not as a code diff or another proposal that's hard to judge at a glance.
 
 - **Keep in-progress plans stable.** When you change a plan where some items are already ticked off, preserve the ticked items. Never untick an item without asking the learner. If a change would substantially alter a ticked item, describe the issue to the learner and let them decide.
 
-- **Leave completed plans alone.** A plan where every item is ticked off, ignoring the optional "If you have extra time" items, is done: don't update it automatically, and don't add new items that would return it to into "in progress". This includes the changes that the wiki rules above would make, such as moving material out of the plan or updating its structural links. If you think a completed plan really needs a change, ask the learner specifically.
+- **Leave completed plans alone.** A plan where every item is ticked off, ignoring the optional "If you have extra time" items, is done: don't update it automatically, and don't add new items that would return it to into "in progress". This includes the changes that the wiki rules above would make, such as moving material out of the plan or updating its structural links. If you think a completed plan really needs a change, ask the learner specifically. The one exception is the update for a new Radar edition, in [Keeping up with the Radar](#keeping-up-with-the-radar).
 
 ## Learning preferences
 

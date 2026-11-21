@@ -2,7 +2,7 @@
 """Download Thoughtworks Technology Radar blips into Markdown todo lists.
 
 Lists the published Radar volumes, asks which ones to download, and writes
-one file per volume, e.g. "thoughtworks-radar-2026-april.md".
+one file per volume, e.g. "034-thoughtworks-radar-2026-april.md".
 
 Data sources:
 - The Radar archive page, for the list of volumes and their dates.
@@ -13,8 +13,9 @@ Data sources:
 The two sources occasionally disagree, so a blip is included in a volume if
 either of them says it belongs there.
 
-Blip histories are cached in .radar-cache.json next to this script, because
-the site blocks clients that read too many pages in a short time.
+The site blocks clients that read too many pages in a short time, so pages are
+read one at a time, with a pause between them. Blip histories are also cached in
+.radar-cache.json next to this script, so a run that gets blocked can resume.
 """
 
 import calendar
@@ -24,13 +25,14 @@ import sys
 import time
 import urllib.error
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 SITE = "https://www.thoughtworks.com"
 USER_AGENT = "Mozilla/5.0 (radar-to-todo script)"
 CACHE_FILE = Path(__file__).with_name(".radar-cache.json")
-PARALLEL_REQUESTS = 4
+# Seconds between two requests. A new volume means re-reading every blip page,
+# so a download takes a while, but it happens twice a year.
+REQUEST_INTERVAL = 1.5
 # The search index never returns more results than this for a single request.
 MAX_RESULTS_PER_REQUEST = 2000
 
@@ -49,6 +51,7 @@ class Blocked(Exception):
 
 
 def fetch(url, data=None, headers=None):
+    time.sleep(REQUEST_INTERVAL)
     headers = {"User-Agent": USER_AGENT, **(headers or {})}
     request = urllib.request.Request(url, data=data, headers=headers)
     for attempt in range(3):
@@ -183,20 +186,17 @@ def read_all_timelines(all_blips, volumes):
     fetched = {}
     if stale:
         print(f"Reading the history of {len(stale)} blips "
-              f"({len(all_blips) - len(stale)} cached)...", flush=True)
-        pool = ThreadPoolExecutor(max_workers=PARALLEL_REQUESTS)
+              f"({len(all_blips) - len(stale)} cached), "
+              f"about {len(stale) * REQUEST_INTERVAL / 60:.0f} minutes...", flush=True)
         try:
-            futures = {pool.submit(read_timeline, b): b for b in stale}
-            for future in as_completed(futures):
-                blip = futures[future]
-                fetched[blip["url"]] = future.result()
+            for blip in stale:
+                fetched[blip["url"]] = read_timeline(blip)
                 if fetched[blip["url"]]:  # Never cache a page that came back without history.
                     cache[blip["url"]] = {"newest_volume": newest_volume,
                                           "index_volume_date": blip["volume_date"],
                                           "timeline": fetched[blip["url"]]}
         finally:
             # Keep what was read so far, so a run that gets blocked can resume later.
-            pool.shutdown(cancel_futures=True)
             save_cache(cache)
     timelines = [fetched[b["url"]] if b["url"] in fetched else cache[b["url"]]["timeline"]
                  for b in all_blips]
@@ -308,7 +308,7 @@ def main():
     for vol in selection:
         year, month = volumes_by_number[vol]
         blips = blips_for_volume(all_blips, timelines, year, month)
-        filename = f"thoughtworks-radar-{year}-{calendar.month_name[month].lower()}.md"
+        filename = f"{vol:03d}-thoughtworks-radar-{year}-{calendar.month_name[month].lower()}.md"
         with open(filename, "w", encoding="utf-8") as f:
             f.write(render(blips, year, month))
         print(f"Vol {vol} ({calendar.month_name[month]} {year}): "

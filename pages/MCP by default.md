@@ -34,7 +34,7 @@ This entry reflects the backlash against MCP that started in late 2025, when sin
 
 **Goal:** See the difference between the two approaches on your own task.
 
-- [ ] **~45 min** · **Do:** Ask Claude Code to build the same small capability twice: count how many items in `Thoughtworks Radar/thoughtworks-radar-<edition>.md` are ticked and how many aren't. First as a one-tool MCP server, added with `claude mcp add`. Then as a CLI script (`radar-progress 2025-november`) with `--help` and JSON output, plus a minimal `.claude/skills/radar-progress/SKILL.md` (a name, a description, and three lines on how to run the script). Ask "how far along am I with the November 2025 Radar?" twice: once with only the MCP server enabled, and once with only the skill. Run `/context` after each and compare.
+- [ ] **~45 min** · **Do:** Ask Claude Code to build the same small capability twice: count how many items in `Thoughtworks Radar/<volume>-thoughtworks-radar-<edition>.md` are ticked and how many aren't. First as a one-tool MCP server, added with `claude mcp add`. Then as a CLI script (`radar-progress 2025-november`) with `--help` and JSON output, plus a minimal `.claude/skills/radar-progress/SKILL.md` (a name, a description, and three lines on how to run the script). Ask "how far along am I with the November 2025 Radar?" twice: once with only the MCP server enabled, and once with only the skill. Run `/context` after each and compare.
 
 ---
 
