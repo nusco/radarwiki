@@ -21,4 +21,4 @@ RadarWiki is minimalistic: a `SKILL.md` and a folder of Markdown files. If you l
 
 I'm generating new pages as I develop the skill. If you want a page on whatever blip you care about, launch your favorite agent in the root and ask it to generate it. Then start learning.
 
-The wiki is currently up to date with the volume 35 of the Radar (November 2026).
+The wiki is currently up to date with volume 35 of the Radar (November 2026).
