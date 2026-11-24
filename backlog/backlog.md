@@ -55,6 +55,19 @@ As a learner, I want the Wiki pages to be generated from a template, so that I c
 - [ ] Obsidian's core Templates plugin is disabled.
 - [ ] The README's "Structure" section mentions the template.
 
+**Organize the Know-how as Skills**
+As a learner, I want all the know-how behind the wiki in one visible place, organized the same way, so that I can find, read and change any of it without wondering where it lives.
+- [ ] All the know-how lives in a visible `skills/` folder in the vault, which I can browse in Obsidian. Nothing that I'd want to read or edit is hidden in `.claude`, which only holds what agents need to find the skills.
+- [ ] How to make the wiki is one skill: what's true for every page (folder layout, keeping up with the Radar, naming and link style, wiki rules, maintenance, research integrity).
+- [ ] How to make a learning plan is another skill: the whole procedure for one plan, from finding the blip to the finished page, plus my learning preferences. It follows the wiki skill, whichever of the two the agent starts from.
+- [ ] The structure of a learning plan is a template that belongs to the learning plan skill, inside its folder.
+- [ ] A future page type (an index, a series page) would be one more skill with its own template, next to the learning plan skill.
+- [ ] Every file in `skills/` starts with frontmatter whose `description` tells a human reader what the file is. In a skill, the description opens with that plain explanation and ends with when to use the skill.
+- [ ] The template's frontmatter is never copied into a plan.
+- [ ] The `templates/` folder goes away. This replaces the "Templates live in a `templates/` folder" criterion of "Generate Page from Template".
+- [ ] Existing plans don't change.
+- [ ] The README's "Structure" section describes the new organization.
+
 
 **Curate Updated Blips**
 As a learner, I want updated Blips to be consistent in the Wiki, so that I avoid duplicated pages and missing information.
