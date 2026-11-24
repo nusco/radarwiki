@@ -30,6 +30,7 @@ description: How the RadarWiki works as a whole, whatever the page: the folder l
 These rules hold for every page, whatever a page skill or its template says:
 
 - **Find every resource with a live web search, never from memory.** Even when you remember a good resource, search for it. Then fetch each page to confirm that it loads and contains what the page says about it.
+  - Some sites, such as Medium, block automated fetches. Don't drop a resource for that reason, and don't add a caveat about it to the page: keep it, and ask the learner to confirm in a browser that it loads.
 - **Use only resources that look human-created.** This is a requirement, not a preference: never use content that looks LLM-generated, slop, content farms or SEO filler, even when it looks otherwise good. Some docs, including official ones, read as generated: verbose, overly detailed, meandering. Skip them in favor of a terse, well-structured narrative written by a person.
 - Always point to existing human-written or human-curated content instead of writing your own explanations or walkthroughs.
 

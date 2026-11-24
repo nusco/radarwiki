@@ -44,6 +44,7 @@ The $TOPIC can be a literal topic ("Zero trust architecture") or a URL referring
 
 ### Metadata
 
+- **Updated** is the date you last changed the plan, so the learner can tell how fresh it is. Older plans may have a **Created** field instead: replace it with **Updated** when you change the plan. The creation date doesn't matter.
 - **Status** is always `#undone` in a new plan, and you never change it afterwards. The learner changes it to something else as they study, such as `#wip` or `#done`.
 
 ### Prerequisites and time budget
@@ -100,10 +101,6 @@ One to three short activities, for the learner who wants to know more about the 
 
 - Say whether the topic is small and covered adequately by this plan, whether you'd recommend a longer plan (and how long), or whether the topic is so vast that you'd split it into smaller topics.
 - If you left out something the blip mentions, say what, and why. Otherwise, leave that line out.
-
-### Review the blip
-
-The closing item asks the learner to reread the blip now that they know the topic, to check that they understand every point it makes, and whether they agree with its ring.
 
 ### Related Radar topics
 

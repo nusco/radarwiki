@@ -6,21 +6,34 @@ Each page is a quick learning plan for one technology topic. The topics come fro
 
 ## The Core Idea
 
-The idea of RadarWiki is that everyone does what they do best:
+In RadarWiki, everyone does what they do best:
 
-- **humans** decide what to learn and produce the content;
-- **agents** assemble the content to create the learning plan.
+- **Humans** decide what to learn and produce the content.
+- **Agents** assemble the content to create the learning plan.
 
-The result is a [collection](pages) of [short courses](pages/Context%20engineering.md) that feel humane, not slop.
+The result is a [collection](pages) of [short courses](pages/Context%20engineering.md) that feel crafted, not slop.
 
 ## Structure
 
-RadarWiki is minimalistic: a folder of skills and a folder of Markdown pages. If you like, you can use Obsidian as a GUI.
+RadarWiki is minimalistic: Markdown pages and a folder of skills to create/maintain them.
 
-The [skills](skills) folder holds all the know-how behind the wiki. The [radarwiki](skills/radarwiki/SKILL.md) skill says how the wiki works as a whole. The [learning-plan](skills/learning-plan/SKILL.md) skill says how to write a page, and holds the learning preferences, such as the default length and pace of the plans. Its [template](skills/learning-plan/assets/template.md) describes what a page looks like. Edit them to make the wiki your own. Existing pages change only when you ask the agent to update them.
+If you like, you can use Obsidian as a GUI. It fits great.
+
+## How to Use It
+
+To **study**:
+- Open a learning plan in a text editor and use it as a learning checklist.
+- It's markdown, so it works in your favorite editor.
+
+To **make it your own**:
+- Go to the [skills](skills) folder and change how the Wiki is assembled and/or how a learning plan is designed.
+- Then start your favorite agent in the root and ask it to re-generate whatever page you're interested in.
+- If you you have the time and tokens, you can ask the agent to update the entire Wiki to your own preferences.
 
 ## Current Status
 
-I'm generating new pages as I develop the skill. If you want a page on whatever blip you care about, launch your favorite agent in the root and ask it to generate it. Then start learning.
+The Wiki covers a dozen or so blips at the moment. I'm generating new pages as I evolve the skill files, to find out what works.
+
+If you want to skip past me and generate a page about any blip you care about, go forth: launch your agent in the root and ask it for the new page. Then start learning.
 
 The wiki is currently up to date with volume 35 of the Radar (November 2026).

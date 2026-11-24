@@ -24,7 +24,7 @@ description: The structure of a learning plan, section by section. The learning-
 
 {One line on the level's theme. Ex.: "Context7 reduces hallucinated code."}
 
-- [ ] **{Time}** · Read: [The Radar blip]({The blip URL}).
+- [ ] **{Time}** · Read: [The Radar blip]({The blip URL}) ({Length. Ex.: "~1 min"}).
 - [ ] **{Time}** · {A short, concrete anchor: a worked example, a demo, a quick look at a real artifact, or a tiny hands-on step.}
 - {More activities, if useful.}
 
