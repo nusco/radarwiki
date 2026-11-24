@@ -40,6 +40,22 @@ Are they interested in fixing these, or should we live with them?
 
 ### My Backlog
 
+**Generate Page from Template**
+As a learner, I want the Wiki pages to be generated from a template, so that I can easily change their style and get consistent results.
+- [ ] The wiki should have a place to put templates. This place should contain a template for a page that describes the general structure and the content of each section.
+- [ ] The natural language instructions to generate plans in the SKILL.md should move to the template so that they're easy to read and change for a human user, and harder to miss for an agent maintainer.
+- [ ] The split: the template says what a page looks like and contains (metadata, sections, levels, labels, time estimates, preferences). The skill keeps the process: finding the blip, keeping up with the Radar, maintaining plans, wiki rules, and research integrity (live search, fetch every page, human-made content only).
+- [ ] After manual review by Paolo, the existing plans should be re-validated against the template and, if necessary, changed.
+- [ ] Templates live in a `templates/` folder in the vault. Only the agent uses them: no Obsidian templating (no Templates or Templater plugin, no Obsidian-generated skeletons).
+- [ ] The instructions in the template are visible (for example, callouts), not hidden comments, so I can read them and edit them to personalize the wiki's style.
+- [ ] All the learning preferences (default length, pace, trusted and avoided sources, link style) move to the template, too. We'll learn over time which pieces sit better in the skill.
+- [ ] The template also covers the `*Assumption: …*` and `*Time budget: …*` lines (where they go and how they look), and a **Status** metadata field with one of `#undone`, `#wip` or `#done`. The agent writes `#undone` in new plans and never changes the field afterwards: only I do, on my study branch.
+- [ ] When re-validating, completed plans follow the existing rule: ask me before any change, structural or content. In-progress plans keep their ticks.
+- [ ] Changing the template doesn't automatically update the existing pages. I ask for that when I want it.
+- [ ] Obsidian's core Templates plugin is disabled.
+- [ ] The README's "Structure" section mentions the template.
+
+
 **Curate Updated Blips**
 As a learner, I want updated Blips to be consistent in the Wiki, so that I avoid duplicated pages and missing information.
 - [ ] If a blip appears in different editions of the Radar, recap its history when you write its learning plan, telling me in which Radars it appeared and in which rings, according to the Radar website. For example, it's interesting to me that a blip moved from "Trial" to "Adopt".
@@ -100,28 +116,12 @@ As a learner I want to visualize the Radar Wiki as a graph in Obsidian, to see r
 As a learner I want to visualize the learning plans in the Obsidian grap with different color to see which ones I completed.
 
 
-
----
-
-From here on: machine-generated backlog to fish from later.
-
-## Epic 1: Learning plans
-
-**LP-3 · MVP: Verified links**
+**Verify links**
 As a learner, I want every link checked before it lands on the page, so that I never hit an invented or dead link.
 - [ ] The agent fetches each URL and confirms it loads and matches its description.
 - [ ] A mechanical link-check script runs as a required final step, independent of the model.
 - [ ] Any link that can't be verified is removed or clearly marked as unverified.
 
-**LP-4 · MVP: Choose the length**
-As a learner, I want to choose how long a plan takes (from 30 minutes to a weekend), so that it fits my time.
-- [ ] If neither my request nor my learning preferences settle the length, the agent asks with a few choices (e.g. 1 hour / half a day / weekend).
-- [ ] The length is recorded in the page's frontmatter.
-
-**LP-7 · Later: Prerequisites**
-As a learner, I want a plan to name its prerequisite topics as links, so that I can fill gaps first. (This borrows Metacademy's prerequisite-graph idea.)
-
----
 
 ## Epic 2: Wiki linking
 
@@ -136,7 +136,7 @@ As a learner, I want the first mention of each related topic to be a link, even 
 
 **WL-2 · MVP: Clicking a missing page gets a plan**
 As a learner, I want to click a link to a topic that has no plan and get one, so that I can follow my curiosity.
-- [ ] In Obsidian, clicking the link creates a stub (`status: pending`) using a Templater template.
+- [ ] In Obsidian, clicking the link creates a stub (`status: pending`).
 - [ ] I ask the agent (e.g. in a sidebar) to fill it in. It asks for length and pace only if my learning preferences don't decide them.
 - [ ] The finished plan replaces the stub at the same path, so existing links keep working.
 
