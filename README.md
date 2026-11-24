@@ -15,9 +15,9 @@ The result is a [collection](pages) of [short courses](pages/Context%20engineeri
 
 ## Structure
 
-RadarWiki is minimalistic: a `SKILL.md`, two files in the `templates` folder and a folder of Markdown files. If you like, you can use Obsidian as a GUI.
+RadarWiki is minimalistic: a folder of skills and a folder of Markdown pages. If you like, you can use Obsidian as a GUI.
 
-The [template](templates/template.md) describes what a page looks like. The [learning plan guide](templates/Learning%20plan.md) describes how to fill it in, and holds the learning preferences, such as the default length and pace of the plans. Edit them to make the wiki your own. Existing pages change only when you ask the agent to update them.
+The [skills](skills) folder holds all the know-how behind the wiki. The [radarwiki](skills/radarwiki/SKILL.md) skill says how the wiki works as a whole. The [learning-plan](skills/learning-plan/SKILL.md) skill says how to write a page, and holds the learning preferences, such as the default length and pace of the plans. Its [template](skills/learning-plan/assets/template.md) describes what a page looks like. Edit them to make the wiki your own. Existing pages change only when you ask the agent to update them.
 
 ## Current Status
 

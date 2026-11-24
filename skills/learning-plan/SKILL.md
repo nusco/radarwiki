@@ -1,12 +1,37 @@
-# How to write a learning plan
+---
+name: learning-plan
+description: How to write one learning plan, a self-study page organized in progressive levels, for a Thoughtworks Technology Radar blip (30' to a weekend), with curated videos and articles. It covers the whole procedure, from finding the blip to the finished page, what goes in each section, and the learner's learning preferences. Use when the user asks for a learning plan, study plan, or how to learn a Radar blip or technical topic quickly.
+argument-hint: "[topic] [time budget]"
+---
 
-Every learning plan in the `pages` folder follows the layout in [template.md](template.md). This file says how to fill it in: the approach behind the plans, what goes in each section, and the learner's learning preferences. Edit either file to change the style of the wiki. Changing them doesn't update the existing plans: ask the agent when you want them updated.
+# Learning plan
 
-## Reading the template
+Create a self-study plan for the Thoughtworks Technology Radar blip on: $TOPIC, with a specific $TIME_BUDGET
 
+The $TOPIC can be a literal topic ("Zero trust architecture") or a URL referring to it (https://www.thoughtworks.com/radar/techniques/zero-trust-architecture).
+
+**Follow the `radarwiki` skill first.** [`radarwiki`](../radarwiki/SKILL.md) holds the rules for every page in the wiki: keeping up with the Radar, naming and links, the wiki rules, maintaining existing pages, and research integrity. Read it before you write or change a plan. This skill only adds what's specific to learning plans.
+
+## The template
+
+[`assets/template.md`](assets/template.md) is the structure of every plan: its sections in order. Follow it in every plan.
+
+- Copy the template's body, never its frontmatter: plans have no frontmatter.
 - Text in `{curly braces}` describes what goes there, and "Ex." gives an example. Everything else is copied as is.
-- A placeholder that starts with "Optional" can be left out. Leave it out unless this file says the plan needs it.
-- When a request asks for something the template or this file doesn't, the request wins for that plan.
+- A placeholder that starts with "Optional" can be left out. Leave it out unless this skill says the plan needs it.
+- When a request asks for something the template or this skill doesn't, the request wins for that plan.
+
+## Steps
+
+1. **Find the blip.** If the learner gave the blip's URL, that's the blip. Otherwise, look for it in the `Thoughtworks Radar` folder. A blip can use a different name for the topic (for example, Grafana Agent is in the Radar as Grafana Alloy), so match the topic, not just the name. But if the Radar has a blip under the name the learner used, that's the blip, even if another blip seems to cover the same topic: blips that the Radar lists separately stay separate. Every topic should have a blip, so if you can't find one, something is wrong: maybe the learner misspelled the topic, or the folder is missing an edition. Don't write the plan. Tell the learner that you found no blip, and list any close matches in the folder.
+
+2. **Pin down the inputs.** Get the topic and time budget from the arguments. If the budget is missing, choose one with the rules on [default length](#default-length). If the learner gave a budget that seems inappropriate (too long for an obsolete topic, or too short for an important one), supersede it with your own estimate. If the learner's background is unclear, assume one instead of asking. State these choices in the plan, as [Prerequisites and time budget](#prerequisites-and-time-budget) says, so the learner can push back.
+
+3. **Cover what the blip highlights.** List everything the blip explicitly mentions or links to: concepts, tools, criticisms, related specs. Each one must end up in the plan: in a level, in "If you have extra time", in the wrap-up, or as a related topic with its own plan. Skip one only for a clear reason, such as time or scope, duplicated information, or obsolescence, and state that reason in one line in the plan, so the learner knows it was a choice and not an oversight.
+
+4. **Find the resources,** following the research integrity rules in `radarwiki`, the rules on [resources](#resources) below, and the trusted and avoided sources in the [learning preferences](#learning-preferences).
+
+5. **Write the plan** in the `pages` folder, following the template section by section, and the [writing rules](#writing-rules) and [sections](#sections) below.
 
 ## Writing rules
 
@@ -19,7 +44,7 @@ Every learning plan in the `pages` folder follows the layout in [template.md](te
 
 ### Metadata
 
-- **Status** is always `#undone` in a new plan. The learner changes it to something else as they study, such as `#wip` or `#done`.
+- **Status** is always `#undone` in a new plan, and you never change it afterwards. The learner changes it to something else as they study, such as `#wip` or `#done`.
 
 ### Prerequisites and time budget
 
@@ -63,7 +88,7 @@ The levels are the core of the plan.
 
 ### Time estimates
 
-- **Every to-do item starts with the time the learner will spend on it.** Work it out from the time the content strictly needs (the length of the article or video, or the bare work in an exercise), adjusted for the pace. Use round numbers, like ~5 min, ~20 min, ~1 hour or ~1.5 hours.
+- **Every to-do item starts with the time the learner will spend on it.** Work it out from the time the content strictly needs (the length of the article or video, or the bare work in an exercise), adjusted for the [pace](#pace). Use round numbers, like ~5 min, ~20 min, ~1 hour or ~1.5 hours.
 - **Give the resource's own length too**, when you know it, so the learner can tell it apart from the time the activity takes.
 - **Make the estimates add up.** Each level's time is roughly the sum of its activities, and **Time** is the sum of the levels. "If you have extra time" and "Review the blip" don't count. Size the content to fit the time budget.
 
@@ -108,9 +133,3 @@ Design for slow, thoughtful learning. Assume that the learner will re-read, paus
 ### Avoided sources
 
 None yet.
-
-### Link style
-
-- The learner opens plans as notes in Obsidian. Name each file after its topic, like `Model Context Protocol (MCP).md`, and don't add a Markdown level-1 title inside (like `# MCP`): Obsidian shows the file name as the title.
-- Link between plans with Obsidian links, like `[[Agent Skills]]`, or `[[Agent Scan|MCP-Scan]]` when a plan covers a topic under another name.
-- Use standard Markdown links for everything else, such as resources and blips.

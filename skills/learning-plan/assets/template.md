@@ -1,3 +1,7 @@
+---
+description: The structure of a learning plan, section by section. The learning-plan skill fills it in to write each page; this frontmatter is never copied into a plan.
+---
+
 - **Blip:** {Ex.: "[Serena](https://www.thoughtworks.com/radar/tools/serena)"}
 - **Time:** {Ex.: "~45 minutes"}
 - **Radar edition:** {Ex.: "November 2025 and April 2026"}
