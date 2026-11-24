@@ -1,86 +1,58 @@
-- **Blip:** {Ex.: "[Serena](https://www.thoughtworks.com/radar/tools/serena)"}
-- **Time:** {Ex.: "~45 minutes"}
-- **Radar edition:** {Ex.: "November 2025 and April 2026"}
-- **Quadrant:** {"Techniques", "Tools", "Platforms", or "Languages & Frameworks"}
-- **Ring:** {"Adopt", "Trial", "Assess", or "Caution" (formerly "Hold")}
-- **Updated:** {The update date of the page. Ex.: "2026-10-21"}
-- **Status:** {Always "#undone"; the user can change this to something else as they study, such as "#wip" or "#done"}
+# How to write a learning plan
 
-*Assumption: {The learner's background, only when it's unclear. If the plan builds on other plans, what it assumes from them, with links. Ex.: "You know what an MCP server is and how to add one to Claude Code, from `[[Model Context Protocol (MCP)]]`."}*
+Every learning plan in the `pages` folder follows the layout in [template.md](template.md). This file says how to fill it in: the approach behind the plans, what goes in each section, and the learner's learning preferences. Edit either file to change the style of the wiki. Changing them doesn't update the existing plans: ask the agent when you want them updated.
 
-*Time budget: {Why this time budget, only if it needs explaining: you chose it because the learner gave none, it departs from the default length, or it overrides the learner's budget. Otherwise, leave this line out. Ex.: "a single tool would usually get an hour or less, but Pi has become a foundation that other agents are built on, and it's best learned by extending it, which takes time."}*
+## Reading the template
 
----
-
-## Current state of the topic ({The date you wrote this section. Ex.: "late 2026"})
-
-{One short paragraph on what the learner needs to know before starting, that the activities won't make clear: Is the topic still relevant today? Did anything major happen to it, like a rename, an acquisition, or an open-source product going commercial? Was it superseded by a competing technology? Is it still changing fast? Don't repeat what the levels teach.}
-
----
-
-## Level 1 — {The level's theme. Ex.: "What it is"} ({The time slot. Ex.: "0:00–0:15"}, {The level's time. Ex.: "~15 min"})
-
-**Goal:** {What the learner will be able to do after this level, in one line. Ex.: "Explain how Context7 reduces hallucinated code."}
-
-- [ ] **{Time}** · Read: [The Radar blip]({The blip URL}) ({The blip's length. Ex.: "~1 min"}).
-- [ ] **{Time}** · {Something short and concrete, as an anchor for the more theoretical material that follows: a worked example, a demo, a quick look at a real artifact, or a tiny hands-on step. It can be a Read, a Skim or a Do.}
-
-## Level 2 — {The level's theme. Ex.: "How it works"} ({The time slot. Ex.: "0:15–0:45"}, {The level's time. Ex.: "~30 min"})
-
-**Goal:** {What the learner will be able to do after this level, in one line.}
-
-- [ ] **{Time}** · Read: [{Title}]({URL}) ({Author, date and length. Ex.: "Enes Akar, Upstash, Mar 2025, 6 min"}) — {Why you picked it, and how to use it.}
-- [ ] **{Time}** · Watch: [{Title}]({URL}) ({Author, date and length}) — {Why you picked it, and how to use it.}
-- [ ] **{Time}** · Skim: [{Title}]({URL}) ({Author, date and length}) — {Only for a tool page, such as an overview or a reference of options. Ex.: "skim the page, then launch the Inspector and click around. You'll use it properly in the exercise below."}
-- [ ] **{Time}** · **Do:** {A hands-on exercise that ends with something concrete to produce, compare or decide, so the learner knows when it's done. It builds on earlier exercises. Only where practice fits the level.}
-
-## Level {N} — {The level's theme} ({The time slot}, {The level's time})
-
-{More levels like Level 2, usually 2–4 levels in total.}
-
----
-
-## If you have extra time
-
-- [ ] **{Time}** · {One to three short activities, for the learner who wants to know more about the topic. Ex.: an additional video or blog post.}
-
----
-
-## Recommendation for future learning
-
-{Is the topic small and covered adequately by this plan? Would you recommend a longer plan, and how long? Is the topic so vast that you'd split it into smaller topics? Ex.: "This plan covers it."}
-
-**Left out from the blip:** {Only if you left out something the blip mentions: what, and why. Otherwise, leave this line out.}
-
-Related Radar topics:
-
-- {A related Radar topic: a link to its plan if it has one, like `[[Agent Skills]]`, or to its blip if it doesn't. No editions.}
-
----
-
-- [ ] **~10 min** · **Close:** [Review the blip]({The blip URL}) — reread it now that you know the topic. Check that you understand every point it makes, and whether you agree with its ring.
-
-# About this template
-
-This is the model for every learning plan in the `pages` folder. Edit it to change the style of the wiki. Changing it doesn't update the existing plans: ask the agent when you want them updated.
-
-Everything above this heading is the plan. Text in `{curly braces}` describes what goes there, and "Ex." gives an example. Everything else is copied as is. Everything from this heading down is not part of the plan.
-
-When a request asks for something this template doesn't, the request wins for that plan.
+- Text in `{curly braces}` describes what goes there, and "Ex." gives an example. Everything else is copied as is.
+- A placeholder that starts with "Optional" can be left out. Leave it out unless this file says the plan needs it.
+- When a request asks for something the template or this file doesn't, the request wins for that plan.
 
 ## Writing rules
 
 - **Keep the plan scannable.** It goes from a few lines to a screenful of text for a weekend-long plan.
-- **Keep generated text small, and set it apart.** Write your own text only where it helps the plan read well: a goal, an assumption, an exercise brief, a one-line pointer. Keep it short, and never format it like a resource: only human-made content gets a **Read**, **Watch** or **Skim** label and a link with author and date.
-- **Every activity is a to-do item**, so the learner can tick it off: resources, exercises, "If you have extra time" items, and the closing item. Related topics are plain list items: they're pointers, not tasks, so the learner never has to come back to a finished plan to check them off.
+- **Keep generated text small, and set it apart.** Write your own text only where it helps the plan read well: a theme line, the prerequisites, an exercise brief, a one-line pointer. Keep it short, and never format it like a resource: only human-made content gets a **Read**, **Watch** or **Skim** label and a link with author and date.
+- **Every activity is a to-do item**, so the learner can tick it off: resources, exercises, "If you have extra time" items, and the "Review the blip" item. Related topics are plain list items: they're pointers, not tasks, so the learner never has to come back to a finished plan to check them off.
 - **Don't hedge.** Every activity should leave the learner knowing what to do next. Options are fine, such as an optional extra resource or an alternative exercise, as long as the plan gives the learner the means to choose: what each option offers that the other doesn't, who or what situation it suits, and how long it takes. If the learner could only make the choice by trying every option first, make it for them. For example, don't mention an alternative resource with a vague caveat ("the blip links to another article, but it's partly paywalled"). Decide where it belongs (in a level, in "If you have extra time", or left out with a reason) and say what it adds.
+
+## Sections
+
+### Metadata
+
+- **Status** is always `#undone` in a new plan. The learner changes it to something else as they study, such as `#wip` or `#done`.
+
+### Prerequisites and time budget
+
+- **Prerequisites:** write them only when the learner's background is unclear, or when the plan builds on other plans. In that case, say what the plan assumes from them, and link them.
+- **Time budget:** explain it only if it needs explaining: you chose it because the learner gave none, it departs from the default length, or it overrides the learner's budget. Otherwise, leave it out.
+
+### Current state
+
+The paragraph puts the topic in perspective today, telling the learner what they need to know before starting that the activities won't make clear. Is the topic still relevant? Did anything major happen to it, like a rename, an acquisition, or an open-source product going commercial? Was it superseded by a competing technology? Is it still changing fast? Don't repeat what the levels teach.
+
+Its goals are to:
+
+- Put the topic in perspective.
+- Fill in historical gaps in the study material. Maybe all the linked content is from ten years ago. What happened since?
+- Remove any lingering doubts that the study material is obsolete or irrelevant, in particular for older topics.
 
 ### Levels
 
-- **Levels go progressively deeper.** Each level leaves the learner with usable knowledge, so they can stop after any level. Have at least two levels, unless the plan is a quick historical plan for an obsolete topic.
-- **Cover the _what_, _why_ and _how_ of the topic, at a bare minimum.** For example, Level 1 might cover what the topic is and why it exists, Level 2 how it works, and the following levels go deeper: hands-on experience, the role of the topic in the wider ecosystem, problems and issues. This is an indication: if it doesn't fit a topic, go for something else.
-- **Give each level one theme.** Everything in a level serves the theme in its title. If a level needs to cover two concerns, split it into `###` subsections, each with its own theme. Don't mix concerns (for example, security resources in a "Build a server" level): it makes the learning feel chaotic. An item that fits no level goes to "If you have extra time" or the recommendation for future learning.
+The levels are the core of the plan.
+
+- **Levels go progressively deeper.** Each level leaves the learner with usable knowledge, so they can stop after any level. Have at least two levels, usually two to four, unless the plan is a quick historical plan for an obsolete, now barely-relevant topic.
+- **At a bare minimum, cover the _what_, _why_ and _how_ of the topic.** This is an indication: if it doesn't fit a topic, go for something else.
+  - **Level 1** usually answers the very basic questions about the topic: what is it, what problem does it solve, what does it look like? It starts with the Radar blip, followed by something short and concrete, as an anchor for the more theoretical material that follows. The anchor can be a **Read**, a **Skim** or a **Do**.
+  - **Level 2** is usually the "Shu" in "Shu-Ha-Ri": it covers the basics of how the topic works, and shows the motions.
+  - **Levels 3 and above** are optional. They tend to be the "Ha" in "Shu-Ha-Ri": hands-on experience, the role of the topic in the wider ecosystem, alternatives, problems and shortcomings. Go beyond Level 3 only when the topic has more good storylines.
+- **Give each level one theme.** Everything in a level serves the theme in its title, and the line under the title says what the level is about and what the learner will be able to do after it. If a level needs to cover two concerns, split it into `###` subsections, each with its own theme. Don't mix concerns (for example, security resources in a "Build a server" level): it makes the learning feel chaotic. An item that fits no level goes to "If you have extra time" or the wrap-up.
 - **Each level has 1–4 resources**, and at most one **Do** exercise.
+
+### Activities
+
+- **Read, Watch or Skim?** A page that explains concepts or walks through an example is a **Read**. A page that mostly describes a tool, such as an overview or a reference of options, is a **Skim**: the learner skims it, tries the tool for a few minutes, and gets real practice in a later **Do**. Never ask the learner to skim dense conceptual material, such as a list of vulnerabilities or a spec that assumes background knowledge. Make it a **Read** that fits the level and the learner's background, or leave it out (and, if it matters, point to it in the wrap-up).
+- **Do** exercises go only where practice fits the level. Each ends with something concrete to produce, compare or decide, so the learner knows when it's done, and builds on earlier exercises.
+- For each resource, say why you picked it, and how to use it.
 
 ### Resources
 
@@ -88,13 +60,29 @@ When a request asks for something this template doesn't, the request wins for th
 - Prefer well-regarded conference talks and established authors. Quality always wins, so make an exception to these preferences when a resource is clearly better:
   - **Curated third-party explanations over official docs.** A good article by a respected practitioner usually explains a topic better than the reference page. Use official docs when they are the best explanation, or for the hands-on parts (quickstarts, tool pages).
   - **Short over long.** Pick the shortest resource that does the topic justice.
-- **Read or Skim?** A page that explains concepts or walks through an example is a **Read**. A page that mostly describes a tool is a **Skim**: the learner skims it, tries the tool for a few minutes, and gets real practice in a later **Do**. Never ask the learner to skim dense conceptual material, such as a list of vulnerabilities or a spec that assumes background knowledge. Make it a **Read** that fits the level and the learner's background, or leave it out (and, if it matters, point to it in the recommendation for future learning).
 
 ### Time estimates
 
 - **Every to-do item starts with the time the learner will spend on it.** Work it out from the time the content strictly needs (the length of the article or video, or the bare work in an exercise), adjusted for the pace. Use round numbers, like ~5 min, ~20 min, ~1 hour or ~1.5 hours.
 - **Give the resource's own length too**, when you know it, so the learner can tell it apart from the time the activity takes.
-- **Make the estimates add up.** Each level's time is roughly the sum of its activities, and **Time** is the sum of the levels. "If you have extra time" and the closing item don't count. Size the content to fit the time budget.
+- **Make the estimates add up.** Each level's time is roughly the sum of its activities, and **Time** is the sum of the levels. "If you have extra time" and "Review the blip" don't count. Size the content to fit the time budget.
+
+### If you have extra time
+
+One to three short activities, for the learner who wants to know more about the topic. If useful, explain why an activity is optional. For example, this section might include a longer online course of a few hours that exceeds the time budget.
+
+### Wrap-up
+
+- Say whether the topic is small and covered adequately by this plan, whether you'd recommend a longer plan (and how long), or whether the topic is so vast that you'd split it into smaller topics.
+- If you left out something the blip mentions, say what, and why. Otherwise, leave that line out.
+
+### Review the blip
+
+The closing item asks the learner to reread the blip now that they know the topic, to check that they understand every point it makes, and whether they agree with its ring.
+
+### Related Radar topics
+
+Link each related topic to its plan if it has one, or to its blip if it doesn't. Don't mention editions.
 
 ## Learning preferences
 
@@ -112,7 +100,7 @@ Design for slow, thoughtful learning. Assume that the learner will re-read, paus
 ### Trusted sources
 
 - The `Thoughtworks Radar` folder lists all the Radar's topics by edition.
-- You can include brief courses from the following sources, even paid ones, as long as they are relevant and high quality. If one is especially relevant but doesn't fit the time budget, you can recommend it in "Recommendation for future learning".
+- You can include brief courses from the following sources, even paid ones, as long as they are relevant and high quality. If one is especially relevant but doesn't fit the time budget, you can recommend it in the wrap-up.
   - Coursera
   - DeepLearning.AI
   - Pluralsight
