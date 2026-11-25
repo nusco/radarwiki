@@ -48,10 +48,6 @@ Small, and covered here. It's a design judgment, not a technology. The ideas con
 
 - [ ] **~10 min** · Re-read [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-- [[Model Context Protocol (MCP)]]
-- [[Naive API-to-MCP conversion]]
-- [[Agent Skills]]
-- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure)
-- [[MCP Apps]]: a case where MCP does something a CLI can't
+- **[[Model Context Protocol (MCP)]]**: the protocol this blip warns against using where a simpler option, such as a CLI, would do.

@@ -42,8 +42,6 @@ This plan covers it for a generalist. Go deeper only if you build Python MCP ser
 
 - [ ] **~10 min** · Re-read [FastMCP](https://www.thoughtworks.com/radar/languages-and-frameworks/fastmcp) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-- [[Model Context Protocol (MCP)]]
-- [[Naive API-to-MCP conversion]]
-- [[MCP Apps]]
+- **[[Model Context Protocol (MCP)]]**: FastMCP is a Python framework for building MCP servers.

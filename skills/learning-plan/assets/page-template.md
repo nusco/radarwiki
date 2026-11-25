@@ -1,5 +1,5 @@
 ---
-description: The structure of a learning plan, section by section. The learning-plan skill fills it in to write each page; this frontmatter is never copied into a plan.
+description: The structure of a learning plan, section by section. It only contains formatting. The learning-plan skill knows how fills this in to write each page. This frontmatter is never copied into a plan.
 ---
 
 - **Blip:** {Ex.: "[Serena](https://www.thoughtworks.com/radar/tools/serena)"}
@@ -55,9 +55,10 @@ description: The structure of a learning plan, section by section. The learning-
 
 - [ ] **{Time}** · Re-read [{The blip's name}]({The blip URL}) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-{The list of "Related blips" from the blip's page. The following example is the case of [Agent Plugins](https://www.thoughtworks.com/radar/platforms/agent-plugins)}
+{Optional: this whole section, heading included. Leave it out if the blip's page lists no related blips.}
 
-- [[Model Context Protocol (MCP)]]
-- [[Agent Skills]]
+- **[[{Related blip}]]**: {why}.
+- **[[{Related blip}]]**: {why}.
+- {...}

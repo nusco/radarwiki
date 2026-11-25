@@ -54,23 +54,12 @@ Know how other tools build on Pi, and who now stands behind it.
 
 This plan covers Pi for a generalist. If you want more, the closest next step is a plan on a full-featured agent: OpenCode, which the blip suggests for enterprise use, or Claude Code.
 
-**Left out from the blip:** the April version compares Pi with agent frameworks (ADK, LangGraph and Mastra). They're about building agents from scratch, not about Pi, so they're in the related topics below.
+**Left out from the blip:** the April version compares Pi with agent frameworks (ADK, LangGraph and Mastra). They're about building agents from scratch, not about Pi, so this plan leaves them out.
 
 ## Review the blip
 
 - [ ] **~10 min** · Re-read [Pi](https://www.thoughtworks.com/radar/tools/pi) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-- [[Agent Skills]]
-- [[Model Context Protocol (MCP)]]
-- [[MCP by default]]
-- [[Context engineering]]
-- [OpenCode](https://www.thoughtworks.com/radar/tools/opencode)
-- [Claude Code](https://www.thoughtworks.com/radar/tools/claude-code)
-- [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw)
-- [Sandboxed execution for coding agents](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents)
-- [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling)
-- [Agent Development Kit (ADK)](https://www.thoughtworks.com/radar/languages-and-frameworks/agent-development-kit-adk)
-- [LangGraph](https://www.thoughtworks.com/radar/languages-and-frameworks/langgraph)
-- [Mastra](https://www.thoughtworks.com/radar/languages-and-frameworks/mastra)
+- **[[OpenCode]]**: another open-source terminal coding agent, which the Radar prefers over Pi as an enterprise coding harness.

@@ -68,16 +68,9 @@ These 6 hours are enough to understand the blip, judge MCP servers, and write si
 
 - [ ] **~10 min** · Re-read [Model Context Protocol (MCP)](https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-- [[Naive API-to-MCP conversion]]
-- [[FastMCP]]
-- [[MCP Apps]]
-- [[MCP by default]]
-- [[Agent Skills]]: an alternative to MCP for many use cases
-- [[Context engineering]]
-- [[Context7]]
-- [[Serena]]
-- [[Toxic flow analysis for AI]]
-- [[Agent Scan]], formerly MCP-Scan
-- [[Agent-to-Agent (A2A) Protocol]]
+- **[[Agent-to-Agent (A2A) Protocol]]**: the complementary protocol for communication between agents, rather than between an agent and its tools.
+- **[[FastMCP]]**: a Python framework for building MCP servers.
+- **[[Toxic flow analysis for AI]]**: a technique to find unsafe data flows across the MCP servers an agent uses.
+- **[[Agent Scan|MCP-Scan]]**: a scanner that checks MCP servers for risks such as tool poisoning and prompt injection.

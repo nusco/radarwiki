@@ -41,11 +41,8 @@ This plan is enough for a generalist. If you ever deploy agents for other people
 
 - [ ] **~10 min** · Re-read [Toxic flow analysis for AI](https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-- [[Agent Scan]], formerly MCP-Scan
-- [Threat modeling](https://www.thoughtworks.com/radar/techniques/threat-modeling): linked from the blip, the broader practice that toxic flow analysis specializes
-- [Sandboxed execution for coding agents](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents)
-- [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw)
-- [[Agent Skills]]
-- [[Model Context Protocol (MCP)]]
+- **[[Threat modeling]]**: the broader practice: toxic flow analysis applies it to the data flows of agentic systems.
+- **[[Agent Skills]]**: malicious skills can create toxic flows, just as MCP servers can.
+- **[[Agent Scan]]**: a scanner that helps find toxic flows in an agent's MCP servers and skills.

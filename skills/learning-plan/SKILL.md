@@ -27,7 +27,7 @@ The $TOPIC can be a literal topic ("Zero trust architecture") or a URL referring
 
 2. **Pin down the inputs.** Get the topic and time budget from the arguments. If the budget is missing, choose one with the rules on [default length](#default-length). If the learner gave a budget that seems inappropriate (too long for an obsolete topic, or too short for an important one), supersede it with your own estimate. If the learner's background is unclear, assume one instead of asking. State these choices in the plan, as [Prerequisites and time budget](#prerequisites-and-time-budget) says, so the learner can push back.
 
-3. **Cover what the blip highlights.** List everything the blip explicitly mentions or links to: concepts, tools, criticisms, related specs. Each one must end up in the plan: in a level, in "If you have extra time", in the wrap-up, or as a related topic with its own plan. Skip one only for a clear reason, such as time or scope, duplicated information, or obsolescence, and state that reason in one line in the plan, so the learner knows it was a choice and not an oversight.
+3. **Cover what the blip highlights.** List everything the blip explicitly mentions or links to: concepts, tools, criticisms, related specs. Each one must end up in the plan: in a level, in "If you have extra time", in the wrap-up, or in the "Related blips" section if the blip's page lists it as a related blip. Skip one only for a clear reason, such as time or scope, duplicated information, or obsolescence, and state that reason in one line in the plan, so the learner knows it was a choice and not an oversight.
 
 4. **Find the resources,** following the research integrity rules in `radarwiki`, the rules on [resources](#resources) below, and the trusted and avoided sources in the [learning preferences](#learning-preferences).
 
@@ -37,7 +37,7 @@ The $TOPIC can be a literal topic ("Zero trust architecture") or a URL referring
 
 - **Keep the plan scannable.** It goes from a few lines to a screenful of text for a weekend-long plan.
 - **Keep generated text small, and set it apart.** Write your own text only where it helps the plan read well: a theme line, the prerequisites, an exercise brief, a one-line pointer. Keep it short, and never format it like a resource: only human-made content gets a **Read**, **Watch** or **Skim** label and a link with author and date.
-- **Every activity is a to-do item**, so the learner can tick it off: resources, exercises, "If you have extra time" items, and the "Review the blip" item. Related topics are plain list items: they're pointers, not tasks, so the learner never has to come back to a finished plan to check them off.
+- **Every activity is a to-do item**, so the learner can tick it off: resources, exercises, "If you have extra time" items, and the "Review the blip" item. Related blips are plain list items: they're pointers, not tasks, so the learner never has to come back to a finished plan to check them off.
 - **Don't hedge.** Every activity should leave the learner knowing what to do next. Options are fine, such as an optional extra resource or an alternative exercise, as long as the plan gives the learner the means to choose: what each option offers that the other doesn't, who or what situation it suits, and how long it takes. If the learner could only make the choice by trying every option first, make it for them. For example, don't mention an alternative resource with a vague caveat ("the blip links to another article, but it's partly paywalled"). Decide where it belongs (in a level, in "If you have extra time", or left out with a reason) and say what it adds.
 
 ## Sections
@@ -102,9 +102,11 @@ One to three short activities, for the learner who wants to know more about the 
 - Say whether the topic is small and covered adequately by this plan, whether you'd recommend a longer plan (and how long), or whether the topic is so vast that you'd split it into smaller topics.
 - If you left out something the blip mentions, say what, and why. Otherwise, leave that line out.
 
-### Related Radar topics
+### Related blips
 
-Link each related topic to its plan if it has one, or to its blip if it doesn't. Don't mention editions.
+List the "Related blips" from this blip's page on the Thoughtworks Radar, each followed by a brief note explaining why it's related. Base each note on what the two blips' pages say about each other. Only when they say nothing about the relation, write your own reason, from your research. For example, the page for "Agent Plugins" (https://www.thoughtworks.com/radar/platforms/agent-plugins) lists related blips "Model Context Protocol (MCP)" and "Agent Skills". These could appear as "**[[Model Context Protocol (MCP)]]**: a plugin can package MCP servers." and "**[[Agent Skills]]**: a plugin can package skills, and a skills repository can double as a plugin."
+
+If the blip's page lists no related blips, leave out the whole section, heading included. Don't add blips that only the plan's other sections link to: those links stay where they are, and the section lists only what Thoughtworks lists.
 
 ## Learning preferences
 

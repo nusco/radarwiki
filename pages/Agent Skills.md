@@ -51,13 +51,10 @@ This plan covers it for a generalist. Since you already maintain skills, the bes
 
 - [ ] **~10 min** · Re-read [Agent Skills](https://www.thoughtworks.com/radar/techniques/agent-skills) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-- [[MCP by default]]
-- [[Context engineering]]
-- [[Toxic flow analysis for AI]]
-- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure)
-- [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat)
-- [Skills as executable onboarding documentation](https://www.thoughtworks.com/radar/techniques/skills-as-executable-onboarding-documentation)
-- [Claude Code plugin marketplace](https://www.thoughtworks.com/radar/tools/claude-code-plugin-marketplace)
-- [OpenClaw](https://www.thoughtworks.com/radar/tools/openclaw)
+- **[[Context engineering]]**: skills put context engineering into practice, loading instructions only when the agent needs them.
+- **[[Agent instruction bloat]]**: the failure mode of skill and AGENTS.md instructions that grow long, contradictory and stale.
+- **[[OpenClaw]]**: a self-hosted assistant extended with skills, whose broad permissions make unreviewed skills a real risk.
+- **[[MCP by default]]**: a skill backed by a local CLI or script often does the job without an MCP server.
+- **[[Claude Code plugin marketplace]]**: a way to share skills across a team through Git-hosted marketplaces.

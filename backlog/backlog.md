@@ -40,15 +40,6 @@ Are they interested in fixing these, or should we live with them?
 
 ### My Backlog
 
-**Related blips**
-
-As a learner, I want the learning plans to show a list of related blips so that I can see the connections between topics.
-- [ ] When Thoughtworks' blip page lists related blips, the page ends with a "Related blips" section that lists them, each with a note explaining why it's related.
-- [ ] The existing pages are migrated to this new style of the section.
-- [ ] Each related blip links to its wiki page, whether or not the page exists yet.
-- [ ] If the blip's page lists no related blips, the page has no "Related blips" section.
-- [ ] The section lists only the related blips from Thoughtworks' page. The other sections can still link to other pages, for example for prerequisites or for material covered elsewhere, so the Obsidian graph can show more connections than the section does.
-
 **Generate Page from Template**
 
 _Note: Some criteria here are obsolete after the implementation of "Organize the Know-how as Skills". We need to review it and complete it. (In particular, we must review the template and rules and update the existing pages.)_
@@ -95,6 +86,7 @@ As a learner, I want to tell the maintainer that two blips are aliases of each o
 
   - Until this is done, a request for a plan on the older blip creates a separate plan.
   - The `[[Agent Scan|MCP-Scan]]` link example in `SKILL.md` may need revisiting.
+  - An old alias can also appear in a blip's "Related blips". For example, the MCP blip lists MCP-Scan, which its page currently links as `[[Agent Scan|MCP-Scan]]`.
 
 **Manage homonymous blips**
 

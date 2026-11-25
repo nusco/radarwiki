@@ -50,13 +50,7 @@ This is one of the most relevant topics for a generalist, and 3 hours gives a ge
 
 - [ ] **~10 min** · Re-read [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure)
-- [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat)
-- [Context graph](https://www.thoughtworks.com/radar/techniques/context-graph)
-- [Curated shared instructions for software teams](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams)
-- [[AGENTS.md.md|AGENTS.md]]
-- [[Agent Skills]]
-- [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling)
-- [[Context7]]
+- **[[Progressive context disclosure]]**: a core technique that starts the model with a lean context and loads more on demand.
+- **[[Context graph]]**: models decisions and their reasons as a queryable graph, so agents can find out why something was decided.

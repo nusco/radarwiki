@@ -38,8 +38,6 @@ This plan covers it.
 
 - [ ] **~10 min** · Re-read [Context7](https://www.thoughtworks.com/radar/tools/context7) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-- [[Context engineering]]
-- [[Model Context Protocol (MCP)]]
-- [[MCP by default]]
+- **[[Model Context Protocol (MCP)]]**: Context7 is an MCP server, so any agent that speaks MCP can use it.

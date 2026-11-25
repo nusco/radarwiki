@@ -54,11 +54,6 @@ This plan covers it. AGENTS.md is a small convention, and the bigger ideas behin
 
 - [ ] **~10 min** · Re-read [AGENTS.md](https://www.thoughtworks.com/radar/techniques/agents-md) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-- [[Context engineering]]
-- [Curated shared instructions for software teams](https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams)
-- [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat)
-- [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure)
-- [Anchoring coding agents to a reference application](https://www.thoughtworks.com/radar/techniques/anchoring-coding-agents-to-a-reference-application)
-- [[Agent Skills]]
+- **[[Context engineering]]**: AGENTS.md is one of its simplest techniques, a fixed starting file of instructions for the agent.

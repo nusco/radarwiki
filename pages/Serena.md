@@ -42,9 +42,3 @@ This plan covers it.
 ## Review the blip
 
 - [ ] **~10 min** · Re-read [Serena](https://www.thoughtworks.com/radar/tools/serena) now that you know the topic.
-
-## Related Radar topics
-
-- [Code intelligence as agentic tooling](https://www.thoughtworks.com/radar/techniques/code-intelligence-as-agentic-tooling)
-- [[Context engineering]]
-- [[Model Context Protocol (MCP)]]

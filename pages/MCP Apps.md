@@ -39,9 +39,3 @@ This plan covers it for a generalist. If you build agent products with a UI, als
 ## Review the blip
 
 - [ ] **~10 min** · Re-read [MCP Apps](https://www.thoughtworks.com/radar/platforms/mcp-apps) now that you know the topic.
-
-## Related Radar topics
-
-- [[Model Context Protocol (MCP)]]
-- [AG-UI Protocol](https://www.thoughtworks.com/radar/platforms/ag-ui-protocol)
-- [[MCP by default]]

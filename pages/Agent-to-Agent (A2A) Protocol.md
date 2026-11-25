@@ -47,9 +47,6 @@ This plan covers it for a generalist. It's not worth more time unless you build 
 
 - [ ] **~10 min** · Re-read [Agent-to-Agent (A2A) Protocol](https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-- [[Model Context Protocol (MCP)]]
-- [AG-UI Protocol](https://www.thoughtworks.com/radar/platforms/ag-ui-protocol)
-- [Agent Development Kit (ADK)](https://www.thoughtworks.com/radar/languages-and-frameworks/agent-development-kit-adk)
-- [Team of coding agents](https://www.thoughtworks.com/radar/techniques/team-of-coding-agents)
+- **[[Model Context Protocol (MCP)]]**: the complementary protocol: MCP connects an agent to tools and data, while A2A connects agents to each other.

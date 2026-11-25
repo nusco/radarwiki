@@ -41,9 +41,6 @@ Small, and fully covered here. The design rules are more important than the anti
 
 - [ ] **~10 min** · Re-read [Naive API-to-MCP conversion](https://www.thoughtworks.com/radar/techniques/naive-api-to-mcp-conversion) now that you know the topic.
 
-## Related Radar topics
+## Related blips
 
-- [[Model Context Protocol (MCP)]]
-- [[FastMCP]]
-- [[MCP by default]]
-- [GraphQL as data access pattern for LLMs](https://www.thoughtworks.com/radar/techniques/graphql-as-data-access-pattern-for-llms)
+- **[[Model Context Protocol (MCP)]]**: the protocol this blip is about: design MCP servers for agents instead of mirroring existing APIs.

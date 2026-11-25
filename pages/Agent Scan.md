@@ -42,9 +42,3 @@ This plan covers it.
 ## Review the blip
 
 - [ ] **~10 min** · Re-read [Agent Scan](https://www.thoughtworks.com/radar/tools/agent-scan) now that you know the topic.
-
-## Related Radar topics
-
-- [MCP-Scan](https://www.thoughtworks.com/radar/tools/mcp-scan)
-- [[Toxic flow analysis for AI]]
-- [[Agent Skills]]
