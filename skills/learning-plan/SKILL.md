@@ -14,7 +14,7 @@ The $TOPIC can be a literal topic ("Zero trust architecture") or a URL referring
 
 ## The template
 
-[`assets/template.md`](assets/template.md) is the structure of every plan: its sections in order. Follow it in every plan.
+[`assets/page-template.md`](assets/page-template.md) is the structure of every plan: its sections in order. Follow it in every plan.
 
 - Copy the template's body, never its frontmatter: plans have no frontmatter.
 - Text in `{curly braces}` describes what goes there, and "Ex." gives an example. Everything else is copied as is.

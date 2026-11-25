@@ -19,7 +19,7 @@ Anthropic introduced skills in October 2025 and published them as an open standa
 Explain what a skill is (a folder with a `SKILL.md`), and why *progressive disclosure* makes it cheap until it's needed.
 
 - [ ] **~5 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/agent-skills) (~2 min) — an open standard that spread fast, with a warning about third-party skills.
-- [ ] **~10 min** · **Do:** Open `skills/learning-plan/SKILL.md`, the skill that writes these plans. Notice the two parts: the frontmatter (a name and a description that the agent always sees), and the body (instructions that load only when the skill is used). Then look at `assets/template.md` in the same folder: a file the skill loads only when it needs it.
+- [ ] **~10 min** · **Do:** Open `skills/learning-plan/SKILL.md`, the skill that writes these plans. Notice the two parts: the frontmatter (a name and a description that the agent always sees), and the body (instructions that load only when the skill is used). Then look at `assets/page-template.md` in the same folder: a file the skill loads only when it needs it.
 - [ ] **~30 min** · Read: [Equipping agents for the real world with Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) (Barry Zhang, Keith Lazuka and Mahesh Murag, Anthropic, Oct 2025, ~8 min) — the original post, by the people who designed skills. It explains why skills are folders, and the three levels of progressive disclosure: metadata, body, linked files.
 
 ## Level 2 — How to write a good one (~90 min)
