@@ -35,7 +35,7 @@ Find the toxic flows in your own agent setup, and know a simple rule for removin
 
 ## Wrap-up
 
-This plan is enough for a generalist. If you ever deploy agents for other people, study agent security more broadly as its own topic (~3 hours): sandboxing, permissions, and prompt injection defenses.
+This plan is enough for a generalist. Limiting what a hijacked agent can do is covered in [[Agent sandboxing]], and the wider practice that toxic flow analysis belongs to in [[Threat modeling]].
 
 ## Review the blip
 

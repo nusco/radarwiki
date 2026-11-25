@@ -1,9 +1,9 @@
 - **Blip:** [Context engineering](https://www.thoughtworks.com/radar/techniques/context-engineering)
-- **Time:** ~3 hours
+- **Time:** ~2 hours 45 minutes
 - **Radar edition:** November 2025 and April 2026
 - **Quadrant:** Techniques
 - **Ring:** Adopt
-- **Updated:** 2026-11-24
+- **Updated:** 2026-11-25
 - **Status:** #undone
 
 ---
@@ -27,22 +27,21 @@ Know why "just put everything in a big context window" doesn't work.
 - [ ] **~30 min** · Read: [Context rot](https://www.trychroma.com/research/context-rot) (Kelly Hong, Anton Troynikov and Jeff Huber, Chroma, Jul 2025) — the study behind the term. 18 models get less reliable as their input grows, even on simple tasks. Read the introduction and the conclusion (~10 min), and look at the charts in between. Skip the details of each experiment.
 - [ ] **~30 min** · Read: [How to fix your context](https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html) (Drew Breunig, Jun 2025, ~10 min) — four ways a context fails (poisoning, distraction, confusion, clash) and how to fix each one.
 
-## Level 3 — Engineer your own context (~60 min)
+## Level 3 — Engineer your own context (~45 min)
 
 See what fills your own agent's context, and make it leaner.
 
-- [ ] **~15 min** · Read: [Progressive context disclosure](https://www.thoughtworks.com/radar/techniques/progressive-context-disclosure) and [Agent instruction bloat](https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat) (Radar, Apr 2026 and Nov 2026, ~2 min each) — two short entries that turn the theory into a habit.
 - [ ] **~45 min** · **Do:** Run `/context` again, and sort what you see into two groups: always loaded (system prompt, `CLAUDE.md`, memory, skill descriptions, MCP tool names) and loaded on demand (skill bodies, deferred tools, files). Make one change, then measure again. For example, disable an MCP server you don't use here, or move a rarely needed instruction into a skill.
+
+Loading context only when it's needed is covered in [[Progressive context disclosure]], and keeping instruction files from growing out of control in [[Agent instruction bloat]].
 
 ## If you have extra time
 
 - [ ] **~25 min** · Read: [Context rot: the emerging challenge that could hold back LLM progress](https://www.understandingai.org/p/context-rot-the-emerging-challenge) (Timothy B. Lee, Nov 2025, ~10 min free part) — linked by the blip. It isn't a summary of the Chroma study, which it mentions only in passing. It puts context rot in a wider story: the earlier needle-in-a-haystack tests, why attention gets more expensive as the input grows, and why this matters for agents that work for hours or days. Read it if you want the "why" behind Level 2. The paywall cuts in just before Lee explains why he thinks context rot happens. Stop there, because the rest isn't needed.
-- [ ] **~15 min** · Read: [Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching) (Claude docs, ~5 min for these sections) — the "context setup" technique from the newer blip. Read only the opening and "How prompt caching works", to see why stable context at the start of the prompt is cheaper.
-- [ ] **~15 min** · Read: [Subagents](https://code.claude.com/docs/en/sub-agents) (Claude Code docs, ~5 min for the opening) — cited by the older blip. Read only the opening, up to the built-in subagents: sub-agents keep a side task's context out of the main conversation.
 
 ## Wrap-up
 
-This is one of the most relevant topics for a generalist, and 3 hours gives a generalist a solid understanding. If you ever build an agent yourself, plan another ~3 hours on memory, compaction and sub-agents. That's better done as part of a hands-on agent-building plan. Start it with [Context engineering for agents](https://www.langchain.com/blog/context-engineering-for-agents) (LangChain, Jul 2025, 14 min), cited by the older blip, which groups the same techniques from a builder's point of view: write, select, compress, isolate.
+This is one of the most relevant topics for a generalist, and this plan gives a generalist a solid understanding. Using sub-agents to keep a side task's context out of the main conversation is covered in [[Subagents for better context management]], and prompt caching (the "context setup" technique from the newer blip) in [[Naive context compression]]. If you ever build an agent yourself, plan another ~3 hours on memory and compaction. That's better done as part of a hands-on agent-building plan. Start it with [Context engineering for agents](https://www.langchain.com/blog/context-engineering-for-agents) (LangChain, Jul 2025, 14 min), cited by the older blip, which groups the same techniques from a builder's point of view: write, select, compress, isolate.
 
 **Left out from the blip:** the two research papers cited by the newer version ([dynamic tool selection](https://arxiv.org/abs/2509.20386v1) and [active context compression](https://arxiv.org/abs/2601.07190)) are research-level, and the Anthropic article covers the same ideas for a generalist. The older version's prompt-engineering basics ([tips](https://www.promptingguide.ai/introduction/tips), [few-shot](https://www.promptingguide.ai/techniques/fewshot)) are assumed knowledge. Its [just-in-time tooling](https://jentic.com/blog/just-in-time-tooling) post is mostly a product pitch, and [[MCP by default]] covers the same idea as MCP tool search. The newer version's [Writing effective tools for agents](https://www.anthropic.com/engineering/writing-tools-for-agents) is in [[Naive API-to-MCP conversion]], where it fits best.
 

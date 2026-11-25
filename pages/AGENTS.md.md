@@ -3,7 +3,7 @@
 - **Radar edition:** November 2025
 - **Quadrant:** Techniques
 - **Ring:** Trial
-- **Updated:** 2026-11-24
+- **Updated:** 2026-11-25
 - **Status:** #undone
 
 This plan assumes that you've done Level 1 of [[Context engineering]], so you know why what's always in the context matters.
@@ -37,7 +37,7 @@ Know what the evidence says about context files, and use it to prune your own.
 - [ ] **~15 min** · Read: [Evaluating AGENTS.md](https://arxiv.org/abs/2602.11988) (Gloaguen et al., ETH Zurich, Feb 2026, rev. Sep 2026, ~5 min for these sections) — the study that the later Radar blips cite. Read the abstract, the Introduction and the Conclusion of the [full text](https://arxiv.org/html/2602.11988). On real tasks, context files didn't make agents noticeably better, and they made runs about 20% more expensive. Repository overviews didn't help, and handwritten files did better than generated ones.
 - [ ] **~15 min** · **Do:** Go through the AGENTS.md you wrote in Level 2 line by line. Cut anything that's an overview, or that the README or a linter already covers. Decide which lines stay, and why.
 
-Keeping instruction files lean as they grow over time is covered by the Agent instruction bloat item in Level 3 of [[Context engineering]].
+Keeping instruction files lean as they grow over time is covered in [[Agent instruction bloat]], and turning them into an index of docs loaded on demand in [[Progressive context disclosure]].
 
 ## If you have extra time
 

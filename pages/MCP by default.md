@@ -1,9 +1,9 @@
 - **Blip:** [MCP by default](https://www.thoughtworks.com/radar/techniques/mcp-by-default)
-- **Time:** ~2 hours 45 minutes
+- **Time:** ~2 hours 15 minutes
 - **Radar edition:** April 2026
 - **Quadrant:** Techniques
 - **Ring:** Caution
-- **Updated:** 2026-11-24
+- **Updated:** 2026-11-25
 - **Status:** #undone
 
 This plan assumes that you know what an MCP server is and how to add one to Claude Code, from [[Model Context Protocol (MCP)]].
@@ -22,12 +22,13 @@ Explain in two sentences why the Radar warns against making MCP the default way 
 - [ ] **~45 min** · Read: [What if you don't need MCP at all?](https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/) (Mario Zechner, Nov 2025, ~15 min) — a concrete case. He replaces browser MCP servers with a few small scripts: about 225 tokens of instructions, instead of 13,000–18,000 tokens of tool definitions.
 - [ ] **~25 min** · Read: [The MCP abstraction tax](https://justin.poehnelt.com/posts/mcp-abstraction-tax/) (Justin Poehnelt, Mar 2026, ~7 min) — cited by the blip. Every layer between the agent and the API loses some detail.
 
-## Level 2 — The alternatives (~45 min)
+## Level 2 — The alternatives (~15 min)
 
 Know the two main alternatives: a CLI plus instructions, and code execution against MCP servers.
 
 - [ ] **~15 min** · Read: [Claude Skills are awesome, maybe a bigger deal than MCP](https://simonwillison.net/2025/Oct/16/claude-skills/#skills-compared-to-mcp) (Simon Willison, Oct 2025, ~5 min from that section) — also cited by the blip. Start at "Skills compared to MCP". [[Agent Skills]] has its own plan.
-- [ ] **~30 min** · Read: [Code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp) (Adam Jones and Conor Kelly, Anthropic, Nov 2025, ~10 min) — a middle path: keep the servers, but let the agent write code that calls them, so intermediate data never enters the context.
+
+Code execution against MCP servers, the middle path that keeps the servers but lets the agent write code that calls them, is covered in [[Programmatic tool calling]].
 
 ## Level 3 — Try it (~45 min)
 
