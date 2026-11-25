@@ -1,39 +1,26 @@
 # RadarWiki
 
-A self-study wiki to learn software things.
-
-Each page is a quick learning plan for one technology topic. The topics come from the [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar).
-
-## The Core Idea
+A wiki to learn software things. Each page is a mini-course on a topic from [Thoughtworks' Technology Radar](https://www.thoughtworks.com/radar).
 
 In RadarWiki, everyone does what they do best:
 
-- **Humans** decide what to learn and produce the content.
-- **Agents** assemble the content to create the learning plan.
+- **Humans** curate the topics and produce the content.
+- **Agents** assemble and maintain the courses.
 
-The result is a [collection](pages) of [short courses](pages/Context%20engineering.md) that feel crafted, not slop.
-
-## Structure
-
-RadarWiki is minimalistic: Markdown pages and a folder of skills to create/maintain them.
-
-If you like, you can use Obsidian as a GUI. It fits great.
+The result is a [collection](pages) of [very quick courses](pages/Pi.md) that feel crafted, not slop.
 
 ## How to Use It
 
-To **study**:
-- Open a learning plan in a text editor and use it as a learning checklist.
-- It's markdown, so it works in your favorite editor.
+If you want to **learn things**:
+- Open a course in a text editor. (Possibly Markdown-friendly. Obsidian fits great.)
+- Use it as a study checklist.
 
-To **make it your own**:
-- Go to the [skills](skills) folder and change how the Wiki is assembled and/or how a learning plan is designed.
-- Then start your favorite agent in the root and ask it to re-generate whatever page you're interested in.
-- If you you have the time and tokens, you can ask the agent to update the entire Wiki to your own preferences.
+To **make the wiki your own**:
+- Edit the [skill files](skills) to change how courses are designed and wired together.
+- Launch your favorite agent in the root and ask it to re-generate the courses you want–or the entire wiki, if you have the tokens.
 
 ## Current Status
 
-The Wiki covers a dozen or so blips at the moment. I'm generating new pages as I evolve the skill files, to find out what works.
-
-If you want to skip past me and generate a page about any blip you care about, go forth: launch your agent in the root and ask it for the new page. Then start learning.
+At the moment, the Wiki spans a dozen pages. I'm generating more as I work on the skill files. You can skip past me if you want, and ask your agent to generate any course you need. Just give it a [Thoughtworks Radar Blip](https://www.thoughtworks.com/radar/search).
 
 The wiki is currently up to date with volume 35 of the Radar (November 2026).
