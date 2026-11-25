@@ -57,4 +57,7 @@ description: The structure of a learning plan, section by section. The learning-
 
 ## Related Radar topics
 
-- {A related Radar topic. Ex.: "[[Agent Skills]]"}
+{The list of "Related blips" from the blip's page. The following example is the case of [Agent Plugins](https://www.thoughtworks.com/radar/platforms/agent-plugins)}
+
+- [[Model Context Protocol (MCP)]]
+- [[Agent Skills]]

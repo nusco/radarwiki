@@ -41,7 +41,9 @@ Are they interested in fixing these, or should we live with them?
 ### My Backlog
 
 **Generate Page from Template**
-# Some criteria here are obsolete after the implementation of "Organize the Know-how as Skills". We need to review it and complete it. (In particular, we must review the template and rules and update the existing pages.)
+
+_Note: Some criteria here are obsolete after the implementation of "Organize the Know-how as Skills". We need to review it and complete it. (In particular, we must review the template and rules and update the existing pages.)_
+
 As a learner, I want the Wiki pages to be generated from a template, so that I can easily change their style and get consistent results.
 - [ ] The wiki should have a place to put templates. This place should contain a template for a page that describes the general structure and the content of each section.
 - [ ] The natural language instructions to generate plans in the SKILL.md should move to the template so that they're easy to read and change for a human user, and harder to miss for an agent maintainer.
