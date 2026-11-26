@@ -3,7 +3,7 @@
 - **Radar edition:** November 2026
 - **Quadrant:** Techniques
 - **Ring:** Adopt
-- **Updated:** 2026-11-25
+- **Updated:** 2026-11-26
 - **Status:** #undone
 
 ---
@@ -41,7 +41,7 @@ Go beyond the built-in sandbox, and choose an isolation level from the risk, as 
 
 ## Wrap-up
 
-This plan covers the technique for a generalist. Most of the remaining depth is in specific tools, such as container and microVM runtimes, and in agent security as a whole.
+This plan covers the technique for a generalist. Most of the remaining depth is in specific tools, such as [[nono.sh]] (an OS-level sandbox with shareable profiles) and container or microVM runtimes, and in agent security as a whole.
 
 ## Review the blip
 
