@@ -45,10 +45,13 @@ As a Learner
 I want to visualize the Radar Wiki as a graph in Obsidian
 So that I can plan and track my progress.
 - [ ] The repo contains an Obsidian graph configuration that shows all the `.md` pages in the `pages` folder.
-- [ ] Pages that are tagged as #done show up green. Pages tagged as #wip show up orange. Pages with any other tag (including #undone) stay the default grey.
+- [ ] Pages that are tagged as #done show up green. Pages tagged as #wip show up orange. Pages with any other tag (including #undone) are grey.
 - [ ] The README explains how to manage the graph and shows an image example.
 - [ ] The graph links show up as undirected.
+- [ ] The graph hides unresolved links (links to pages that don't exist yet).
 - [ ] The graph parameters result in a graph that is relatively readable even with a lot of nodes.
+- [ ] TO DECIDE: How do we avoid cluttering diffs? ( current best option: an `obsidian-integration` folder with instructions, a brief one-line mention in the `README`)
+- [ ] TO DECIDE: Any other comments from the agent worth discussing?
 
 **Generate Page from Template**
 
