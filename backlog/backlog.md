@@ -40,6 +40,16 @@ Are they interested in fixing these, or should we live with them?
 
 ### My Backlog
 
+**Visualize as Obsidian graph**
+As a Learner
+I want to visualize the Radar Wiki as a graph in Obsidian
+So that I can plan and track my progress.
+- [ ] The repo contains an Obsidian graph configuration that shows all the `.md` pages in the `pages` folder.
+- [ ] Pages that are tagged as #done show up green. Pages tagged as #wip show up orange. Pages with any other tag (including #undone) stay the default grey.
+- [ ] The README explains how to manage the graph and shows an image example.
+- [ ] The graph links show up as undirected.
+- [ ] The graph parameters result in a graph that is relatively readable even with a lot of nodes.
+
 **Generate Page from Template**
 
 _Note: Some criteria here are obsolete after the implementation of "Organize the Know-how as Skills". We need to review it and complete it. (In particular, we must review the template and rules and update the existing pages.)_
@@ -128,9 +138,6 @@ As a learner, I want to distinguish different blips that have the same name, to 
   - A blip can change quadrant, which would make a quadrant-based name stale. A short description of the topic is an alternative.
   - "(language)" doesn't work as a short label for every blip: Zap is a Go logging library, so "Zap (language)" would be wrong. "(framework)" or "(library)" would fit it better. If the short form has to be chosen per blip, it's close to the short description alternative.
   - `tools/gremlin` is a SaaS tool for chaos experiments. `languages-and-frameworks/gremlin` has no description on its page, and is probably the graph query language.
-
-**Visualize as Obsidian graph**
-As a learner I want to visualize the Radar Wiki as a graph in Obsidian, to see related topics.
 
 **Visualize progress in graph**
 As a learner I want to visualize the learning plans in the Obsidian grap with different color to see which ones I completed.
