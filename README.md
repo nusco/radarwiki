@@ -21,6 +21,7 @@ To **make the wiki your own**:
 
 ## Current Status
 
-At the moment, the Wiki spans over a hundred and twenty pages, covering every blip in the latest Radar. I'm generating more pages as I work on the skill files. You can skip past me if you want, and ask your agent to generate any course you need. Just give it a [Thoughtworks Radar Blip](https://www.thoughtworks.com/radar/search).
+At the moment, the Wiki contains every blip from the latest Radar (volume 35, November 2026).
 
-The wiki is currently up to date with volume 35 of the Radar (November 2026).
+I'll add blips from older radars as I work on the skill files. You can skip past me if you want, and ask your agent to generate any course you need. Just give it a [blip from any Radar edition](https://www.thoughtworks.com/radar/search).
+
