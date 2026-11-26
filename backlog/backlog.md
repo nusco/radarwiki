@@ -58,6 +58,23 @@ As a learner, I want the Wiki pages to be generated from a template, so that I c
 - [ ] Obsidian's core Templates plugin is disabled.
 - [ ] The README's "Structure" section mentions the template.
 
+**Update Plan for Returning Blip**
+
+When the wiki maintainer updates the wiki to a new edition of the Radar, if there are returning blips, it might pay to try and refresh the learning plans for those blips. (The rationale is that if a blip is returning, then it's likely important, and there might be fresher, more relevant and higher quality material out there for it). A good test bed is _Toxic Flow Analysis_ in the Nov 2026 Radar.
+
+**Refresh Underexplained Blip**
+
+Some blips in the Radar can be new enough that the maintainer cannot find good material out there. In the Nov 2026 Radar, that happened for Semantic review of AI-edited prose, AI-accelerated shadow IT, AI-driven documentation sprawl, Agent pipeline responsibility and the hands-on half of Anchoring coding agents to a reference application. Design a mechanism to return to these "underexplained" blips later, when the Internet might provide material to flesh out the blip's learning plan.
+
+**Rename Blips with Slashes**
+
+Wikimaster: "The mattpocock/skills blip can't be a file name because of the slash, so its page will be mattpocock-skills, linked as [[mattpocock-skills|mattpocock/skills]]." Find a standard for these cases. (What the Wikimaster found might be good enough.) _Note: Define consistent personas, such as Wikimaster and Learner. "Wikimaster" might sound offensive to North Americans, so find something better._
+
+**Retry Failed Pages**
+
+It happened with felonybench and PluginEval. Add instructions for retrying.
+Related: MITRE ATLAS generates pages on the fly, and the agent doesn't run JavaScript, so it comes out nearly empty. Find a solution. Probably: "This session has a Playwright browser available, from the Vaadin plugin. It's a real headless browser: it runs JavaScript, can wait for a page to finish loading, and can take a snapshot of the page. I didn't use it, and I should have tried it before passing these back to you."
+
 **Curate Updated Blips**
 As a learner, I want updated Blips to be consistent in the Wiki, so that I avoid duplicated pages and missing information.
 - [ ] If a blip appears in different editions of the Radar, recap its history when you write its learning plan, telling me in which Radars it appeared and in which rings, according to the Radar website. For example, it's interesting to me that a blip moved from "Trial" to "Adopt".
@@ -118,15 +135,25 @@ As a learner I want to visualize the Radar Wiki as a graph in Obsidian, to see r
 **Visualize progress in graph**
 As a learner I want to visualize the learning plans in the Obsidian grap with different color to see which ones I completed.
 
-
 **Verify links**
 As a learner, I want every link checked before it lands on the page, so that I never hit an invented or dead link.
 - [ ] The agent fetches each URL and confirms it loads and matches its description.
 - [ ] A mechanical link-check script runs as a required final step, independent of the model.
 - [ ] Any link that can't be verified is removed or clearly marked as unverified.
 
+**Find Exact Timing in Audio/Video Sources**
 
-## Epic 2: Wiki linking
+Wikimaster: "I didn't verify the exact start and end times of the podcast excerpts in Grilling and Production-aware coding agents."
+Then, when asked to elaborate:
+Wikimaster: "I can't listen to audio. What I can do is check timings from text:
+- Chapter lists. I had the Pragmatic Engineer timestamps but didn't use the one after "The wayfinder skill" to find where the excerpt ends. That's a plain miss on my part.
+- Episode length. Audio players and YouTube pages show it once the page renders, which Playwright can do.
+- Transcripts. Many podcasts publish one, and YouTube has captions. With a transcript I can confirm where a topic starts and stops, not just guess from chapter titles.
+  
+  The one case I can't check is an episode with no chapters and no transcript. There I could only give the total length."
+
+## Epic: Wiki linking
+_TODO: generated. select and roll into the general backlog_
 
 First, check out how LLM Wiki does it:
 https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
@@ -159,7 +186,8 @@ As a learner, I want clicking a missing page to start generation directly, with 
 
 ---
 
-## Epic 3: Progress and maintenance
+## Epic: Progress and maintenance
+_TODO: generated. select and roll into the general backlog_
 
 **PM-2 · MVP: Tweak one item**
 As a learner, I want to ask the agent to change a single item, for example an exercise I can't complete, so that I'm not stuck.

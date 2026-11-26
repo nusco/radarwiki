@@ -27,9 +27,13 @@ Learn how to test a deterministic guardrail, and test one of yours.
 - [ ] **~10 min** · Skim: [Redproof](https://github.com/schalermthai/redproof) (schalermthai) — the test suite tool the blip links to. Skim the README for its core idea: for each guardrail, plant a deliberate violation and check that the guardrail catches it ("red"), and check that clean code passes ("green").
 - [ ] **~30 min** · **Do:** Pick one deterministic guardrail in your setup, such as a hook that blocks edits to certain files, a linter rule, or a pre-commit check. Plant a violation that it should catch, and check that it does. Then plant one that's slightly different, like a renamed file or a different syntax, and see whether it still catches it. Write down one guardrail you trusted that turned out weaker than you thought, or note that all of them held.
 
+## If you have extra time
+
+- [ ] **~15 min** · Skim: [PluginEval](https://github.com/wshobson/agents/blob/main/docs/plugin-eval.md) (wshobson/agents, ~12 min in full) — the tool the blip uses for the non-deterministic half: it scores skills and plugins with a static lint, an LLM judge and a simulation. Read the opening and "Status of each layer". Its own docs are candid: the lint is deterministic, while the LLM judge and the simulation are experimental and not yet validated against human judgment.
+
 ## Wrap-up
 
-This plan covers the deterministic half. For skills and plugins, the blip uses PluginEval, part of the [wshobson/agents](https://github.com/wshobson/agents) collection (see [[Agent plugin marketplace]]). GitHub didn't load its page during my checks, so open it in a browser if you want the details.
+This plan covers the deterministic half well. Evaluating skills and plugins is still immature, as PluginEval's own docs admit. PluginEval is part of the [wshobson/agents](https://github.com/wshobson/agents) collection, which is covered in [[Agent plugin marketplace]].
 
 ## Review the blip
 

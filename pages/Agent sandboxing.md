@@ -1,5 +1,5 @@
 - **Blip:** [Agent sandboxing](https://www.thoughtworks.com/radar/techniques/agent-sandboxing)
-- **Time:** ~2 hours 45 minutes
+- **Time:** ~2 hours 50 minutes
 - **Radar edition:** November 2026
 - **Quadrant:** Techniques
 - **Ring:** Adopt
@@ -12,12 +12,13 @@
 
 The blip is new in November 2026, but it continues [Sandboxed execution for coding agents](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents) (*Trial*, April 2026), and widens it from coding agents to all agents, straight into *Adopt*. Sandboxing went mainstream in a year. In late 2025 the major coding agents shipped built-in OS-level sandboxes, and in 2026 container, microVM and remote sandboxes became products of their own. The reason is that prompt injection is still unsolved, so the safest assumption is that an agent may be turned against you. A sandbox limits the damage it can do. The open problem is network access: blocking files is easy, but deciding which hosts an agent can reach is still a judgment call.
 
-## Level 1 — Why agents need a sandbox (~30 min)
+## Level 1 — Why agents need a sandbox (~35 min)
 
 Understand the trade-off a sandbox resolves: agents are most useful when they run without asking permission, and most dangerous then too.
 
 - [ ] **~10 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/agent-sandboxing) (~2 min) — then its predecessor, [Sandboxed execution for coding agents](https://www.thoughtworks.com/radar/techniques/sandboxed-execution-for-coding-agents) (~2 min), which lists concrete tools. Notice how the new blip shifts the focus from tools to least privilege.
 - [ ] **~20 min** · Read: [Living dangerously with Claude](https://simonwillison.net/2025/Oct/22/living-dangerously-with-claude/) (Simon Willison, Oct 2025, ~5 min) — an annotated talk on why "YOLO mode" is so productive, why prompt injection makes it risky, and why sandboxing is "the only solution that's credible". The background on the lethal trifecta is covered in [[Toxic flow analysis for AI]].
+- [ ] **~5 min** · Skim: [Felony Bench](https://www.felonybench.com/) (Felpix) — the blip's "recent security headlines": a tongue-in-cheek tally of real incidents in 2026 where AI agents broke into third-party systems, each with a source. Skim the list to see what an unsandboxed agent can actually do.
 
 ## Level 2 — How a built-in sandbox works (~1.25 hours)
 
@@ -41,8 +42,6 @@ Go beyond the built-in sandbox, and choose an isolation level from the risk, as 
 ## Wrap-up
 
 This plan covers the technique for a generalist. Most of the remaining depth is in specific tools, such as container and microVM runtimes, and in agent security as a whole.
-
-The blip's "recent security headlines" link goes to felonybench.com, which blocked my checks: open it in a browser if you want the examples it points to.
 
 ## Review the blip
 

@@ -1,5 +1,5 @@
 - **Blip:** [Production-aware coding agents](https://www.thoughtworks.com/radar/techniques/production-aware-coding-agents)
-- **Time:** ~1 hour 15 minutes
+- **Time:** ~1 hour 25 minutes
 - **Radar edition:** November 2026
 - **Quadrant:** Techniques
 - **Ring:** Assess
@@ -18,11 +18,11 @@ Give coding agents appropriate access to production observability, so they can p
 
 - [ ] **~10 min** · Read: [The Radar blip](https://www.thoughtworks.com/radar/techniques/production-aware-coding-agents) (~1 min) — note how it extends the agent's feedback: from checks during a session, to the build pipeline, to production.
 
-## Level 2 — Production as feedback (~1 hour)
+## Level 2 — Production as feedback (~1 hour 15 minutes)
 
 Understand why production is the real feedback loop for AI-written code, and give your agent a first look at it.
 
-- [ ] **~30 min** · Listen: [Observability for AI with Charity Majors](https://oreilly.com/radar/podcast/generative-ai-in-the-real-world-observability-for-ai-with-charity-majors/) (Ben Lorica with Charity Majors, O'Reilly, Oct 2026) — the cofounder of Honeycomb on why cheap code moves the work to understanding how it runs, and why she prefers "owner on the loop" to "human in the loop". The page has timestamps: start from the beginning, and stop after the "owner on the loop" takeaway (18:53).
+- [ ] **~45 min** · Listen: [Observability for AI with Charity Majors](https://oreilly.com/radar/podcast/generative-ai-in-the-real-world-observability-for-ai-with-charity-majors/) (Ben Lorica with Charity Majors, O'Reilly, Oct 2026, 37 min, ~26 min for this part) — the cofounder of Honeycomb on why cheap code moves the work to understanding how it runs, and why she prefers "owner on the loop" to "human in the loop". Listen from the start, and stop at the takeaway on different telemetry strategies (26:00).
 - [ ] **~30 min** · **Do:** Pick a service you work on, and give your coding agent read-only access to one source of production data: a log query CLI, your observability tool's MCP server, or just a log file you download. Ask it to investigate a recent error, and to suggest a fix based on what it finds. Note what the production data told it that the code alone couldn't, and what access you'd be comfortable giving it permanently.
 
 ## Wrap-up

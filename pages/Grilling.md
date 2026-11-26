@@ -30,7 +30,7 @@ See how the current skill structures the interview, and use it on a real plan.
 
 ## If you have extra time
 
-- [ ] **~45 min** · Watch: [AI Skills with Matt Pocock](https://newsletter.pragmaticengineer.com/p/ai-skills-with-matt-pocock) (Gergely Orosz, The Pragmatic Engineer, Sep 2026, ~15 min for this part) — start at "Building reusable skills for AI coding agents" (30:32) and stop after "The wayfinder skill". Pocock explains how he uses grilling and related skills to plan and steer agent work.
+- [ ] **~45 min** · Watch: [AI Skills with Matt Pocock](https://newsletter.pragmaticengineer.com/p/ai-skills-with-matt-pocock) (Gergely Orosz, The Pragmatic Engineer, Sep 2026, ~17 min for this part) — start at "Building reusable skills for AI coding agents" (30:32), and stop when "Why agents excel at software engineering" begins (47:52). Pocock explains how he uses grilling and related skills to plan and steer agent work.
 
 ## Wrap-up
 

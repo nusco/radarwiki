@@ -24,7 +24,7 @@ ATLAS is a shared vocabulary of how attackers target AI systems, grounded in rea
 
 Find your way around the matrix, and use it to check a threat model.
 
-- [ ] **~15 min** · Skim: [MITRE ATLAS](https://atlas.mitre.org/) (MITRE) — open the matrix: tactics are the columns (the attacker's goals), techniques the cells. Click "LLM Prompt Injection" and read its description and one linked case study. The site renders in the browser, so it may not load in a text-only reader.
+- [ ] **~15 min** · Skim: [MITRE ATLAS](https://atlas.mitre.org/) (MITRE, v2026.10) — scroll to the matrix: the 16 tactics are the columns (the attacker's goals), and the techniques are the cells. Use the platform filter to show only "Agentic AI". Then open [LLM Prompt Injection](https://atlas.mitre.org/techniques/AML.T0051), read its description, and follow its case study, [Data Exfiltration via Agent Tools in Copilot Studio](https://atlas.mitre.org/studies/AML.CS0037), to see how a real attack chains several techniques.
 - [ ] **~20 min** · **Do:** Take the threats you listed for the LLM feature in Level 3 of [[Threat modeling]]. Map each one to an ATLAS technique, and look for techniques in the matrix that your list missed. Add the ones that apply.
 
 ## Wrap-up
