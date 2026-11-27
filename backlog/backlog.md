@@ -40,28 +40,6 @@ Are they interested in fixing these, or should we live with them?
 
 ### My Backlog
 
-**Manage Illegal Filename Characters in Blips**
-
-As a Learner
-I want the pages of blips whose names aren't legal file names to get a file name close to the blip's name
-So that they can be saved as wiki pages.
-
-- [ ] A name is illegal if it breaks under Obsidian or under any common OS (macOS, Windows, Linux). That covers:
-  - the characters Obsidian rejects in file names, which include those that macOS, Windows and Linux reject: `* " \ / < > : | ?`
-  - the characters that break Obsidian links: `# ^ [ ] |`
-  - a leading dot, which hides the file on macOS and Linux and in Obsidian (like `.NET Aspire`)
-  - a trailing dot or space, which Windows strips
-  - the names Windows reserves, like `CON`, `PRN`, `AUX`, `NUL`, `COM1` or `LPT1`
-- [ ] The example we already have is the `mattpocock/skills` blip: its page is `mattpocock-skills.md`, linked everywhere as `[[mattpocock-skills|mattpocock/skills]]`.
-- [ ] There's no fixed mapping. Case by case, the Wikimaster picks a file name that is close to the blip's name and has nothing illegal in it, and links the page everywhere with the blip's name as the alias. Most cases follow simple patterns (`/` becomes a dash, `"` is dropped), but some need judgment: `C#` could become `C-sharp`, `#metoo` could become `hashtag-metoo`, and `.NET Aspire` could become `dotNET Aspire`.
-- [ ] A blip always gets the same file name. Wiki links can point to a page before it exists, so before picking a name, the Wikimaster checks whether existing pages already link to the blip under an alias, and if so, reuses that name.
-- [ ] The Skill states this as a general principle with a few examples, so that the Wikimaster keeps an eye out if future blips happen to have illegal names.
-- [ ] Smoke test, names: for every blip in the Radar's history that has an illegal name, the Wikimaster proposes a file name and a link, without writing any pages, and I review the list.
-- [ ] Smoke test, pages: the Wikimaster writes full plans for one blip per kind of illegal name (`/`, `"`, `#`, `*`, `|`, leading dot), picking blips I'd actually want to learn, like `C# 4.0` or `.NET Aspire`. Before writing one of these pages, it links to it from an existing page, to check that the link and the page get the same name.
-
-- Note: past editions already have 37 such blips, none with a page yet except mattpocock/skills: 22 with `/` (like `CI/CD infrastructure as a service`), 6 with a leading dot (the `.NET` blips), 3 with `"`, 3 with `#` (`C# 4.0`, `F#`, `Q#`), 2 with `*` (`JavaScript MV* frameworks`, `WS-*`), and 1 with `|` (`TCR (Test && Commit || Revert)`). No blip ends with a dot or space, or has a reserved name.
-- Out of scope: names that differ only in case (see "Manage homonymous blips" and "Curate Updated Blips") and long paths (see "Manage Long Page Names").
-
 **Manage Long Page Names**
 
 As a Learner
@@ -69,6 +47,16 @@ I want page file names to stay within the path limits of common OSes
 So that the wiki works wherever I open it.
 
 - [ ] Windows limits paths to 260 characters by default. The longest blip name so far has 65 characters, so this isn't a problem yet. Decide whether and how to shorten names that would push a path past the limit.
+
+**Find Related Blips When the Radar Lists None**
+
+As a Learner
+I want a learning plan to list related blips even when its blip's page lists none
+So that older plans are connected to the rest of the wiki too.
+
+- [ ] Older blip pages have no "Related blips" section. None of the six smoke-test blips in "Manage Illegal Filename Characters in Blips" had one, from F# (2010) to TCR (November 2025). The `learning-plan` skill currently leaves the section out in that case.
+- [ ] To be decided: how the Wikimaster finds related blips on its own (for example, blips that the blip's text links to or mentions, blips in the same edition on the same topic, or later blips that replaced it), and whether the page says that the list comes from the Wikimaster rather than from Thoughtworks.
+- [ ] Note: find out when the Radar started listing related blips, to tell how many blips this affects.
 
 **Visualize as Obsidian graph**
 As a Learner

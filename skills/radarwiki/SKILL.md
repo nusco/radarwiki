@@ -16,6 +16,14 @@ description: How the RadarWiki works as a whole, whatever the page: the folder l
 - The learner opens pages as notes in Obsidian. Name each file after its topic, like `Model Context Protocol (MCP).md`, and don't add a Markdown level-1 title inside (like `# MCP`): Obsidian shows the file name as the title.
 - Link between pages with Obsidian links, like `[[Agent Skills]]`, or `[[Agent Scan|MCP-Scan]]` when a page covers a topic under another name.
 - Use standard Markdown links for everything else, such as resources and blips.
+- **Some topic names aren't legal file names.** A name is illegal if it breaks under Obsidian or any common OS (macOS, Windows, Linux):
+  - it contains a character that Obsidian rejects in file names, `* " \ / < > : | ?`, or one that breaks Obsidian links, `# ^ [ ] |`
+  - it starts with a dot, which hides the file on macOS, on Linux and in Obsidian
+  - it ends with a dot or a space, which Windows strips
+  - it's a name that Windows reserves, such as `CON`, `PRN`, `AUX`, `NUL`, `COM1` or `LPT1`
+
+  Blips like these exist, so check every new page's name. When it's illegal, pick a file name as close to the topic's name as you can that has nothing illegal in it, and link the page everywhere with the topic's name as the alias. There's no fixed mapping: usually `/` becomes a dash and `"` is dropped, but some names need judgment. For example, `mattpocock/skills` is `mattpocock-skills.md`, linked as `[[mattpocock-skills|mattpocock/skills]]`; `C#` could become `C-sharp`, `#metoo` could become `hashtag-metoo`, and `.NET Aspire` could become `dotNET Aspire`.
+- **A topic always keeps the same file name.** Links can point to a page that doesn't exist yet, so before you pick a file name for an illegal name, search the pages for links that already show the topic's name as an alias, and reuse their file name.
 
 ## Wiki rules
 

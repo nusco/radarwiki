@@ -27,7 +27,7 @@ See how a workflow misconfiguration became a supply-chain attack.
 
 ## Wrap-up
 
-This plan covers it. Running workflows locally before pushing is covered in [[Act]], and the wider approach in [[Zero trust security for CI/CD]].
+This plan covers it. Running workflows locally before pushing is covered in [[Act]], and the wider approach in [[Zero trust security for CI-CD|Zero trust security for CI/CD]].
 
 ## Review the blip
 
@@ -35,7 +35,7 @@ This plan covers it. Running workflows locally before pushing is covered in [[Ac
 
 ## Related blips
 
-- **[[Zero trust security for CI/CD]]**: the blip recommends evaluating zizmor alongside it.
+- **[[Zero trust security for CI-CD|Zero trust security for CI/CD]]**: the blip recommends evaluating zizmor alongside it.
 - **[[GitHub Actions]]**: the only CI platform zizmor covers.
 - **[[Wiz]]**: a commercial tool covering some of the same ground.
 - **[[Snyk]]**: another commercial alternative.
