@@ -23,7 +23,8 @@ description: How the RadarWiki works as a whole, whatever the page: the folder l
   - it's a name that Windows reserves, such as `CON`, `PRN`, `AUX`, `NUL`, `COM1` or `LPT1`
 
   Blips like these exist, so check every new page's name. When it's illegal, pick a file name as close to the topic's name as you can that has nothing illegal in it, and link the page everywhere with the topic's name as the alias. There's no fixed mapping: usually `/` becomes a dash and `"` is dropped, but some names need judgment. For example, `mattpocock/skills` is `mattpocock-skills.md`, linked as `[[mattpocock-skills|mattpocock/skills]]`; `C#` could become `C-sharp`, `#metoo` could become `hashtag-metoo`, and `.NET Aspire` could become `dotNET Aspire`.
-- **A topic always keeps the same file name.** Links can point to a page that doesn't exist yet, so before you pick a file name for an illegal name, search the pages for links that already show the topic's name as an alias, and reuse their file name.
+- **Keep file names within 100 characters**, so that paths stay well within the 260 characters Windows allows by default. When a topic's name would make a longer file name, shorten it as close to the topic's name as you can, and link the page everywhere with the topic's name as the alias, as you would for an illegal name.
+- **A topic always keeps the same file name.** Links can point to a page that doesn't exist yet, so before you pick a file name for an illegal or long name, search the pages for links that already show the topic's name as an alias, and reuse their file name.
 
 ## Wiki rules
 

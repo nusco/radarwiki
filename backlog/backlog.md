@@ -40,17 +40,6 @@ Are they interested in fixing these, or should we live with them?
 
 ### My Backlog
 
-**Manage Long Page Names**
-
-As a Learner
-I want page file names to stay within the path limits of common OSes
-So that the wiki works wherever I open it.
-
-- [ ] A page whose topic name would make a file name longer than 100 characters gets a shorter file name, as close to the topic's name as possible, and is linked everywhere with the topic's name as the alias (the same mechanism as illegal names).
-- [ ] Notes for refinement:
-  - Windows limits paths to 260 characters by default. The longest blip name in the 35 editions so far has 65 characters, and the worst realistic full path today is about 155 characters, so no existing blip is affected. Probably YAGNI, but the rule costs one sentence.
-  - The cap leaves room for longer names from pages that aren't blips (WL-1), suffixes from "Manage homonymous blips" (for example, " (Languages & Frameworks)"), and substitutions from illegal names (for example, `dotNET`, `hashtag-`).
-
 **Find Related Blips When the Radar Lists None**
 
 As a Learner
